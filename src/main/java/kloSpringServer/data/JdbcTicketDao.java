@@ -44,7 +44,7 @@ public class JdbcTicketDao implements TicketDao {
                 ticket.setSenderName(rs.getString("SENDER_NAME"));
                 ticket.setSenderEmail(rs.getString("SENDER_EMAIL"));
                 ticket.setDate(rs.getString("DATE"));
-                ticket.setReply(rs.getString("REPLY"));
+                ticket.setReply(rs.getString("REPLY_MESSAGE"));
                 ticket.setReplyBy(rs.getString("REPLY_BY"));
                 ticket.setReplyDate(rs.getString("REPLY_DATE"));
 

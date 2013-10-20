@@ -1,6 +1,7 @@
 package kloSpringServer.controller;
 
 import kloSpringServer.data.TicketDao;
+import kloSpringServer.model.ApiResult;
 import kloSpringServer.model.SupportTicket;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -22,9 +23,9 @@ public class TicketController {
     private TicketDao ticketDao;
 
 
-    @RequestMapping(value = "/{ticketId}",  method = RequestMethod.GET)
+    @RequestMapping(value = "/{ticketId}",  method = RequestMethod.GET, headers="Accept=application/json")
     public @ResponseBody
-    SupportTicket getTicketById(@PathVariable String ticketId) {
-        return ticketDao.getTicketById(ticketId);
+    ApiResult getTicketById(@PathVariable String ticketId) {
+        return new ApiResult(ticketDao.getTicketById(ticketId));
     }
 }
