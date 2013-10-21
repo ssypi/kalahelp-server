@@ -35,7 +35,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration
 @Transactional
-@ContextConfiguration({"/testContext.xml"})
+@ContextConfiguration(locations = {"/applicationContext.xml", "/testContext.xml"})
 public class NewsControllerTest {
 
     @Autowired

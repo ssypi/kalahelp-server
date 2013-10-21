@@ -46,16 +46,11 @@ public class NewsController {
     public ResponseEntity<?> addNewsItem(@RequestBody NewsItem newsItem) {
         NewsItem created = newsDao.addNews(newsItem);
 
-        int id = created.getId();
-        System.out.println("id= " + id);
-        System.out.println("id= " + id);
-        System.out.println("id= " + id);
-        System.out.println("id= " + id);
-
         HttpHeaders headers = new HttpHeaders();
         HttpStatus status;
 
         if (created != null) {
+            int id = created.getId();
             URI uri = ServletUriComponentsBuilder.fromCurrentContextPath()
                     .path("/news/" + id).build().toUri();
             headers.setLocation(uri);
@@ -66,12 +61,5 @@ public class NewsController {
 
         return new ResponseEntity<Void>(headers, status);
     }
-
-//    @RequestMapping(value = "/add", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
-//    @ResponseBody
-//    public NewsItem addNewsItem(@RequestBody NewsItem newsItem) {
-//        NewsItem created = newsDao.addNews(newsItem);
-//        return created;
-//    }
 }
 

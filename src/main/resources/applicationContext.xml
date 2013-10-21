@@ -3,12 +3,17 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:sec="http://www.springframework.org/schema/security"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd
     http://www.springframework.org/schema/mvc
-        http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+       http://www.springframework.org/schema/security
+       http://www.springframework.org/schema/security/spring-security-2.0.4.xsd">
 
     <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="locations" value="classpath:jdbc.properties"/>
@@ -22,6 +27,12 @@
         <property name="password" value="${jdbc.password}"/>
     </bean>
 
+
+    <context:component-scan base-package="kloSpringServer.model"/>
+    <context:component-scan base-package="kloSpringServer.data"/>
+    <context:component-scan base-package="kloSpringServer.service"/>
+    <context:annotation-config/>
+
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"/>
     </bean>
@@ -29,27 +40,11 @@
     <tx:annotation-driven transaction-manager="transactionManager"/>
 
 
-    <context:component-scan base-package="kloSpringServer.controller"/>
-    <context:component-scan base-package="kloSpringServer.data"/>
-    <context:component-scan base-package="kloSpringServer.model"/>
-    <context:component-scan base-package="kloSpringServer.service"/>
-    <context:annotation-config/>
-
-    <mvc:annotation-driven>
-        <mvc:message-converters>
-            <ref bean="jsonConverter"/>
-        </mvc:message-converters>
-    </mvc:annotation-driven>
-
-    <bean class="org.springframework.mock.web.MockServletContext"/>
-
-
-    <bean id="handlerMapping"
-          class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping">
+    <bean id="filterChainProxy" class="org.springframework.security.web.FilterChainProxy">
+        <sec:filter-chain-map path-type="ant">
+            <sec:filter-chain pattern="/**" filters="
+           authenticationFilter"/>
+        </sec:filter-chain-map>
     </bean>
 
-    <bean id="jsonConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
-        <property name="supportedMediaTypes" value="application/json"/>
-        <property name="prettyPrint" value="true"/>
-    </bean>
 </beans>

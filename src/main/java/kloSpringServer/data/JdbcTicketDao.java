@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import javax.sql.DataSource;
 import java.sql.ResultSet;
@@ -17,7 +18,8 @@ import java.util.List;
  * Date: 9.10.2013
  * Time: 1:39
  */
-@Component
+
+@Repository
 public class JdbcTicketDao implements TicketDao {
     private static final String TABLE_TICKET = "TICKET";
     private JdbcTemplate jdbcTemplate;

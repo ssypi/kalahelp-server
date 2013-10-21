@@ -29,15 +29,15 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 /**
- * Created with IntelliJ IDEA.
- * User: kala
- * Date: 20.10.2013
- * Time: 1:04
- */
+* Created with IntelliJ IDEA.
+* User: kala
+* Date: 20.10.2013
+* Time: 1:04
+*/
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration
 @Transactional
-@ContextConfiguration({"/testContext.xml"})
+@ContextConfiguration(locations = {"/testContext.xml", "/applicationContext.xml"})
 public class SessionControllerTest {
 
     @Autowired
@@ -52,6 +52,8 @@ public class SessionControllerTest {
     public void setUp() throws Exception {
         this.mockMvc = MockMvcBuilders.webAppContextSetup(this.wac).build();
     }
+
+
 
     @Test
     public void testNewSessionForUser() throws Exception {
@@ -72,22 +74,19 @@ public class SessionControllerTest {
             e.printStackTrace();
             fail("Unable to map User/json");
         }
-
-        System.out.println(userAsJson);
+//        System.out.println(userAsJson);
 
         mockMvc.perform(post("/session/")
                 .contentType(MediaType.APPLICATION_JSON)
                 .accept(MediaType.APPLICATION_JSON)
                 .characterEncoding("UTF-8")
                 .content(userAsJson)
-        );
-//                .andExpect(status().isOk());
-//                .andExpect(jsonPath("$.status", is(0)))
-//                .andExpect(jsonPath("$.result").exists())
-//                .andExpect(jsonPath("$.result.token", notNullValue()))
+        )
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.status", is(0)))
+                .andExpect(jsonPath("$.result").exists())
+                .andExpect(jsonPath("$.result.token", notNullValue()));
 //                .andReturn();
-
 //        System.out.println(result.getResponse().getContentAsString());
-
     }
 }

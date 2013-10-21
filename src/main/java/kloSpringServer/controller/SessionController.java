@@ -2,8 +2,9 @@ package kloSpringServer.controller;
 
 import kloSpringServer.model.ApiResult;
 import kloSpringServer.model.Session;
-import kloSpringServer.model.SessionHelper;
+import kloSpringServer.service.SessionHelper;
 import kloSpringServer.model.User;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,13 +23,16 @@ import javax.servlet.http.HttpServletRequest;
 @RequestMapping("/session")
 public class SessionController {
 
+    @Autowired
+    private SessionHelper sessionHelper;
+
+
     @RequestMapping(value = "/", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
     @ResponseBody
     public ApiResult newSessionForUser(HttpServletRequest request, @RequestBody User user) {
-        SessionHelper helper = new SessionHelper();
         String ip = request.getRemoteAddr();
-        Session newSession = helper.createSessionForIp(ip);
-        helper.saveSession(newSession);
+        Session newSession = sessionHelper.createSessionForIp(ip);
+        sessionHelper.saveSession(newSession);
         return new ApiResult(newSession);
     }
 }

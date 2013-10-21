@@ -1,10 +1,14 @@
-package kloSpringServer.model;
+package kloSpringServer.service;
 
-import kloSpringServer.data.JdbcSessionDao;
 import kloSpringServer.data.SessionDao;
+import kloSpringServer.model.Session;
+import kloSpringServer.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.Date;
 import java.util.UUID;
 
@@ -17,12 +21,15 @@ import java.util.UUID;
 @Service
 public class SessionHelper {
 
-//    @Autowired
-    private SessionDao sessionDao = new JdbcSessionDao();
+    @Autowired
+    private SessionDao sessionDao;
+
+    public SessionHelper() {
+    }
 
     public boolean isExpired(Session session) {
         Date currentTime = new Date();
-        return session.getExpireDate().compareTo(currentTime) >= 0;
+        return session.getExpireDate().before(currentTime);
     }
 
     public boolean verifySession(Session session) {
@@ -38,6 +45,10 @@ public class SessionHelper {
         Session session = new Session();
         session.setIpAddress(ip);
         session.setToken(generateToken());
+        Date date = new Date();
+        long hours = 5 * 3600000L;
+        date.setTime(date.getTime() + hours);
+        session.setExpireDate(date);
         return session;
     }
 

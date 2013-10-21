@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import javax.sql.DataSource;
 import java.sql.ResultSet;
@@ -17,7 +18,7 @@ import java.sql.SQLException;
  * Date: 20.10.2013
  * Time: 0:18
  */
-@Component
+@Repository
 public class JdbcSessionDao implements SessionDao {
     private static final String TABLE_SESSION = "SESSION";
     private JdbcTemplate jdbcTemplate;
@@ -48,17 +49,13 @@ public class JdbcSessionDao implements SessionDao {
     @Override
     public Session saveSession(Session session) {
         String sql = "INSERT INTO " + TABLE_SESSION
-                + " VALUES(?, ?, ?);";
+                + " VALUES(?, ?, CURRENT_TIMESTAMP);";
 
         System.out.println(session.getIpAddress());
         System.out.println(session.getToken());
         System.out.println(session.getExpireDate());
 
-        if (jdbcTemplate == null) {
-            System.out.println("NULL");
-        }
-
-        jdbcTemplate.update(sql, session.getToken(), session.getIpAddress(), session.getExpireDate());
+        jdbcTemplate.update(sql, session.getToken(), session.getIpAddress());
         return session;
     }
 

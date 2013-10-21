@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.sql.DataSource;
@@ -18,7 +19,7 @@ import java.util.List;
  * Date: 10.10.2013
  * Time: 0:37
  */
-@Component
+@Repository
 public class JdbcNewsDao implements NewsDao {
     private static final String TABLE_NEWS = "NEWS";
     private JdbcTemplate jdbcTemplate;
