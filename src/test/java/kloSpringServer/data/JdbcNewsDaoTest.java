@@ -3,6 +3,8 @@ package kloSpringServer.data;
 import kloSpringServer.model.NewsItem;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+
+import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
@@ -18,7 +20,6 @@ import java.util.List;
  * Time: 23:57
  */
 @ContextConfiguration (locations = {"/testContext.xml"})
-//@TestExecutionListeners
 @RunWith(SpringJUnit4ClassRunner.class)
 public class JdbcNewsDaoTest {
 
@@ -29,7 +30,7 @@ public class JdbcNewsDaoTest {
     @Transactional
     public void testGetNewsById() throws Exception {
         String content = "Kala kala kala mies, olipa kerran kuka ties.";
-        int writer = 1;
+        String writer = "1";
 
         NewsItem newsItem = new NewsItem();
         newsItem.setContent(content);
@@ -46,7 +47,7 @@ public class JdbcNewsDaoTest {
     @Transactional
     public void testGetLatestNews() throws Exception {
         String content = "kala";
-        int writer = 1;
+        String writer = "1";
         NewsItem newsItem = new NewsItem();
         newsItem.setContent(content);
         newsItem.setWriter(writer);
@@ -65,9 +66,18 @@ public class JdbcNewsDaoTest {
 
     @Test
     @Transactional
+    public void test() throws Exception {
+        NewsItem news = newsDao.getNewsById(1);
+        String expectedContent = "Kalamiehen testi_uutinen";
+        assertThat(expectedContent, equalTo(news.getContent()));
+        assertThat(1, equalTo(news.getId()));
+    }
+
+    @Test
+    @Transactional
     public void testAddNewsItem() throws Exception {
         String content = "Kala kala kala mies, olipa kerran kuka ties.";
-        int writer = 1;
+        String writer = "1";
 
         NewsItem newsItem = new NewsItem();
         newsItem.setContent(content);

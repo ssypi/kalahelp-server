@@ -40,11 +40,10 @@
     <tx:annotation-driven transaction-manager="transactionManager"/>
 
 
-    <bean id="filterChainProxy" class="org.springframework.security.web.FilterChainProxy">
-        <sec:filter-chain-map path-type="ant">
-            <sec:filter-chain pattern="/**" filters="
-           authenticationFilter"/>
-        </sec:filter-chain-map>
-    </bean>
-
+    <!--<bean id="filterChainProxy" class="org.springframework.security.web.FilterChainProxy">-->
+        <!--<sec:filter-chain-map path-type="ant">-->
+            <!--<sec:filter-chain pattern="/**" filters="-->
+           <!--authenticationFilter"/>-->
+        <!--</sec:filter-chain-map>-->
+    <!--</bean>-->
 </beans>

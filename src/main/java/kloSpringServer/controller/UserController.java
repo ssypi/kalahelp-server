@@ -1,0 +1,37 @@
+package kloSpringServer.controller;
+
+import kloSpringServer.model.ApiResult;
+import kloSpringServer.model.User;
+import kloSpringServer.service.UserAuthentication;
+import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: kala
+ * Date: 4.11.2013
+ * Time: 0:32
+ */
+@Controller
+@RequestMapping("/user")
+public class UserController {
+    private static final Logger logger = Logger.getLogger(UserController.class);
+
+    @Autowired
+    UserAuthentication authentication;
+
+    @RequestMapping(value = "/", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
+    @ResponseBody
+    public ApiResult addUser(@RequestBody User user) {
+        authentication.createUser(user);
+        return new ApiResult(null, 0);
+    }
+}

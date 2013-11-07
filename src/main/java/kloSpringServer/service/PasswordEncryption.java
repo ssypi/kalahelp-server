@@ -21,7 +21,6 @@ public class PasswordEncryption {
     private static final int HASH_ROUNDS = 200;
 
     public byte[] encryptPassword(String password, byte[] salt) {
-//        System.out.println("Encrypting password " + password + " with salt " + Arrays.toString(salt));
         byte[] hash = null;
 
         try {

@@ -22,6 +22,17 @@ public class Session implements Serializable {
     private String ipAddress;
     private Date expireDate;
 
+    private static final int EXPIRE_HOURS = 6;
+
+    public Session() {
+    }
+
+    public static Date newExpireDate() {
+        Date currentDate = new Date();
+        long expireHoursInMillis = EXPIRE_HOURS * 3600000L;
+        currentDate.setTime(currentDate.getTime() + expireHoursInMillis);
+        return currentDate;
+    }
 
     public String getToken() {
         return token;
@@ -60,6 +71,20 @@ public class Session implements Serializable {
         if (!token.equals(session.token)) return false;
 
         return true;
+    }
+
+    public boolean validate() {
+        if (token == null || token.isEmpty() || token.equals("0")) return false;
+        return true;
+    }
+
+    public boolean isExpired() {
+        Date currentTime = new Date();
+        return expireDate.before(currentTime);
+    }
+
+    public static String generateToken() {
+        return UUID.randomUUID().toString();
     }
 
 

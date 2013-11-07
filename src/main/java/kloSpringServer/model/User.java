@@ -43,4 +43,10 @@ public class User implements Serializable {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    public boolean validate() {
+        if (username == null || username.isEmpty()) return false;
+        if (password == null || password.isEmpty()) return false;
+        return true;
+    }
 }

@@ -13,5 +13,7 @@ public interface UserDao {
     User getUserByUsername(String username);
     byte[] getSaltForUser(String username);
     boolean verifyUser(String username, byte[] encryptedPassword);
+
+    void saveUser(String username, byte[] encryptedPassword, byte[] salt);
 //    public User getUserByName(String username);
 }

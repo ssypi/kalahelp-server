@@ -3,6 +3,7 @@ package kloSpringServer.controller;
 import kloSpringServer.data.NewsDao;
 import kloSpringServer.model.ApiResult;
 import kloSpringServer.model.NewsItem;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -22,9 +23,13 @@ import java.net.URI;
  * Date: 10.10.2013
  * Time: 0:34
  */
+@SuppressWarnings("SpringJavaAutowiringInspection")
 @Controller
 @RequestMapping("/news")
 public class NewsController {
+
+    private static final Logger logger = Logger.getLogger(NewsController.class);
+
     @Autowired
     private NewsDao newsDao;
 

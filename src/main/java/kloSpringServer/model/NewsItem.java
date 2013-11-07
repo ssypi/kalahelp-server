@@ -14,7 +14,7 @@ import java.util.Date;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class NewsItem implements Serializable {
     private static final long serialVersionUID = 3823808L;
-    private Integer writer;
+    private String writer;
     private String content;
     private Date date;
     private int id;
@@ -44,14 +44,14 @@ public class NewsItem implements Serializable {
         return true;
     }
 
-    public NewsItem(Integer writer, String content) {
-        this(writer, "", content);
+    public NewsItem(String writer, String content) {
+        this(writer, null, content);
         //todo generate current date
         this.date = new Date();
     }
 
 
-    public NewsItem(Integer writer, String date, String content) {
+    public NewsItem(String writer, String date, String content) {
         this.writer = writer;
         // todo: parse Date from String
 //        this.date = date;
@@ -59,11 +59,11 @@ public class NewsItem implements Serializable {
         this.content = content;
     }
 
-    public Integer getWriter() {
+    public String getWriter() {
         return writer;
     }
 
-    public void setWriter(Integer writer) {
+    public void setWriter(String writer) {
         this.writer = writer;
     }
 

@@ -1,6 +1,7 @@
 package kloSpringServer.data;
 
 import kloSpringServer.model.NewsItem;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
@@ -11,6 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.sql.DataSource;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -23,6 +25,8 @@ import java.util.List;
 public class JdbcNewsDao implements NewsDao {
     private static final String TABLE_NEWS = "NEWS";
     private JdbcTemplate jdbcTemplate;
+
+    private static final Logger logger = Logger.getLogger(JdbcNewsDao.class);
 
     @Autowired
     public void setDataSource(DataSource dataSource) {
@@ -41,7 +45,7 @@ public class JdbcNewsDao implements NewsDao {
                 newsItem.setId(rs.getInt("ID"));
                 newsItem.setContent(rs.getString("CONTENT"));
                 newsItem.setDate(rs.getTimestamp("DATE"));
-                newsItem.setWriter(rs.getInt("WRITTEN_BY"));
+                newsItem.setWriter(String.valueOf(rs.getInt("WRITTEN_BY")));
                 return newsItem;
             }
         };
@@ -67,7 +71,7 @@ public class JdbcNewsDao implements NewsDao {
                 newsItem.setId(rs.getInt("ID"));
                 newsItem.setContent(rs.getString("CONTENT"));
                 newsItem.setDate(rs.getTimestamp("DATE"));
-                newsItem.setWriter(rs.getInt("WRITTEN_BY"));
+                newsItem.setWriter(String.valueOf(rs.getInt("WRITTEN_BY")));
                 return newsItem;
             }
         };
@@ -83,9 +87,13 @@ public class JdbcNewsDao implements NewsDao {
     @Override
     @Transactional
     public NewsItem addNews(NewsItem newsItem) {
+        if (logger.isDebugEnabled()) {
+            logger.debug("Adding news: " + newsItem.getContent());
+        }
         String sql = "INSERT INTO " + TABLE_NEWS
                 + " VALUES(null, ?, ?, CURRENT_TIMESTAMP);";
-        jdbcTemplate.update(sql, newsItem.getContent(), newsItem.getWriter());
+        jdbcTemplate.update(sql, newsItem.getContent(), 1);
+        //TODO: replace 1 with writer, get writer id from user table
         int id = jdbcTemplate.queryForObject("SELECT LAST_INSERT_ID()", Integer.class);
         newsItem.setId(id);
         return newsItem;
