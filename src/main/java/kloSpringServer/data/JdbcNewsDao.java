@@ -5,14 +5,12 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.sql.DataSource;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -97,5 +95,14 @@ public class JdbcNewsDao implements NewsDao {
         int id = jdbcTemplate.queryForObject("SELECT LAST_INSERT_ID()", Integer.class);
         newsItem.setId(id);
         return newsItem;
+    }
+
+    @Override
+    public void deleteNewsById(int newsId) {
+        logger.info("Deleting newzz with id " + newsId);
+        String sql = "DELETE FROM " + TABLE_NEWS
+                + " WHERE ID=?;";
+
+        jdbcTemplate.update(sql, newsId);
     }
 }

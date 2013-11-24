@@ -15,35 +15,44 @@
        http://www.springframework.org/schema/security
        http://www.springframework.org/schema/security/spring-security-2.0.4.xsd">
 
-    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-        <property name="locations" value="classpath:jdbc.properties"/>
-    </bean>
+    <beans profile="default">
+        <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+            <property name="locations" value="classpath:jdbc.properties"/>
+        </bean>
+    </beans>
 
-    <bean id="dataSource"
-          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-        <property name="driverClassName" value="${jdbc.driverClassName}"/>
-        <property name="url" value="${jdbc.url}"/>
-        <property name="username" value="${jdbc.username}"/>
-        <property name="password" value="${jdbc.password}"/>
-    </bean>
+    <beans profile="local">
+        <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+            <property name="locations" value="classpath:jdbc-local.properties"/>
+        </bean>
+    </beans>
 
+    <beans>
+        <bean id="dataSource"
+              class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+            <property name="driverClassName" value="${jdbc.driverClassName}"/>
+            <property name="url" value="${jdbc.url}"/>
+            <property name="username" value="${jdbc.username}"/>
+            <property name="password" value="${jdbc.password}"/>
+        </bean>
+        <context:component-scan base-package="kloSpringServer.model"/>
+        <context:component-scan base-package="kloSpringServer.data"/>
+        <context:component-scan base-package="kloSpringServer.service"/>
+        <context:annotation-config/>
 
-    <context:component-scan base-package="kloSpringServer.model"/>
-    <context:component-scan base-package="kloSpringServer.data"/>
-    <context:component-scan base-package="kloSpringServer.service"/>
-    <context:annotation-config/>
+        <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+            <property name="dataSource" ref="dataSource"/>
+        </bean>
 
-    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <property name="dataSource" ref="dataSource"/>
-    </bean>
+        <tx:annotation-driven transaction-manager="transactionManager"/>
+    </beans>
 
-    <tx:annotation-driven transaction-manager="transactionManager"/>
 
 
     <!--<bean id="filterChainProxy" class="org.springframework.security.web.FilterChainProxy">-->
-        <!--<sec:filter-chain-map path-type="ant">-->
-            <!--<sec:filter-chain pattern="/**" filters="-->
-           <!--authenticationFilter"/>-->
-        <!--</sec:filter-chain-map>-->
+    <!--<sec:filter-chain-map path-type="ant">-->
+    <!--<sec:filter-chain pattern="/**" filters="-->
+    <!--authenticationFilter"/>-->
+    <!--</sec:filter-chain-map>-->
     <!--</bean>-->
 </beans>

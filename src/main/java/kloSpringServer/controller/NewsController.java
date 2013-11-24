@@ -33,11 +33,21 @@ public class NewsController {
     @Autowired
     private NewsDao newsDao;
 
-    @RequestMapping(value = "/{newsId}", method = RequestMethod.GET)
+    @RequestMapping(value = "/{newsId}", method = RequestMethod.DELETE, produces = "application/json")
     public @ResponseBody
-    ApiResult getNewsById(@PathVariable int newsId) {
-        return new ApiResult(newsDao.getNewsById(newsId));
+    ApiResult deleteNewsById(@PathVariable int newsId) {
+        logger.info(newsId);
+        newsDao.deleteNewsById(newsId);
+        //TODO: fix
+        return new ApiResult(null, ApiResult.STATUS_OK);
     }
+
+//    @RequestMapping(value = "/{newsId}", method = RequestMethod.GET)
+//    public @ResponseBody
+//    ApiResult getNewsById(@PathVariable int newsId) {
+//        logger.info("Get " + newsId);
+//        return new ApiResult(newsDao.getNewsById(newsId));
+//    }
 
     @RequestMapping(value = "/latest/{count}", method = RequestMethod.GET)
     public @ResponseBody

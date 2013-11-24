@@ -3,6 +3,7 @@ package kloSpringServer.controller;
 import kloSpringServer.model.NewsItem;
 import org.junit.Test;
 import org.springframework.http.MediaType;
+import org.springframework.test.web.servlet.MvcResult;
 
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.is;
@@ -20,6 +21,19 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 public class NewsControllerTest extends ControllerTest {
 
     @Test
+    public void testDeleteNews() throws Exception {
+        int newsId = 4;
+
+        MvcResult result = mockMvc.perform(delete("/news/" + newsId)
+        .accept(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.status", is(0)))
+                .andReturn();
+
+        System.out.println(result.getResponse().getContentAsString());
+    }
+
+//    @Test
     public void testGetNewsById() throws Exception {
         mockMvc.perform(get("/news/1"))
                 .andExpect(status().isOk())

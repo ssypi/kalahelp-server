@@ -15,7 +15,7 @@
         <maven.compiler.target>1.7</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <org.springframework.version>3.2.3.RELEASE</org.springframework.version>
-        <!--<profileName>standalone</profileName>-->
+        <profileName>local</profileName>
     </properties>
 
     <dependencies>
@@ -42,6 +42,7 @@
             <groupId>hsqldb</groupId>
             <artifactId>hsqldb</artifactId>
             <version>1.8.0.10</version>
+            <scope>test</scope>
         </dependency>
         <!--<dependency>-->
             <!--<groupId>com.jayway.jsonpath</groupId>-->
@@ -69,13 +70,24 @@
             <scope>provided</scope>
         </dependency>
 
-        <!--mysql driver-->
+
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.25</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.sun.mail</groupId>
+            <artifactId>javax.mail</artifactId>
+            <version>1.5.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.thetransactioncompany</groupId>
+            <artifactId>cors-filter</artifactId>
+            <version>1.8</version>
+        </dependency>
 
         <!--spring framework-->
         <dependency>

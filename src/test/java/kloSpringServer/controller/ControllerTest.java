@@ -32,11 +32,11 @@ import static org.springframework.test.util.AssertionErrors.fail;
 @ContextConfiguration(locations = {"/testContext.xml"})
 public abstract class ControllerTest {
     @Autowired
-    protected WebApplicationContext wac;
+    WebApplicationContext wac;
 
-    protected MockMvc mockMvc;
+    MockMvc mockMvc;
 
-    protected String convertToJson(Object object, Class clazz) throws IOException {
+    String convertToJson(Object object, Class clazz) throws IOException {
         String jsonString = null;
         try {
             ObjectWriter ow = new ObjectMapper().writer().withDefaultPrettyPrinter();

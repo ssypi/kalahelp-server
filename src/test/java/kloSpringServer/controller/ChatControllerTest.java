@@ -24,8 +24,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  */
 public class ChatControllerTest extends ControllerTest {
     private int chatId;
-    ChatDao chatDao;
-    ChatController controller;
+    private ChatDao chatDao;
+    private ChatController controller;
 
     private ChatDao mockChatController() {
         chatDao = new ChatDaoInMemoryImpl();

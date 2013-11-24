@@ -20,8 +20,8 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 @Repository
 public class ChatDaoInMemoryImpl implements ChatDao {
-    private static ConcurrentHashMap<Integer, List<ChatMessage>> chats = new ConcurrentHashMap<>();
-    private static ConcurrentHashMap<Integer, ChatRequest> chatRequests = new ConcurrentHashMap<>();
+    private static final ConcurrentHashMap<Integer, List<ChatMessage>> chats = new ConcurrentHashMap<>();
+    private static final ConcurrentHashMap<Integer, ChatRequest> chatRequests = new ConcurrentHashMap<>();
 
     @Override
     public ChatRequest requestChat() {

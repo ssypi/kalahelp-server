@@ -14,4 +14,5 @@ public interface NewsDao {
     public NewsItem getNewsById(int newsId);
     public List<NewsItem> getLatestNews(int count);
     public NewsItem addNews(NewsItem newsItem);
+    void deleteNewsById(int newsId);
 }

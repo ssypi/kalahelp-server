@@ -4,9 +4,9 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class ChatMessage {
-    int index;
-    String content;
-    String writer;
+    private int index;
+    private String content;
+    private String writer;
 
     public int getIndex() {
         return index;

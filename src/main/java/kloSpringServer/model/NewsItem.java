@@ -51,6 +51,7 @@ public class NewsItem implements Serializable {
     }
 
 
+    // xxx
     public NewsItem(String writer, String date, String content) {
         this.writer = writer;
         // todo: parse Date from String

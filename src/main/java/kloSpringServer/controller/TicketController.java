@@ -10,18 +10,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-/**
- * Created with IntelliJ IDEA.
- * User: kala
- * Date: 9.10.2013
- * Time: 1:29
- */
+@SuppressWarnings("SpringJavaAutowiringInspection")
 @Controller
 @RequestMapping("/ticket")
 public class TicketController {
     @Autowired
     private TicketDao ticketDao;
-
 
     @RequestMapping(value = "/{ticketId}",  method = RequestMethod.GET, headers="Accept=application/json")
     public @ResponseBody

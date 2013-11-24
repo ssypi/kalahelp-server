@@ -64,7 +64,7 @@ public class JdbcTicketDao implements TicketDao {
     @Override
     public void addTicket(SupportTicket ticket) {
         String sql = "INSERT INTO " + TABLE_TICKET
-                + " VALUES (null, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP);";
+                + " VALUES (null, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP);"; // TODO: fixme
 
         Object[] params = new Object[]{ticket.getStatus(),
                 ticket.getCategory(),

@@ -30,6 +30,21 @@
         <!--<dispatcher>REQUEST</dispatcher>-->
         <!--<dispatcher>ASYNC</dispatcher>-->
     <!--</filter-mapping>-->
+    
+    <filter>
+        <filter-name>CORS</filter-name>
+        <filter-class>com.thetransactioncompany.cors.CORSFilter</filter-class>
+        <async-supported>true</async-supported>
+        <init-param>
+            <param-name>cors.supportedHeaders</param-name>
+            <param-value>Content-Type,Accept,Origin</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>CORS</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 
     <context-param>
         <param-name>contextConfigLocation</param-name>
@@ -40,6 +55,9 @@
 
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    <listener>
+        <listener-class>kloSpringServer.JdbcDriverRegistrationListener</listener-class>
     </listener>
 
     <servlet>

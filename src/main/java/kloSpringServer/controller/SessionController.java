@@ -38,7 +38,10 @@ public class SessionController {
     @RequestMapping(value = "/", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
     @ResponseBody
     public ApiResult newSessionForUser(@RequestBody User user, HttpServletResponse response, HttpServletRequest request) {
-        String ip = request.getRemoteAddr();
+        String ip = request.getHeader("X-Forwarded-For");
+        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+            ip = request.getRemoteAddr();
+        }
         logger.info("Login attempt from " + ip);
 
         if (!user.validate()) { // invalid request
@@ -54,6 +57,7 @@ public class SessionController {
         }
 
         Session newSession = sessionDao.createNewSessionForIp(ip);
+        logger.info("Successful login for " + user.getUsername() + " from " + newSession.getIpAddress());
         return new ApiResult(newSession);
     }
 }

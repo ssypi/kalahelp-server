@@ -13,12 +13,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * Created with IntelliJ IDEA.
- * User: kala
- * Date: 21.10.2013
- * Time: 2:23
- */
 @Component
 public class AuthenticationFilter extends OncePerRequestFilter {
     @Autowired
@@ -30,7 +24,10 @@ public class AuthenticationFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         String token = request.getHeader("token");
         if (token != null && !token.isEmpty()) {
-            String ip = request.getRemoteAddr();
+            String ip = request.getHeader("X-Forwarded-For");
+            if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+                ip = request.getRemoteAddr();
+            }
             Session session = new Session();
             session.setToken(token);
             session.setIpAddress(ip);
