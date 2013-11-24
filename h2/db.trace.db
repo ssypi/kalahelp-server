@@ -1,0 +1,9 @@
+10-21 13:30:10 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "NEWS" not found; SQL statement:
+SELECT * FROM NEWS WHERE ID=? LIMIT 1; [42102-160]
+10-21 13:30:10 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "NEWS" not found; SQL statement:
+INSERT INTO NEWS VALUES(null, ?, ?, CURRENT_TIMESTAMP); [42102-160]
+10-21 13:30:10 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "NEWS" not found; SQL statement:
+SELECT * FROM NEWS ORDER BY DATE DESC LIMIT ?; [42102-160]

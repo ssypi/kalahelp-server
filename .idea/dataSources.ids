@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Data Source" product="MySQL" version="5.5.31-0+wheezy1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.25 ( Revision: ${bzr.revision-id} )" uuid="66b9bb6e-40cf-4088-b4ac-11e1e4c07a15">
+    <extra-name-characters>#@</extra-name-characters>
+    <identifier-quote-string>`</identifier-quote-string>
+    <synchronize>true</synchronize>
+    <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+    <jdbc-url>jdbc:mysql://localhost:3306/syp</jdbc-url>
+    <user-name>syp</user-name>
+    <user-password>dfc9dfd8dfcfdfdedfccdfdedf9cdfd9</user-password>
+    <schema-pattern>syp.*</schema-pattern>
+    <default-schemas>syp.*</default-schemas>
+    <default-dialect>MySQL</default-dialect>
+    <libraries>
+      <library>
+        <url>jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.25/mysql-connector-java-5.1.25.jar!/</url>
+      </library>
+    </libraries>
+    <ssh-properties>
+      <enabled>true</enabled>
+      <proxy-host>kapsi.fi</proxy-host>
+      <proxy-port>22</proxy-port>
+      <user>syp</user>
+      <use-password>false</use-password>
+      <password></password>
+      <private-key-path>J:\old stuff\asd.ppk</private-key-path>
+      <passphrase></passphrase>
+      <remote-host>db1.kapsi.fi</remote-host>
+      <remote-port>3306</remote-port>
+      <local-port>3306</local-port>
+    </ssh-properties>
+    <schema name="" catalog="syp"/>
+    <table name="BAN" schema="" catalog="syp" type="TABLE">
+      <column name="matchId" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" def="MA=="/>
+      <column name="side" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="heroId" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" def="MA=="/>
+      <column name="BanOrder" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="matchId,heroId"/>
+    </table>
+    <table name="GDBC_PERSON" schema="" catalog="syp" type="TABLE">
+      <column name="Ssn" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12"/>
+      <column name="FirstName" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12"/>
+      <column name="LastName" sqlType="VARCHAR" length="40" precision="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="Ssn"/>
+    </table>
+    <table name="HERO" schema="" catalog="syp" type="TABLE">
+      <column name="HeroId" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" def="MA=="/>
+      <column name="HeroName" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="HeroId"/>
+    </table>
+    <table name="MATCHES" schema="" catalog="syp" type="TABLE">
+      <column name="MatchId" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" def="MA=="/>
+      <column name="RadiantTeam" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5"/>
+      <column name="DireTeam" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5"/>
+      <column name="Winner" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="Duration" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="MatchId"/>
+    </table>
+    <table name="MATCH_PLAYER" schema="" catalog="syp" type="TABLE">
+      <column name="MatchId" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" def="MA=="/>
+      <column name="PlayerId" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" def="MA=="/>
+      <column name="HeroId" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="Side" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="MatchId,PlayerId"/>
+    </table>
+    <table name="NEWS" schema="" catalog="syp" type="TABLE">
+      <column name="ID" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="CONTENT" sqlType="VARCHAR" length="500" precision="0" nullable="true" jdbcType="12"/>
+      <column name="WRITTEN_BY" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="DATE" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="ID"/>
+    </table>
+    <table name="PICK" schema="" catalog="syp" type="TABLE">
+      <column name="matchId" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" def="MA=="/>
+      <column name="side" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="heroId" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" def="MA=="/>
+      <column name="PickOrder" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="matchId,heroId"/>
+    </table>
+    <table name="SESSION" schema="" catalog="syp" type="TABLE">
+      <column name="TOKEN" sqlType="VARCHAR" length="130" precision="0" nullable="false" jdbcType="12"/>
+      <column name="IP_ADDRESS" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12"/>
+      <column name="EXPIRE_DATE" sqlType="DATETIME" length="19" precision="0" nullable="false" jdbcType="93"/>
+      <index name="unique_TOKEN" unique="true" columns="TOKEN"/>
+    </table>
+    <table name="TEAM" schema="" catalog="syp" type="TABLE">
+      <column name="TeamId" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" def="MA=="/>
+      <column name="TeamName" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="Rating" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5"/>
+      <column name="PLAYER_1" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5"/>
+      <column name="PLAYER_2" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5"/>
+      <column name="PLAYER_3" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5"/>
+      <column name="PLAYER_4" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5"/>
+      <column name="PLAYER_5" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="TeamId"/>
+    </table>
+    <table name="TICKET" schema="" catalog="syp" type="TABLE">
+      <column name="TICKET_NUMBER" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="STATUS" sqlType="VARCHAR" length="10" precision="0" nullable="true" jdbcType="12" def="J05ldyc="/>
+      <column name="CATEGORY" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12" def="J090aGVyJw=="/>
+      <column name="SUBJECT" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="SENDER_NAME" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="SENDER_EMAIL" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12"/>
+      <column name="MESSAGE" sqlType="VARCHAR" length="500" precision="0" nullable="true" jdbcType="12"/>
+      <column name="DATE" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="REPLY_BY" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="REPLY_MESSAGE" sqlType="VARCHAR" length="500" precision="0" nullable="true" jdbcType="12"/>
+      <column name="REPLY_DATE" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
+      <primary-key name="PRIMARY" columns="TICKET_NUMBER"/>
+    </table>
+    <table name="USER" schema="" catalog="syp" type="TABLE">
+      <column name="USERNAME" sqlType="VARCHAR" length="25" precision="0" nullable="false" jdbcType="12"/>
+      <column name="PASSWORD" sqlType="VARBINARY" length="255" precision="0" nullable="false" jdbcType="-3"/>
+      <column name="SALT" sqlType="VARBINARY" length="255" precision="0" nullable="false" jdbcType="-3"/>
+      <primary-key name="PRIMARY" columns="USERNAME"/>
+      <index name="unique_USERNAME" unique="true" columns="USERNAME"/>
+    </table>
+    <table name="Visitor" schema="" catalog="syp" type="TABLE">
+      <column name="Address" sqlType="VARCHAR" length="30" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="HostName" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="Times" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="Address,HostName"/>
+    </table>
+    <table name="schema_migrations" schema="" catalog="syp" type="TABLE">
+      <column name="version" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <index name="unique_schema_migrations" unique="true" columns="version"/>
+    </table>
+    <table name="users" schema="" catalog="syp" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="created_at" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="updated_at" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+  </data-source>
+</component>

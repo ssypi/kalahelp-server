@@ -1,13 +1,407 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d917c35e-2987-4f3a-b03f-ff2eff7af23b" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\dev\IdeaProjects\klospring\kloSpringServer.iml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    <list default="true" id="c4f7a5ad-f472-4787-b802-3250399f2fa1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h2/db.h2.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_3_2_3_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_3_2_3_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_3_2_3_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_3_2_3_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_3_2_3_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_3_2_3_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_3_2_3_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_3_2_3_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_3_2_3_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_3_2_3_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/META-INF/context.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h2/db.trace.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/kloSpringServer.time" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/kloSpringServer_war.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/kloSpringServer_war_exploded.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
-    <ignored path="klospring.iws" />
+    <ignored path="kloSpringServer.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d917c35e-2987-4f3a-b03f-ff2eff7af23b" time="1385319901533" ignored="false" />
+    <file path="/Dummy.txt" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385319374781" ignored="false" />
+    <file path="/pom.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384636634241" ignored="false" />
+    <file path="/applicationContext.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383941996408" ignored="false" />
+    <file path="/TicketController.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381355902728" ignored="false" />
+    <file path="/fragment.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384894741211" ignored="false" />
+    <file path="/TicketDao.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381274041254" ignored="false" />
+    <file path="/JdbcTicketDao.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383944156768" ignored="false" />
+    <file path="/a.sql" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383517845534" ignored="false" />
+    <file path="/dummy.sql" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383517845534" ignored="false" />
+    <file path="/Data Source" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383520000176" ignored="false" />
+    <file path="/web.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384636738061" ignored="false" />
+    <file path="$PROJECT_DIR$/../d2spring/.idea/workspace.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381277736726" ignored="false" />
+    <file path="/ticketController-servlet.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381275721920" ignored="false" />
+    <file path="$PROJECT_DIR$/../d2spring/src/main/resources/applicationContext.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381276160298" ignored="false" />
+    <file path="/ApiResult.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382048099936" ignored="false" />
+    <file path="/NewsController.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384030607137" ignored="false" />
+    <file path="/NewsDao.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384016065313" ignored="false" />
+    <file path="/JdbcNewsDao.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384016674254" ignored="false" />
+    <file path="$PROJECT_DIR$/../klo/src/config.properties" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381396723369" ignored="false" />
+    <file path="$PROJECT_DIR$/../klo/src/klo/domain/ClientThread.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381397305049" ignored="false" />
+    <file path="/ClientThread.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382361985642" ignored="false" />
+    <file path="$PROJECT_DIR$/../klo/src/klo/presentation/view/NewsView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381417249840" ignored="false" />
+    <file path="$PROJECT_DIR$/../halpdeskWeb/src/helpdesk/TestServlet.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381400163135" ignored="false" />
+    <file path="$PROJECT_DIR$/../halpdeskWeb/web/WEB-INF/web.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381400313504" ignored="false" />
+    <file path="/NewsView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384905993114" ignored="false" />
+    <file path="$PROJECT_DIR$/../halpdeskWeb/src/helpdesk/web/ContextListener.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381412036081" ignored="false" />
+    <file path="$PROJECT_DIR$/../halpdeskWeb/src/helpdesk/web/ChatControl.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381409472571" ignored="false" />
+    <file path="$PROJECT_DIR$/../halpdeskWeb/src/helpdesk/web/TestServlet.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381409472571" ignored="false" />
+    <file path="$PROJECT_DIR$/../halpdeskWeb/out/artifacts/halpdeskWeb_war_exploded/WEB-INF/web.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381409472571" ignored="false" />
+    <file path="$PROJECT_DIR$/../halpdeskWeb/WEB-INF/web.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381409472571" ignored="false" />
+    <file path="$PROJECT_DIR$/../halpdeskWeb/WEB-INF/helpdesk.jsp" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381409472571" ignored="false" />
+    <file path="$PROJECT_DIR$/../halpdeskWeb/src/Test/SocketClientTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381409472571" ignored="false" />
+    <file path="$PROJECT_DIR$/../halpdeskWeb/src/helpdesk/web/TicketControl.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381412897189" ignored="false" />
+    <file path="$PROJECT_DIR$/../halpdeskWeb/src/helpdesk/web/SupportControl.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381409472571" ignored="false" />
+    <file path="$PROJECT_DIR$/../halpdeskWeb/src/helpdesk/web/ChatServlet.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381409472572" ignored="false" />
+    <file path="/ContextListener.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381411492376" ignored="false" />
+    <file path="$PROJECT_DIR$/../klo/src/klo/presentation/view/LogView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381417312282" ignored="false" />
+    <file path="$PROJECT_DIR$/../klo/src/klo/presentation/view/NewsPopupView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381417313528" ignored="false" />
+    <file path="$PROJECT_DIR$/../klo/src/klo/domain/SettingsData.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381417313863" ignored="false" />
+    <file path="$PROJECT_DIR$/../klo/src/klo/presentation/view/SettingsAccountView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381417311678" ignored="false" />
+    <file path="$PROJECT_DIR$/../klo/src/klo/domain/PacketHandler.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381417313528" ignored="false" />
+    <file path="$PROJECT_DIR$/../klo/src/klo/presentation/view/CustomTable.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381417312996" ignored="false" />
+    <file path="$PROJECT_DIR$/../klo/src/klo/presentation/view/asdk.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381417359152" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/pom.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382491506346" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/desktop/App.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382007777375" ignored="false" />
+    <file path="/App.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382007777375" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/App.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382007827615" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/desktop.iml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384109749564" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/.idea/compiler.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382007827615" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/.idea/encodings.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382007827615" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/.idea/workspace.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384112123455" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/.idea/vcs.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382007827615" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/.idea/misc.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384110921534" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/asd.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382007943358" ignored="false" />
+    <file path="/asd.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382007943358" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/SettingsData.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384112107676" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/ChatPopupPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384881045525" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/ChatPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384881126345" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/ColumnComparator.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384892005659" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/CustomTableModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384897558771" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/LogPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385317267876" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/LoginPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383763105175" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/MainPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383756090018" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/NewsPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384109749564" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/TicketsPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384894253384" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/ChatPopupView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382007963931" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/ChatView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382488967842" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/CustomTable.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382008275367" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/GradientButton.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382007963931" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/GradientPanel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382007963931" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/DeleteNewsPopup.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382007963931" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/LogView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385317320161" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/LoginView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383763277800" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/MessageReceiver.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384906063522" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/MainView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383869896655" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/NewsView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384906021917" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/MessageDispatcher.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384906059643" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/SearchIcon.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382007963931" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/DsMessage.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382007963931" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/SettingsAccountView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382007963931" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/SettingsTemplatesView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382488949579" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/HelpDesk2000.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383767619128" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/SettingsView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382488967842" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/Theme.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383938948345" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/common/NewsItem.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382366268433" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/TicketPopupView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382561276493" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/common/ChatMessage.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382007963932" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/TicketsView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385140259004" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/common/LoginInfo.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382008275367" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/ClientThread.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382361997785" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/common/ReplyTemplate.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382007963932" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/NewsData.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382367694195" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/ApplicationBuilder.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385317223222" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/ChatData.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384881045525" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/AudioClipPlayer.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382363058685" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/SingleChatData.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384112105719" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/DataAccess.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382367681139" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/ConfigReader.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382364741438" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/common/TCPPacket.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382008275367" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/LoginData.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383756010132" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/Client.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382367718553" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/PacketHandler.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383755988748" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/TopMenuBar.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382008275367" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/ConnectionSettingsView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382007963932" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/TicketsData.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384112103624" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/PopupLoader.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382007963932" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/ConnectionSettingsPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382367718552" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/PopupDisplayView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382007963932" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/SettingsPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385317159803" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/TicketPopupPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383917765736" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/RecentTicketsPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384883675888" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/NewsPopupView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384904227095" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/SettingsCategoryView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382526705085" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/asd.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382007993917" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/test/java/desktop/MainPresentationModelTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382008202088" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/test/java/desktop/EmailSenderTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382008177989" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/test/java/desktop/DsMessageTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382008166255" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/test/java/desktop/ClientTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382008074561" ignored="false" />
+    <file path="/ClientTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382008061262" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/test/java/AppTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382008101238" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/test/java/desktop/DatabaseInterfaceTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382008147223" ignored="false" />
+    <file path="/DsMessageTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382008165644" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/test/java/desktop/old/DsMessageTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382008212693" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/NewsService.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382367681140" ignored="false" />
+    <file path="/NewsService.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382124232868" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/NewsServiceHttpImpl.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382367681140" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/test/java/helpdesk/desktop/domain/NewsServiceHttpImplTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382367686439" ignored="false" />
+    <file path="/NewsServiceHttpImplTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382359922873" ignored="false" />
+    <file path="dbtable:/436c0b11/01e52eab-de25-4837-a177-6432a4d0a370/syp..TEAM" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382010857330" ignored="false" />
+    <file path="$PROJECT_DIR$/../dota2stats/src/Main.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382019556962" ignored="false" />
+    <file path="$PROJECT_DIR$/../dota2stats/dota2stats.iml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382011002702" ignored="false" />
+    <file path="dbtable:/436c0b11/01e52eab-de25-4837-a177-6432a4d0a370/syp..MATCHES" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382020070987" ignored="false" />
+    <file path="/Main.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382019542491" ignored="false" />
+    <file path="/NewsServiceHttpImpl.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383763569790" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/log4j.properties" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382014444954" ignored="false" />
+    <file path="/log4j.properties" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383776058288" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/HttpService.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382016375008" ignored="false" />
+    <file path="/HttpService.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383868027384" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/HttpResponse.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383867998564" ignored="false" />
+    <file path="/HttpResponse.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383523983802" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/test/java/helpdesk/desktop/domain/HttpServiceTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384112081833" ignored="false" />
+    <file path="/HttpServiceTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382359411524" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/resources/Helpdesk/HttpService.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382016398561" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/HttpService.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383525772684" ignored="false" />
+    <file path="$PROJECT_DIR$/../d2sweb/js/gateway.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382018585525" ignored="false" />
+    <file path="$PROJECT_DIR$/../dota2stats/src/model/Statistics.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382018321885" ignored="false" />
+    <file path="$PROJECT_DIR$/../d2sweb/js/main.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382022106411" ignored="false" />
+    <file path="/gateway.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384637232608" ignored="false" />
+    <file path="$PROJECT_DIR$/../d2sweb/index.html" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384630177480" ignored="false" />
+    <file path="$PROJECT_DIR$/../d2sweb/templates/heroes-played.html" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382021902688" ignored="false" />
+    <file path="/heroes-played.html" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382021902688" ignored="false" />
+    <file path="$PROJECT_DIR$/../d2spring/src/main/java/d2spring/data/JdbcHeroListDao.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382019684743" ignored="false" />
+    <file path="dbtable:/436c0b11/01e52eab-de25-4837-a177-6432a4d0a370/syp..HERO" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382019565723" ignored="false" />
+    <file path="/main.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384694854861" ignored="false" />
+    <file path="db-console:/436c0b11/01e52eab-de25-4837-a177-6432a4d0a370/" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382020012959" ignored="false" />
+    <file path="db-console:/4ea1279b/f051e4c2-9669-477d-8412-cff045344f81/" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382128937369" ignored="false" />
+    <file path="$PROJECT_DIR$/../d2sweb/templates/heroes-against.html" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382021891833" ignored="false" />
+    <file path="/heroes-against.html" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382021891833" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/config.properties" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382045667125" ignored="false" />
+    <file path="/config.properties" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383934122675" ignored="false" />
+    <file path="/NewsItem.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383943821895" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/common/ApiResult.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382359525109" ignored="false" />
+    <file path="/ConfigReader.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383867545850" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/resources/config.properties" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383937514742" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/HelpDeskModule.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382054063036" ignored="false" />
+    <file path="/HelpDeskModule.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382054061256" ignored="false" />
+    <file path="/HelpDesk2000.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383767615981" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/resources/log4j.properties" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383529465186" ignored="false" />
+    <file path="/NewsData.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382364967738" ignored="false" />
+    <file path="/ApplicationBuilder.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384906199943" ignored="false" />
+    <file path="/Client.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382120902254" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/deprecated/domain/Client.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382120903477" ignored="false" />
+    <file path="/PacketHandler.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382361384654" ignored="false" />
+    <file path="/NewsPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383763615973" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/LoggerFactory.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382122299648" ignored="false" />
+    <file path="/LoggerFactory.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382122294870" ignored="false" />
+    <file path="/JdbcNewsDaoTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383755634806" ignored="false" />
+    <file path="/NewsControllerTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384030906946" ignored="false" />
+    <file path="/Session.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383935146988" ignored="false" />
+    <file path="/SessionDao.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383584658666" ignored="false" />
+    <file path="/User.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383521874165" ignored="false" />
+    <file path="/JdbcSessionDao.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383585913315" ignored="false" />
+    <file path="/SessionController.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383937368641" ignored="false" />
+    <file path="/SessionControllerTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383755092532" ignored="false" />
+    <file path="/SessionHelper.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383584439688" ignored="false" />
+    <file path="/testContext.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382355086341" ignored="false" />
+    <file path="/app-config.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382234174549" ignored="false" />
+    <file path="/apiController-servlet.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382236963736" ignored="false" />
+    <file path="/UserAuthentication.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383522477332" ignored="false" />
+    <file path="/UserDao.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383517555992" ignored="false" />
+    <file path="/PasswordEncrypter.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382294780996" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdeskserver/src/server/UserManager.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382295048629" ignored="false" />
+    <file path="/PasswordEncryptionTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382297296999" ignored="false" />
+    <file path="/PasswordEncryption.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382296329390" ignored="false" />
+    <file path="/UserDaoImpl.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382297568581" ignored="false" />
+    <file path="/AuthenticationFilter.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383936852950" ignored="false" />
+    <file path="/a.dummy" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384887352624" ignored="false" />
+    <file path="/jdbc.properties" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383931781217" ignored="false" />
+    <file path="/test-data.sql" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383520634799" ignored="false" />
+    <file path="/schema.sql" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382355830989" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/ServiceException.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382359347012" ignored="false" />
+    <file path="/ServiceException.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382359331233" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdeskserver/src/server/ServerThread.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382362042826" ignored="false" />
+    <file path="/ServerThread.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382362040357" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/klo/common/LoginInfo.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383512369073" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/klo/common/TCPPacket.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383868392803" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/klo/common/ChatMessage.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383868313902" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/klo/common/ReplyTemplate.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383868417963" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/klo/common/NewsItem.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382362207801" ignored="false" />
+    <file path="/AudioClipPlayer.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382362980106" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/test/resources/config.properties" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382364444542" ignored="false" />
+    <file path="/DataAccess.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382364946915" ignored="false" />
+    <file path="/LoginView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383763277442" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/model/ApiResult.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383867161034" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/model/NewsItem.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383867156992" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/service/NewsService.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383867760687" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/service/NewsServiceHttpImpl.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384112081833" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/service/ServiceException.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383867795950" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/service/ConfigReader.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383867546737" ignored="false" />
+    <file path="/dummy.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382721926739" ignored="false" />
+    <file path="/TicketsPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384894162047" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/PanelHelper.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382488967842" ignored="false" />
+    <file path="/PanelHelper.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382486661720" ignored="false" />
+    <file path="/TicketsView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385140259004" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/SearchPanel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382488893562" ignored="false" />
+    <file path="/SearchPanel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383938662371" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/SearchableModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382488493910" ignored="false" />
+    <file path="/SearchableModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382488396093" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/components/CustomTable.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384897918096" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/components/GradientButton.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382488952667" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/components/SearchIcon.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382488967842" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/components/SearchPanel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383938716050" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/components/GradientPanel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382488967842" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/components/TicketTable.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384903627831" ignored="false" />
+    <file path="/TicketTable.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384903380827" ignored="false" />
+    <file path="/CustomTableModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382525474494" ignored="false" />
+    <file path="/CustomTable.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384897605228" ignored="false" />
+    <file path="/SettingsPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385317146269" ignored="false" />
+    <file path="/SettingsCategoryView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382526544601" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/model/SupportTicket.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384894079511" ignored="false" />
+    <file path="/SupportTicket.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384893789347" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/service/TicketsService.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383867818535" ignored="false" />
+    <file path="/TicketsService.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382534206281" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/model/TicketComparator.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384894797374" ignored="false" />
+    <file path="/TicketComparator.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382532565615" ignored="false" />
+    <file path="/TicketPopupPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382534265590" ignored="false" />
+    <file path="/LogPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385317260547" ignored="false" />
+    <file path="/RecentTicketsPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382561261077" ignored="false" />
+    <file path="/TicketPopupView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382561274636" ignored="false" />
+    <file path="$PROJECT_DIR$/../dota/demo/untitled/pom.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382722093071" ignored="false" />
+    <file path="$PROJECT_DIR$/../dota/demo/untitled/src/main/resource/demo.proto" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382722330848" ignored="false" />
+    <file path="/demo.proto" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382722330848" ignored="false" />
+    <file path="$PROJECT_DIR$/../dota/demo/parser/src/main/resource/demo.proto" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382722731887" ignored="false" />
+    <file path="$PROJECT_DIR$/../dota/demo/parser/src/test/java/parser/DemoTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382723644199" ignored="false" />
+    <file path="/DemoTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382723643179" ignored="false" />
+    <file path="$PROJECT_DIR$/../dota/demo/parser/pom.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382732879850" ignored="false" />
+    <file path="$PROJECT_DIR$/../dota/demo/parser/src/main/java/parser/App.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382732911417" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/service/LoginService.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383867631012" ignored="false" />
+    <file path="/LoginService.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383508993849" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/model/User.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383867255588" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/service/LoginServiceHttpImpl.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384112081833" ignored="false" />
+    <file path="/LoginServiceHttpImpl.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383935268145" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/model/Session.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383935149067" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/test/java/helpdesk/desktop/domain/service/LoginServiceHttpImplTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383868618425" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/test/java/helpdesk/desktop/domain/service/NewsServiceHttpImplTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383868623707" ignored="false" />
+    <file path="/LoginServiceHttpImplTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383512180184" ignored="false" />
+    <file path="/LoginPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383763082024" ignored="false" />
+    <file path="/LoginInfo.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383512369073" ignored="false" />
+    <file path="/MainView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383869258250" ignored="false" />
+    <file path="/MainPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383756085095" ignored="false" />
+    <file path="/JdbcUserDao.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383521403353" ignored="false" />
+    <file path="/a.regexp" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383516881208" ignored="false" />
+    <file path="/UserAuthenticationTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383517721729" ignored="false" />
+    <file path="/UserController.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383526254909" ignored="false" />
+    <file path="/UserControllerTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383755495984" ignored="false" />
+    <file path="/ControllerTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383523585404" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/service/HttpService.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384112081833" ignored="false" />
+    <file path="/LoginData.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383756009356" ignored="false" />
+    <file path="/ChatPopupPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383756126033" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/ErrorViewModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383760002181" ignored="false" />
+    <file path="/ErrorViewModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383759850793" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/ErrorView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383760704298" ignored="false" />
+    <file path="/ErrorView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383760300005" ignored="false" />
+    <file path="/NewsPopupView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384904044512" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/test/java/helpdesk/desktop/presentation/model/NewsPresentationModelTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383868630340" ignored="false" />
+    <file path="/NewsPresentationModelTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383766083210" ignored="false" />
+    <file path="/ChatController.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383788147035" ignored="false" />
+    <file path="/ChatDao.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383772599437" ignored="false" />
+    <file path="/ChatRequest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383786824659" ignored="false" />
+    <file path="/ChatMessage.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383868312996" ignored="false" />
+    <file path="/ChatDaoMemoryImpl.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383776271254" ignored="false" />
+    <file path="/ChatDaoInMemoryImpl.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383783493294" ignored="false" />
+    <file path="/ChatControllerTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383780983732" ignored="false" />
+    <file path="/ReplyTemplate.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383868398276" ignored="false" />
+    <file path="/TCPPacket.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383868391567" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/NewsItemView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384903801478" ignored="false" />
+    <file path="/NewsItemView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384903800598" ignored="false" />
+    <file path="/ForwardedIpFilter.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383937247451" ignored="false" />
+    <file path="/ChatPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384881126345" ignored="false" />
+    <file path="/a.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383937894591" ignored="false" />
+    <file path="/jdbc-local.properties" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383942044741" ignored="false" />
+    <file path="/JdbcDriverRegistrationListener.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384303239050" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/.gitignore" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384111150754" ignored="false" />
+    <file path="/.gitignore" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384627281249" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/.idea/desktop.time" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384110291694" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/model/HttpResponse.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384112064243" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/HttpResponse.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384112081833" ignored="false" />
+    <file path="/ChatData.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384112087595" ignored="false" />
+    <file path="/SettingsData.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384112091219" ignored="false" />
+    <file path="/SingleChatData.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384112094687" ignored="false" />
+    <file path="/TicketsData.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384112097880" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdeskserver/.idea/workspace.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384305746216" ignored="false" />
+    <file path="/EmailSender.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384303205865" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/web-client/.gitignore" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384627340303" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/web-client/.idea/workspace.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384671523536" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/web-client/old/helpdesk.jsp" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384627533087" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/index.html" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384694991503" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/web-client/old/supportticket.jsp" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384627533087" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/web-client/old/chat.jsp" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384627533087" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/js/main.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384694973225" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/templates/chooser.html" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384632465424" ignored="false" />
+    <file path="/index.html" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384694897753" ignored="false" />
+    <file path="/helpdesk.css" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384639243235" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/css/helpdesk.css" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384639251914" ignored="false" />
+    <file path="/chooser.html" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384629377787" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/templates/info-form.html" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384632811225" ignored="false" />
+    <file path="/info-form.html" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384639278707" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/js/main-vm.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384629587834" ignored="false" />
+    <file path="/main-vm.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384632295314" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/js/chooser-viewmodel.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384633302746" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/js/lib/knockout-2.2.1.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384630120945" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/js/lib/koExternalTemplateEngine_all.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384630120945" ignored="false" />
+    <file path="/chooser-viewmodel.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384631532493" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/js/chat-viewmodel.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384633006131" ignored="false" />
+    <file path="/chat-viewmodel.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384633535110" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/js/form-viewmodel.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384632793620" ignored="false" />
+    <file path="/form-viewmodel.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384639490614" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/js/viewmodel/chat-viewmodel.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384633555718" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/js/viewmodel/form-viewmodel.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384694212511" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/view-templates/info-form.html" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384639278707" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/js/gateway.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384637359351" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/js/model/ticket.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384694293625" ignored="false" />
+    <file path="/ticket.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384636015540" ignored="false" />
+    <file path="$PROJECT_DIR$/../d2sweb/.idea/workspace.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384695015695" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/view-templates/chooser.html" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384695700157" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/service/ChatService.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384881234810" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/ChatService.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384881034467" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/TablePM.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384896473949" ignored="false" />
+    <file path="/TablePM.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384896459190" ignored="false" />
+    <file path="/ColumnComparator.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384891963938" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/TicketStringConverter.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384894628957" ignored="false" />
+    <file path="/TicketStringConverter.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384894603696" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/model/StringListConverter.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384894776526" ignored="false" />
+    <file path="/StringListConverter.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384894638433" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/model/TicketStringConverter.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384894813978" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/components/TableView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384897937347" ignored="false" />
+    <file path="/TableView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384897936186" ignored="false" />
+    <file path="/MessageDispatcher.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384906058967" ignored="false" />
+    <file path="/MessageReceiver.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384906062394" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/test/java/helpdesk/desktop/domain/Test.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385140284352" ignored="false" />
+    <file path="/Test.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385140214835" ignored="false" />
+    <file path="/LogView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385317315628" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +414,11 @@
   </component>
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
+  </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
@@ -64,10 +463,113 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="klospring" />
+    <favorites_list name="kloSpringServer" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="NewsController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/controller/NewsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="63" column="26" selection-start="2235" selection-end="2235" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewsItem.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/model/NewsItem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="13" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="0" selection-start="1723" selection-end="1723" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+            <state />
+          </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="88" column="32" selection-start="3078" selection-end="3078" vertical-scroll-proportion="0.026829269">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="apiController-servlet.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/apiController-servlet.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JdbcDriverRegistrationListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/JdbcDriverRegistrationListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="55" selection-start="913" selection-end="913" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SupportTicket.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/model/SupportTicket.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="13" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TicketController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/controller/TicketController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="13" selection-start="625" selection-end="625" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JdbcTicketDao.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/data/JdbcTicketDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="13" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1383944180987" expanded="true" signature="924:1004" placeholder="SELECT * FRO..TICKET..." />
+                <marker date="1383944180987" expanded="true" signature="2296:2392" placeholder="INSERT INTO ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="13" selection-start="828" selection-end="828" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -82,11 +584,116 @@
       <MyDateState />
     </option>
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/test/java/kloSpringServer/controller/ChatControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kloSpringServer/controller/ForwardedIpFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kloSpringServer/controller/TicketController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kloSpringServer/data/ChatDaoInMemoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kloSpringServer/service/UserAuthentication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kloSpringServer/data/JdbcTicketDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kloSpringServer/DriverDeregisterListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kloSpringServer/data/NewsDao.java" />
+        <option value="dbtable:/20afe608/66b9bb6e-40cf-4088-b4ac-11e1e4c07a15/syp..NEWS" />
+        <option value="$PROJECT_DIR$/src/main/java/kloSpringServer/data/JdbcNewsDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kloSpringServer/controller/NewsController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/kloSpringServer/controller/NewsControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kloSpringServer/service/EmailSender.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kloSpringServer/JdbcDriverRegistrationListener.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\dev\Programs\apache-maven-3.0.5" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="kloSpringServer" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Dependencies" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="kloSpringServer" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Plugins" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="kloSpringServer" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Plugins" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="tomcat7" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="kloSpringServer" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -95,8 +702,6 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <OptionsSetting value="true" id="Undo Check Out" />
-    <OptionsSetting value="true" id="Get Latest Version" />
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
@@ -116,45 +721,352 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="klospring" />
+              <option name="myItemId" value="kloSpringServer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kloSpringServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kloSpringServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kloSpringServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kloSpringServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kloSpringServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kloSpringServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kloSpringServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kloSpringServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="Database.TableEditor.Splitter" value="0.73913044" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/kloSpringServer/controller" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="options.lastSelected" value="preferences.applicationServers" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="PublishConfig">
     <servers>
-      <server id="6101a058-ccab-49cb-91a6-bdd689d7aa07">
-        <serverdata />
+      <server id="1af80d94-1a0e-41c3-9ac9-b2c17a0f4344">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="b6b5eb4a-337e-4649-9116-523f0278fb9f">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="e6c5fa17-4691-4060-8a7d-2b2338e260ef">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="f4107697-0589-4c85-933d-3604d8a9b5c3">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
       </server>
     </servers>
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="kloSpringServer.controller" />
+      <recent name="kloSpringServer.service" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="kloSpringServer.controller.ControllerTest" />
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="kloSpringServer.service" />
+      <recent name="kloSpringServer.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\Projects\kloSpringServer\src\test\resources" />
+      <recent name="C:\dev\Projects\kloSpringServer\src\main\resources" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="kloSpringServer.model" />
+      <recent name="kloSpringServer.data" />
+      <recent name="kloSpringServer.Model" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\Projects\kloSpringServer\src\main\resources" />
+      <recent name="C:\dev\Projects\kloSpringServer\src" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="kloSpringServer.controller" />
+      <recent name="kloSpringServer.service" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="LAST_HOST" value="http://localhost:8080/kloSpring/api/" />
+  </component>
+  <component name="RunManager" selected="Tomcat Server.tomcat">
+    <configuration default="false" name="SessionControllerTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="kloSpringServer.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="kloSpringServer" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="kloSpringServer.controller" />
+      <option name="MAIN_CLASS_NAME" value="kloSpringServer.controller.SessionControllerTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="UserAuthenticationTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="kloSpringServer.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="kloSpringServer" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="kloSpringServer.service" />
+      <option name="MAIN_CLASS_NAME" value="kloSpringServer.service.UserAuthenticationTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="kloSpringServer.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="kloSpringServer" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="kloSpringServer.controller" />
+      <option name="MAIN_CLASS_NAME" value="kloSpringServer.controller.UserControllerTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ChatControllerTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="kloSpringServer.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="kloSpringServer" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="kloSpringServer.controller" />
+      <option name="MAIN_CLASS_NAME" value="kloSpringServer.controller.ChatControllerTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="NewsControllerTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="kloSpringServer.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="kloSpringServer" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="kloSpringServer.controller" />
+      <option name="MAIN_CLASS_NAME" value="kloSpringServer.controller.NewsControllerTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
       <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -242,13 +1154,139 @@
       <patterns />
       <method />
     </configuration>
-    <list size="0" />
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local">
+      <deployment />
+      <server-settings />
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote">
+      <option name="LOCAL" value="false" />
+      <deployment />
+      <server-settings>
+        <data>
+          <option name="transportHostId" />
+        </data>
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="TOMCAT_LOCALHOST_LOG_ID" enabled="true" />
+      <method />
+    </configuration>
+    <configuration default="false" name="tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.01">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="COMMON_VM_ARGUMENTS" value="-XX:+CMSClassUnloadingEnabled -XX:+CMSPermGenSweepingEnabled -Dspring.profiles.active=local" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_kloSpringServer" />
+        <option name="JNDI_PORT" value="1098" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Cover" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="42273" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.tomcat" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.SessionControllerTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.UserAuthenticationTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.UserControllerTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ChatControllerTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.NewsControllerTest" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.NewsControllerTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ChatControllerTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.SessionControllerTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.UserControllerTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.UserAuthenticationTest" />
+      </list>
+    </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="StatisticProjectComponent">
+    <option name="excludeCompilerOutput" value="true" />
+    <option name="excludeIdea9ArtifactDirectory" value="true" />
+    <option name="excludeTargetDirectories" value="true" />
+    <option name="activateWhenOpenProject" value="true" />
+    <option name="excludedDirectories">
+      <value>
+        <list size="0" />
+      </value>
+    </option>
+    <option name="fileTypes" value="class;svn-base;svn-work;Extra;gif;png;jpg;jpeg;bmp;tga;tiff;ear;war;zip;jar;iml;iws;ipr;bz2;gz;" />
+  </component>
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
@@ -268,41 +1306,92 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d917c35e-2987-4f3a-b03f-ff2eff7af23b" name="Default" comment="" />
-      <created>1385319727598</created>
-      <updated>1385319727598</updated>
+      <changelist id="c4f7a5ad-f472-4787-b802-3250399f2fa1" name="Default" comment="" />
+      <created>1381270515057</created>
+      <updated>1381270515057</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1381275023858</created>
+      <updated>1381275023858</updated>
+    </task>
+    <task id="LOCAL-00002" summary="sessioncontroller">
+      <created>1382232608300</created>
+      <updated>1382232608300</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add authenticationfilter">
+      <created>1382314381132</created>
+      <updated>1382314381132</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add ChatController">
+      <created>1383788678139</created>
+      <updated>1383788678139</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add ChatController">
+      <created>1385319417393</created>
+      <updated>1385319417393</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24036403" sideWeight="0.7532189" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12955032" sideWeight="0.67060083" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32832617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25428265" sideWeight="0.69957083" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3004292" sideWeight="0.5337259" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TimeTrackerPlugin" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41201717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32767403" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24034335" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Metrics" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6712095" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14239828" sideWeight="0.69957083" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="896" />
+      <window_info id="REST Client" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32939914" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32832617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32832617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39914164" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -347,7 +1436,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ChatController" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -361,6 +1450,10 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="sessioncontroller" />
+    <MESSAGE value="add authenticationfilter" />
+    <MESSAGE value="add ChatController" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -368,6 +1461,221 @@
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="com.sixrr.metrics.MetricsReloaded">
+    <option name="selectedProfile" value="" />
+    <option name="autoscroll" value="false" />
+    <option name="showOnlyWarnings" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/controller/ChatController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="23" selection-start="928" selection-end="935" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/data/NewsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="13" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/data/JdbcNewsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="30" selection-start="3467" selection-end="3467" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/kloSpringServer/controller/NewsControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="11" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/20afe608/66b9bb6e-40cf-4088-b4ac-11e1e4c07a15/syp..NEWS">
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/service/EmailSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="11" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/JdbcDriverRegistrationListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="55" selection-start="913" selection-end="913" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/model/SupportTicket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="13" selection-start="828" selection-end="828" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/controller/TicketController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="13" selection-start="625" selection-end="625" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/data/JdbcTicketDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="13" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1383944180987" expanded="true" signature="924:1004" placeholder="SELECT * FRO..TICKET..." />
+            <marker date="1383944180987" expanded="true" signature="2296:2392" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/model/NewsItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/apiController-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="0" selection-start="1723" selection-end="1723" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/controller/NewsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="26" selection-start="2235" selection-end="2235" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="32" selection-start="3078" selection-end="3078" vertical-scroll-proportion="0.026829269">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>kloSpringServer:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring (kloSpringServer)|Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>jquery</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring|kloSpringServer</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 
