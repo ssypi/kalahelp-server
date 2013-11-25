@@ -5,10 +5,7 @@ import kloSpringServer.model.ApiResult;
 import kloSpringServer.model.SupportTicket;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 @SuppressWarnings("SpringJavaAutowiringInspection")
 @Controller
@@ -22,4 +19,18 @@ public class TicketController {
     ApiResult getTicketById(@PathVariable String ticketId) {
         return new ApiResult(ticketDao.getTicketById(ticketId));
     }
+
+    @RequestMapping(value = "/latest/{count}", method = RequestMethod.GET, produces = "application/json")
+    public @ResponseBody ApiResult getLatestTickets(@PathVariable int count) {
+        return new ApiResult(ticketDao.getLatestTickets(count));
+    }
+
+    @RequestMapping(value = "/", method = RequestMethod.POST, headers="Accept=application/json")
+    public @ResponseBody
+    ApiResult saveTicket(@RequestBody SupportTicket ticket) {
+        ticketDao.addTicket(ticket);
+        return new ApiResult(null, ApiResult.STATUS_OK);
+    }
+
+
 }

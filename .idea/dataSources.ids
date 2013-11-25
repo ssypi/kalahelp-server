@@ -23,7 +23,7 @@
       <user>syp</user>
       <use-password>false</use-password>
       <password></password>
-      <private-key-path>J:\old stuff\asd.ppk</private-key-path>
+      <private-key-path>C:\asd.ppk</private-key-path>
       <passphrase></passphrase>
       <remote-host>db1.kapsi.fi</remote-host>
       <remote-port>3306</remote-port>
