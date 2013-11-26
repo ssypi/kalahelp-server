@@ -19,5 +19,7 @@ public interface UserDao {
     void saveUser(String username, byte[] encryptedPassword, byte[] salt);
 
     List<User> getUsers();
+
+    void deleteUser(String username);
 //    public User getUserByName(String username);
 }

@@ -44,7 +44,12 @@ public class UserControllerTest extends ControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.result").exists())
                 .andExpect(jsonPath("$.result[0].username").exists());
+    }
 
+    @Test
+    public void testDeleteUser() throws Exception {
+        mockMvc.perform(get("/user/kalamies/delete"))
+                .andExpect(status().isOk());
 
 
     }

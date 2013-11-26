@@ -39,6 +39,7 @@ public class SessionController {
     @ResponseBody
     public ApiResult newSessionForUser(@RequestBody User user, HttpServletResponse response, HttpServletRequest request) {
         String ip = request.getHeader("X-Forwarded-For");
+        logger.info("login attempt from " + ip);
         if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
             ip = request.getRemoteAddr();
         }

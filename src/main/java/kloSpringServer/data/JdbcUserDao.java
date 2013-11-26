@@ -10,6 +10,9 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
 import javax.sql.DataSource;
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Arrays;
@@ -62,6 +65,19 @@ public class JdbcUserDao implements UserDao {
         }
 
 
+    }
+
+    @Override
+    public void deleteUser(String username) {
+        try {
+            username = URLDecoder.decode(username, "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        logger.info("deleting user: " + username);
+        String sql = "DELETE FROM " + TABLE_USER +
+                " WHERE USERNAME=?;";
+        jdbcTemplate.update(sql, username);
     }
 
     @Override
