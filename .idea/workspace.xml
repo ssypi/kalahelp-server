@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4f7a5ad-f472-4787-b802-3250399f2fa1" name="Default" comment="project file&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kloSpringServer.iml" afterPath="$PROJECT_DIR$/kloSpringServer.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/kloSpringServer.time" afterPath="$PROJECT_DIR$/.idea/kloSpringServer.time" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="kloSpringServer.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385493528330" ignored="false" />
+    <file path="/Dummy.txt" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385493637828" ignored="false" />
     <file path="/pom.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384636634241" ignored="false" />
     <file path="/applicationContext.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383941996408" ignored="false" />
     <file path="/TicketController.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381355902728" ignored="false" />
@@ -311,7 +309,7 @@
     <file path="/jdbc-local.properties" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383942044741" ignored="false" />
     <file path="/JdbcDriverRegistrationListener.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384303239050" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/.gitignore" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384111150754" ignored="false" />
-    <file path="/.gitignore" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384627281249" ignored="false" />
+    <file path="/.gitignore" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385493614071" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/.idea/desktop.time" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384110291694" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/model/HttpResponse.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384112064243" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/HttpResponse.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384112081833" ignored="false" />
@@ -455,10 +453,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewsItem.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="NewsItem.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/model/NewsItem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="24" selection-start="1581" selection-end="1581" vertical-scroll-proportion="1.2720848">
+            <state line="71" column="24" selection-start="1581" selection-end="1581" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="7" selection-start="27" selection-end="27" vertical-scroll-proportion="0.038869258">
               <folding />
             </state>
           </provider>
@@ -485,24 +492,6 @@
             <state line="26" column="10" selection-start="956" selection-end="956" vertical-scroll-proportion="0.0">
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="1723" selection-end="1723" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-            <state />
           </provider>
         </entry>
       </file>
@@ -573,7 +562,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/kloSpringServer/controller/TicketController.java" />
         <option value="$PROJECT_DIR$/src/main/java/kloSpringServer/data/ChatDaoInMemoryImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/kloSpringServer/service/UserAuthentication.java" />
         <option value="$PROJECT_DIR$/src/main/java/kloSpringServer/data/JdbcTicketDao.java" />
@@ -589,6 +577,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/kloSpringServer.iml" />
         <option value="$PROJECT_DIR$/src/main/java/kloSpringServer/model/NewsItem.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -724,6 +713,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="kloSpringServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kloSpringServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kloSpringServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".idea" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1270,7 +1273,15 @@
       <created>1385493501884</created>
       <updated>1385493501884</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="project file&#10;">
+      <created>1385493563017</created>
+      <updated>1385493563017</updated>
+    </task>
+    <task id="LOCAL-00010" summary="project file&#10;">
+      <created>1385493642793</created>
+      <updated>1385493642793</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1295,7 +1306,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="896" />
       <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1306,7 +1317,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32832617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1376,7 +1387,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix date from NewsItem class" />
+    <option name="LAST_COMMIT_MESSAGE" value="project file&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1394,8 +1405,8 @@
     <MESSAGE value="sessioncontroller" />
     <MESSAGE value="add authenticationfilter" />
     <MESSAGE value="add ChatController" />
-    <MESSAGE value="project file&#10;" />
     <MESSAGE value="fix date from NewsItem class" />
+    <MESSAGE value="project file&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1410,11 +1421,6 @@
     <option name="showOnlyWarnings" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/kloSpringServer/controller/NewsControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="11" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/20afe608/66b9bb6e-40cf-4088-b4ac-11e1e4c07a15/syp..NEWS">
       <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -1534,7 +1540,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/model/NewsItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="24" selection-start="1581" selection-end="1581" vertical-scroll-proportion="1.2720848">
+        <state line="71" column="24" selection-start="1581" selection-end="1581" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="7" selection-start="27" selection-end="27" vertical-scroll-proportion="0.038869258">
           <folding />
         </state>
       </provider>
