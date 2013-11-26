@@ -45,20 +45,11 @@ public class NewsItem implements Serializable {
     }
 
     public NewsItem(String writer, String content) {
-        this(writer, null, content);
-        //todo generate current date
-        this.date = new Date();
-    }
-
-
-    // xxx
-    public NewsItem(String writer, String date, String content) {
         this.writer = writer;
-        // todo: parse Date from String
-//        this.date = date;
-        this.date = new Date();
         this.content = content;
+        this.date = new Date();
     }
+
 
     public String getWriter() {
         return writer;
@@ -76,7 +67,14 @@ public class NewsItem implements Serializable {
         this.content = content;
     }
 
+    /**
+     * if date is null, sets date to current time and returns that
+     * @return Date date
+     */
     public Date getDate() {
+        if (date == null) {
+            date = new Date();
+        }
         return date;
     }
 
