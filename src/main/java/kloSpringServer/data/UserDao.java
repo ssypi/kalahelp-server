@@ -2,6 +2,8 @@ package kloSpringServer.data;
 
 import kloSpringServer.model.User;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: kala
@@ -15,5 +17,7 @@ public interface UserDao {
     boolean verifyUser(String username, byte[] encryptedPassword);
 
     void saveUser(String username, byte[] encryptedPassword, byte[] salt);
+
+    List<User> getUsers();
 //    public User getUserByName(String username);
 }

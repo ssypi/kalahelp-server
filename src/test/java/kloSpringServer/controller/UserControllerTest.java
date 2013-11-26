@@ -9,9 +9,9 @@ import org.junit.Test;
 import org.springframework.http.MediaType;
 
 import static org.springframework.test.util.AssertionErrors.fail;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.header;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -35,5 +35,17 @@ public class UserControllerTest extends ControllerTest {
                 .content(json)
         )
                 .andExpect(status().isOk()); // success
+    }
+
+    @Test
+    public void testGetUsers() throws Exception {
+        mockMvc.perform(get("/user/"))
+                .andExpect(content().contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.result").exists())
+                .andExpect(jsonPath("$.result[0].username").exists());
+
+
+
     }
 }

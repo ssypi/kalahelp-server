@@ -1,5 +1,6 @@
 package kloSpringServer.controller;
 
+import kloSpringServer.data.UserDao;
 import kloSpringServer.model.ApiResult;
 import kloSpringServer.model.User;
 import kloSpringServer.service.UserAuthentication;
@@ -13,6 +14,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -28,10 +31,23 @@ public class UserController {
     @Autowired
     UserAuthentication authentication;
 
+    @Autowired
+    private UserDao userDao;
+
     @RequestMapping(value = "/", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
     @ResponseBody
     public ApiResult addUser(@RequestBody User user) {
         authentication.createUser(user);
         return new ApiResult(null, 0);
     }
+
+    @RequestMapping(value = "/", method = RequestMethod.GET, produces = "application/json")
+    @ResponseBody
+    public ApiResult getUsers() {
+        List<User> users = userDao.getUsers();
+        return new ApiResult(users);
+
+    }
+
+
 }

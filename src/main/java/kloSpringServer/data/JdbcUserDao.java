@@ -13,6 +13,7 @@ import javax.sql.DataSource;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -38,6 +39,29 @@ public class JdbcUserDao implements UserDao {
         String sql = "INSERT INTO " + TABLE_USER
                 + " VALUES(?, ?, ?)";
         jdbcTemplate.update(sql, username, encryptedPassword, salt);
+    }
+
+    @Override
+    public List<User> getUsers() {
+        String sql = "SELECT * FROM " + TABLE_USER + ";";
+        RowMapper<User> mapper = new RowMapper<User>() {
+            @Override
+            public User mapRow(ResultSet rs, int rowNum) throws SQLException {
+                User user = new User();
+                user.setUsername(rs.getString("USERNAME"));
+
+                return user;
+            }
+        };
+
+        List<User> results = jdbcTemplate.query(sql, mapper);
+        if (results.isEmpty()) {
+            return null;
+        } else {
+            return results;
+        }
+
+
     }
 
     @Override
