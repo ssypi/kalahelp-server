@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c4f7a5ad-f472-4787-b802-3250399f2fa1" name="Default" comment="project file&#10;">
+    <list default="true" id="c4f7a5ad-f472-4787-b802-3250399f2fa1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="kloSpringServer.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385493637828" ignored="false" />
+    <file path="/Dummy.txt" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385493663645" ignored="false" />
     <file path="/pom.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384636634241" ignored="false" />
     <file path="/applicationContext.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383941996408" ignored="false" />
     <file path="/TicketController.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381355902728" ignored="false" />
@@ -309,7 +310,7 @@
     <file path="/jdbc-local.properties" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383942044741" ignored="false" />
     <file path="/JdbcDriverRegistrationListener.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384303239050" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/.gitignore" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384111150754" ignored="false" />
-    <file path="/.gitignore" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385493614071" ignored="false" />
+    <file path="/.gitignore" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385493855715" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/.idea/desktop.time" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384110291694" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/model/HttpResponse.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384112064243" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/HttpResponse.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384112081833" ignored="false" />
@@ -465,7 +466,7 @@
       <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="7" selection-start="27" selection-end="27" vertical-scroll-proportion="0.038869258">
+            <state line="3" column="9" selection-start="46" selection-end="46" vertical-scroll-proportion="0.11660777">
               <folding />
             </state>
           </provider>
@@ -1281,7 +1282,11 @@
       <created>1385493642793</created>
       <updated>1385493642793</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="project file&#10;">
+      <created>1385493666443</created>
+      <updated>1385493666443</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1547,7 +1552,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="7" selection-start="27" selection-end="27" vertical-scroll-proportion="0.038869258">
+        <state line="3" column="9" selection-start="46" selection-end="46" vertical-scroll-proportion="0.11660777">
           <folding />
         </state>
       </provider>
