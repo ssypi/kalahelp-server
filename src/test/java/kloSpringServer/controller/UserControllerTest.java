@@ -47,6 +47,18 @@ public class UserControllerTest extends ControllerTest {
     }
 
     @Test
+    public void shouldNotAllowDeleteLastUser() throws Exception {
+        mockMvc.perform(get("/user/kalamies/delete"))
+                .andExpect(status().isOk());
+        try {
+            mockMvc.perform(get("/user/kalamies2/delete"));
+            fail("Failed");
+        } catch (Exception e) {
+            //ignore
+        }
+    }
+
+    @Test
     public void testDeleteUser() throws Exception {
         mockMvc.perform(get("/user/kalamies/delete"))
                 .andExpect(status().isOk());

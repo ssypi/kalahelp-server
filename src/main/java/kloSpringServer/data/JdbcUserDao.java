@@ -68,12 +68,20 @@ public class JdbcUserDao implements UserDao {
     }
 
     @Override
-    public void deleteUser(String username) {
+    public void deleteUser(String username) throws IllegalStateException {
         try {
             username = URLDecoder.decode(username, "UTF-8");
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
+
+        String countSql = "SELECT COUNT(*) FROM " + TABLE_USER + ";";
+        int count = jdbcTemplate.queryForObject(countSql, Integer.class);
+
+        if (count == 1) {
+            throw new IllegalStateException();
+        }
+
         logger.info("deleting user: " + username);
         String sql = "DELETE FROM " + TABLE_USER +
                 " WHERE USERNAME=?;";
