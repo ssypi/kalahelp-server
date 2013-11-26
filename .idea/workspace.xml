@@ -1,50 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c4f7a5ad-f472-4787-b802-3250399f2fa1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h2/db.h2.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_3_2_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_3_2_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_3_2_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_3_2_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_3_2_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_3_2_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_3_2_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_3_2_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_3_2_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_3_2_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/META-INF/context.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h2/db.trace.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/kloSpringServer.time" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/kloSpringServer_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/kloSpringServer_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    <list default="true" id="c4f7a5ad-f472-4787-b802-3250399f2fa1" name="Default" comment="project file&#10;">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kloSpringServer.iml" afterPath="$PROJECT_DIR$/kloSpringServer.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/kloSpringServer.time" afterPath="$PROJECT_DIR$/.idea/kloSpringServer.time" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="kloSpringServer.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385319374781" ignored="false" />
+    <file path="/Dummy.txt" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385493528330" ignored="false" />
     <file path="/pom.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384636634241" ignored="false" />
     <file path="/applicationContext.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383941996408" ignored="false" />
     <file path="/TicketController.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381355902728" ignored="false" />
-    <file path="/fragment.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384894741211" ignored="false" />
+    <file path="/fragment.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385491596855" ignored="false" />
     <file path="/TicketDao.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1381274041254" ignored="false" />
     <file path="/JdbcTicketDao.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383944156768" ignored="false" />
     <file path="/a.sql" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383517845534" ignored="false" />
@@ -103,15 +71,15 @@
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/LogPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385317267876" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/LoginPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383763105175" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/MainPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383756090018" ignored="false" />
-    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/NewsPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384109749564" ignored="false" />
-    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/TicketsPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384894253384" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/NewsPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385394679153" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/TicketsPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385386332197" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/ChatPopupView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382007963931" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/ChatView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382488967842" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/CustomTable.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382008275367" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/GradientButton.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382007963931" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/GradientPanel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382007963931" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/DeleteNewsPopup.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382007963931" ignored="false" />
-    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/LogView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385317320161" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/LogView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385324975990" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/LoginView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383763277800" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/MessageReceiver.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384906063522" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/MainView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383869896655" ignored="false" />
@@ -125,14 +93,14 @@
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/SettingsView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382488967842" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/Theme.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383938948345" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/common/NewsItem.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382366268433" ignored="false" />
-    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/TicketPopupView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382561276493" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/TicketPopupView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385493172472" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/common/ChatMessage.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382007963932" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/TicketsView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385140259004" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/common/LoginInfo.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382008275367" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/ClientThread.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382361997785" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/common/ReplyTemplate.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382007963932" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/NewsData.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382367694195" ignored="false" />
-    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/ApplicationBuilder.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385317223222" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/ApplicationBuilder.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385491633523" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/ChatData.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384881045525" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/AudioClipPlayer.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382363058685" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/SingleChatData.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384112105719" ignored="false" />
@@ -142,14 +110,14 @@
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/LoginData.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383756010132" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/Client.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382367718553" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/PacketHandler.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383755988748" ignored="false" />
-    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/TopMenuBar.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382008275367" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/TopMenuBar.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385493350030" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/ConnectionSettingsView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382007963932" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/TicketsData.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384112103624" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/PopupLoader.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382007963932" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/ConnectionSettingsPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382367718552" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/PopupDisplayView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382007963932" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/SettingsPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385317159803" ignored="false" />
-    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/TicketPopupPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383917765736" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/TicketPopupPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385386396165" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/RecentTicketsPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384883675888" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/NewsPopupView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384904227095" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/SettingsCategoryView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382526705085" ignored="false" />
@@ -167,17 +135,17 @@
     <file path="/NewsService.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382124232868" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/NewsServiceHttpImpl.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382367681140" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/test/java/helpdesk/desktop/domain/NewsServiceHttpImplTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382367686439" ignored="false" />
-    <file path="/NewsServiceHttpImplTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382359922873" ignored="false" />
+    <file path="/NewsServiceHttpImplTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385387536982" ignored="false" />
     <file path="dbtable:/436c0b11/01e52eab-de25-4837-a177-6432a4d0a370/syp..TEAM" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382010857330" ignored="false" />
     <file path="$PROJECT_DIR$/../dota2stats/src/Main.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382019556962" ignored="false" />
     <file path="$PROJECT_DIR$/../dota2stats/dota2stats.iml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382011002702" ignored="false" />
     <file path="dbtable:/436c0b11/01e52eab-de25-4837-a177-6432a4d0a370/syp..MATCHES" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382020070987" ignored="false" />
     <file path="/Main.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382019542491" ignored="false" />
-    <file path="/NewsServiceHttpImpl.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383763569790" ignored="false" />
+    <file path="/NewsServiceHttpImpl.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385386068931" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/log4j.properties" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382014444954" ignored="false" />
     <file path="/log4j.properties" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383776058288" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/HttpService.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382016375008" ignored="false" />
-    <file path="/HttpService.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383868027384" ignored="false" />
+    <file path="/HttpService.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385491472185" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/HttpResponse.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383867998564" ignored="false" />
     <file path="/HttpResponse.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383523983802" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/test/java/helpdesk/desktop/domain/HttpServiceTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384112081833" ignored="false" />
@@ -193,14 +161,14 @@
     <file path="/heroes-played.html" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382021902688" ignored="false" />
     <file path="$PROJECT_DIR$/../d2spring/src/main/java/d2spring/data/JdbcHeroListDao.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382019684743" ignored="false" />
     <file path="dbtable:/436c0b11/01e52eab-de25-4837-a177-6432a4d0a370/syp..HERO" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382019565723" ignored="false" />
-    <file path="/main.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384694854861" ignored="false" />
+    <file path="/main.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385434684682" ignored="false" />
     <file path="db-console:/436c0b11/01e52eab-de25-4837-a177-6432a4d0a370/" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382020012959" ignored="false" />
     <file path="db-console:/4ea1279b/f051e4c2-9669-477d-8412-cff045344f81/" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382128937369" ignored="false" />
     <file path="$PROJECT_DIR$/../d2sweb/templates/heroes-against.html" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382021891833" ignored="false" />
     <file path="/heroes-against.html" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382021891833" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/config.properties" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382045667125" ignored="false" />
     <file path="/config.properties" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383934122675" ignored="false" />
-    <file path="/NewsItem.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383943821895" ignored="false" />
+    <file path="/NewsItem.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385492962156" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/common/ApiResult.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382359525109" ignored="false" />
     <file path="/ConfigReader.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383867545850" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/resources/config.properties" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383937514742" ignored="false" />
@@ -209,11 +177,11 @@
     <file path="/HelpDesk2000.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383767615981" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/resources/log4j.properties" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383529465186" ignored="false" />
     <file path="/NewsData.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382364967738" ignored="false" />
-    <file path="/ApplicationBuilder.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384906199943" ignored="false" />
+    <file path="/ApplicationBuilder.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385491632463" ignored="false" />
     <file path="/Client.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382120902254" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/deprecated/domain/Client.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382120903477" ignored="false" />
     <file path="/PacketHandler.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382361384654" ignored="false" />
-    <file path="/NewsPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383763615973" ignored="false" />
+    <file path="/NewsPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385393722192" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/LoggerFactory.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382122299648" ignored="false" />
     <file path="/LoggerFactory.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382122294870" ignored="false" />
     <file path="/JdbcNewsDaoTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383755634806" ignored="false" />
@@ -256,11 +224,11 @@
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/model/ApiResult.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383867161034" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/model/NewsItem.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383867156992" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/service/NewsService.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383867760687" ignored="false" />
-    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/service/NewsServiceHttpImpl.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384112081833" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/service/NewsServiceHttpImpl.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385386068931" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/service/ServiceException.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383867795950" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/service/ConfigReader.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383867546737" ignored="false" />
     <file path="/dummy.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382721926739" ignored="false" />
-    <file path="/TicketsPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384894162047" ignored="false" />
+    <file path="/TicketsPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385386332197" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/PanelHelper.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382488967842" ignored="false" />
     <file path="/PanelHelper.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382486661720" ignored="false" />
     <file path="/TicketsView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385140259004" ignored="false" />
@@ -279,16 +247,16 @@
     <file path="/CustomTable.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384897605228" ignored="false" />
     <file path="/SettingsPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385317146269" ignored="false" />
     <file path="/SettingsCategoryView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382526544601" ignored="false" />
-    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/model/SupportTicket.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384894079511" ignored="false" />
-    <file path="/SupportTicket.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384893789347" ignored="false" />
-    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/service/TicketsService.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383867818535" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/model/SupportTicket.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385342129247" ignored="false" />
+    <file path="/SupportTicket.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385342128055" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/service/TicketsService.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385386315125" ignored="false" />
     <file path="/TicketsService.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382534206281" ignored="false" />
-    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/model/TicketComparator.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384894797374" ignored="false" />
-    <file path="/TicketComparator.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382532565615" ignored="false" />
-    <file path="/TicketPopupPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382534265590" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/model/TicketComparator.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385386421407" ignored="false" />
+    <file path="/TicketComparator.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385386420543" ignored="false" />
+    <file path="/TicketPopupPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385386382633" ignored="false" />
     <file path="/LogPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385317260547" ignored="false" />
     <file path="/RecentTicketsPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382561261077" ignored="false" />
-    <file path="/TicketPopupView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382561274636" ignored="false" />
+    <file path="/TicketPopupView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385493113765" ignored="false" />
     <file path="$PROJECT_DIR$/../dota/demo/untitled/pom.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382722093071" ignored="false" />
     <file path="$PROJECT_DIR$/../dota/demo/untitled/src/main/resource/demo.proto" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382722330848" ignored="false" />
     <file path="/demo.proto" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1382722330848" ignored="false" />
@@ -304,7 +272,7 @@
     <file path="/LoginServiceHttpImpl.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383935268145" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/model/Session.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383935149067" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/test/java/helpdesk/desktop/domain/service/LoginServiceHttpImplTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383868618425" ignored="false" />
-    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/test/java/helpdesk/desktop/domain/service/NewsServiceHttpImplTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383868623707" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/test/java/helpdesk/desktop/domain/service/NewsServiceHttpImplTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385387612337" ignored="false" />
     <file path="/LoginServiceHttpImplTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383512180184" ignored="false" />
     <file path="/LoginPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383763082024" ignored="false" />
     <file path="/LoginInfo.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383512369073" ignored="false" />
@@ -316,7 +284,7 @@
     <file path="/UserController.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383526254909" ignored="false" />
     <file path="/UserControllerTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383755495984" ignored="false" />
     <file path="/ControllerTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383523585404" ignored="false" />
-    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/service/HttpService.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384112081833" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/service/HttpService.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385491475949" ignored="false" />
     <file path="/LoginData.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383756009356" ignored="false" />
     <file path="/ChatPopupPresentationModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383756126033" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/ErrorViewModel.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383760002181" ignored="false" />
@@ -324,8 +292,8 @@
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/ErrorView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383760704298" ignored="false" />
     <file path="/ErrorView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383760300005" ignored="false" />
     <file path="/NewsPopupView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384904044512" ignored="false" />
-    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/test/java/helpdesk/desktop/presentation/model/NewsPresentationModelTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383868630340" ignored="false" />
-    <file path="/NewsPresentationModelTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383766083210" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/test/java/helpdesk/desktop/presentation/model/NewsPresentationModelTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385395054194" ignored="false" />
+    <file path="/NewsPresentationModelTest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385394725472" ignored="false" />
     <file path="/ChatController.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383788147035" ignored="false" />
     <file path="/ChatDao.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383772599437" ignored="false" />
     <file path="/ChatRequest.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1383786824659" ignored="false" />
@@ -356,52 +324,61 @@
     <file path="$PROJECT_DIR$/../helpdesk/web-client/.gitignore" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384627340303" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/web-client/.idea/workspace.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384671523536" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/web-client/old/helpdesk.jsp" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384627533087" ignored="false" />
-    <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/index.html" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384694991503" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/index.html" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385480945463" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/web-client/old/supportticket.jsp" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384627533087" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/web-client/old/chat.jsp" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384627533087" ignored="false" />
-    <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/js/main.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384694973225" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/js/main.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385480558669" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/templates/chooser.html" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384632465424" ignored="false" />
-    <file path="/index.html" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384694897753" ignored="false" />
+    <file path="/index.html" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385434565320" ignored="false" />
     <file path="/helpdesk.css" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384639243235" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/css/helpdesk.css" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384639251914" ignored="false" />
-    <file path="/chooser.html" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384629377787" ignored="false" />
+    <file path="/chooser.html" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385432325874" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/templates/info-form.html" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384632811225" ignored="false" />
-    <file path="/info-form.html" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384639278707" ignored="false" />
+    <file path="/info-form.html" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385328092663" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/js/main-vm.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384629587834" ignored="false" />
     <file path="/main-vm.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384632295314" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/js/chooser-viewmodel.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384633302746" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/js/lib/knockout-2.2.1.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384630120945" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/js/lib/koExternalTemplateEngine_all.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384630120945" ignored="false" />
-    <file path="/chooser-viewmodel.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384631532493" ignored="false" />
+    <file path="/chooser-viewmodel.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385428800264" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/js/chat-viewmodel.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384633006131" ignored="false" />
     <file path="/chat-viewmodel.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384633535110" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/js/form-viewmodel.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384632793620" ignored="false" />
-    <file path="/form-viewmodel.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384639490614" ignored="false" />
+    <file path="/form-viewmodel.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385423449644" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/js/viewmodel/chat-viewmodel.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384633555718" ignored="false" />
-    <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/js/viewmodel/form-viewmodel.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384694212511" ignored="false" />
-    <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/view-templates/info-form.html" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384639278707" ignored="false" />
-    <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/js/gateway.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384637359351" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/js/viewmodel/form-viewmodel.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385432760761" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/view-templates/info-form.html" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385328092663" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/js/gateway.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385328259924" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/js/model/ticket.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384694293625" ignored="false" />
     <file path="/ticket.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384636015540" ignored="false" />
     <file path="$PROJECT_DIR$/../d2sweb/.idea/workspace.xml" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384695015695" ignored="false" />
-    <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/view-templates/chooser.html" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384695700157" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/view-templates/chooser.html" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385432331087" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/service/ChatService.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384881234810" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/ChatService.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384881034467" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/TablePM.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384896473949" ignored="false" />
     <file path="/TablePM.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384896459190" ignored="false" />
     <file path="/ColumnComparator.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384891963938" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/model/TicketStringConverter.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384894628957" ignored="false" />
-    <file path="/TicketStringConverter.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384894603696" ignored="false" />
+    <file path="/TicketStringConverter.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385386408721" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/model/StringListConverter.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384894776526" ignored="false" />
     <file path="/StringListConverter.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384894638433" ignored="false" />
-    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/model/TicketStringConverter.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384894813978" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/model/TicketStringConverter.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385386409418" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/presentation/view/components/TableView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384897937347" ignored="false" />
     <file path="/TableView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384897936186" ignored="false" />
     <file path="/MessageDispatcher.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384906058967" ignored="false" />
     <file path="/MessageReceiver.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1384906062394" ignored="false" />
     <file path="$PROJECT_DIR$/../helpdesk/desktop/src/test/java/helpdesk/desktop/domain/Test.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385140284352" ignored="false" />
     <file path="/Test.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385140214835" ignored="false" />
-    <file path="/LogView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385317315628" ignored="false" />
+    <file path="/LogView.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385320207824" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/service/TicketsServiceHttpImpl.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385386315125" ignored="false" />
+    <file path="/TicketsServiceHttpImpl.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385386297113" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/test/java/helpdesk/desktop/NewsFactory.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385386746010" ignored="false" />
+    <file path="/NewsFactory.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385386619351" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/js/viewmodel/chooser-viewmodel.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385432762995" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/web-client/helpdesk/js/lib/pager.js" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385418520357" ignored="false" />
+    <file path="$PROJECT_DIR$/../helpdesk/desktop/src/main/java/helpdesk/desktop/domain/service/LoginServiceTestImpl.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385491621757" ignored="false" />
+    <file path="/LoginServiceTestImpl.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385491620867" ignored="false" />
+    <file path="/TopMenuBar.java" changelist="c4f7a5ad-f472-4787-b802-3250399f2fa1" time="1385493255337" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -470,16 +447,42 @@
       <file leaf-file-name="NewsController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/controller/NewsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="26" selection-start="2235" selection-end="2235" vertical-scroll-proportion="0.0">
+            <state line="40" column="10" selection-start="1356" selection-end="1356" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewsItem.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/model/NewsItem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="71" column="24" selection-start="1581" selection-end="1581" vertical-scroll-proportion="1.2720848">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewsItem.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/model/NewsItem.java">
+      <file leaf-file-name="JdbcNewsDao.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/data/JdbcNewsDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="13" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0">
+            <state line="93" column="10" selection-start="3114" selection-end="3114" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1384017199833" expanded="true" signature="1024:1091" placeholder="SELECT * FRO..NEWS..." />
+                <marker date="1384017199833" expanded="true" signature="1914:2010" placeholder="SELECT * FRO..NEWS..." />
+                <marker date="1384017199833" expanded="true" signature="2956:3040" placeholder="INSERT INTO ..." />
+                <marker date="1384017199833" expanded="true" signature="3219:3242" placeholder="SELECT LAST_..." />
+                <marker date="1384017199833" expanded="true" signature="3459:3516" placeholder="DELETE FROM ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthenticationFilter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/controller/AuthenticationFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="10" selection-start="956" selection-end="956" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -487,7 +490,7 @@
       </file>
       <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
@@ -498,42 +501,24 @@
           <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
             <state />
           </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="32" selection-start="3078" selection-end="3078" vertical-scroll-proportion="0.026829269">
+            <state line="88" column="32" selection-start="3078" selection-end="3078" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="apiController-servlet.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/apiController-servlet.xml">
+      <file leaf-file-name="kloSpringServer.iml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kloSpringServer.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JdbcDriverRegistrationListener.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/JdbcDriverRegistrationListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="55" selection-start="913" selection-end="913" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SupportTicket.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/model/SupportTicket.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="13" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0">
+            <state line="14" column="19" selection-start="703" selection-end="703" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -542,7 +527,7 @@
       <file leaf-file-name="TicketController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/controller/TicketController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="13" selection-start="625" selection-end="625" vertical-scroll-proportion="0.0">
+            <state line="23" column="5" selection-start="956" selection-end="956" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -551,7 +536,7 @@
       <file leaf-file-name="JdbcTicketDao.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/data/JdbcTicketDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="13" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0">
+            <state line="66" column="74" selection-start="2399" selection-end="2399" vertical-scroll-proportion="0.0">
               <folding>
                 <marker date="1383944180987" expanded="true" signature="924:1004" placeholder="SELECT * FRO..TICKET..." />
                 <marker date="1383944180987" expanded="true" signature="2296:2392" placeholder="INSERT INTO ..." />
@@ -580,6 +565,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitLogSettings">
+    <option name="myStructureFilterPaths" />
     <option name="myDateState">
       <MyDateState />
     </option>
@@ -587,8 +573,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/kloSpringServer/controller/ChatControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kloSpringServer/controller/ForwardedIpFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/kloSpringServer/controller/TicketController.java" />
         <option value="$PROJECT_DIR$/src/main/java/kloSpringServer/data/ChatDaoInMemoryImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/kloSpringServer/service/UserAuthentication.java" />
@@ -603,6 +587,8 @@
         <option value="$PROJECT_DIR$/src/main/java/kloSpringServer/JdbcDriverRegistrationListener.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/kloSpringServer.iml" />
+        <option value="$PROJECT_DIR$/src/main/java/kloSpringServer/model/NewsItem.java" />
       </list>
     </option>
   </component>
@@ -693,7 +679,7 @@
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -721,6 +707,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -740,67 +727,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kloSpringServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kloSpringServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kloSpringServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kloSpringServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kloSpringServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kloSpringServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1330,7 +1258,19 @@
       <created>1385319417393</created>
       <updated>1385319417393</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add ChatController">
+      <created>1385319968373</created>
+      <updated>1385319968373</updated>
+    </task>
+    <task id="LOCAL-00007" summary="project file&#10;">
+      <created>1385320009236</created>
+      <updated>1385320009236</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix date from NewsItem class">
+      <created>1385493501884</created>
+      <updated>1385493501884</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1354,9 +1294,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="896" />
       <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24036403" sideWeight="0.7532189" order="1" side_tool="false" content_ui="tabs" />
@@ -1365,11 +1306,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32832617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25428265" sideWeight="0.69957083" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25428265" sideWeight="0.67060083" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3004292" sideWeight="0.5337259" order="2" side_tool="false" content_ui="tabs" />
@@ -1382,9 +1323,8 @@
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Metrics" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14239828" sideWeight="0.69957083" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14239828" sideWeight="0.67060083" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="896" />
       <window_info id="REST Client" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32939914" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32832617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1436,7 +1376,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="add ChatController" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix date from NewsItem class" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1454,6 +1394,8 @@
     <MESSAGE value="sessioncontroller" />
     <MESSAGE value="add authenticationfilter" />
     <MESSAGE value="add ChatController" />
+    <MESSAGE value="project file&#10;" />
+    <MESSAGE value="fix date from NewsItem class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1468,25 +1410,6 @@
     <option name="showOnlyWarnings" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/controller/ChatController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="23" selection-start="928" selection-end="935" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/data/NewsDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/data/JdbcNewsDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="30" selection-start="3467" selection-end="3467" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/kloSpringServer/controller/NewsControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="11" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.0" />
@@ -1519,37 +1442,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="13" selection-start="828" selection-end="828" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/controller/TicketController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="625" selection-end="625" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/data/JdbcTicketDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="13" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1383944180987" expanded="true" signature="924:1004" placeholder="SELECT * FRO..TICKET..." />
-            <marker date="1383944180987" expanded="true" signature="2296:2392" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/model/NewsItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/apiController-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1558,7 +1450,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
@@ -1569,20 +1461,80 @@
       <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
         <state />
       </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/controller/NewsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="26" selection-start="2235" selection-end="2235" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="32" selection-start="3078" selection-end="3078" vertical-scroll-proportion="0.026829269">
+        <state line="88" column="32" selection-start="3078" selection-end="3078" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kloSpringServer.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="19" selection-start="703" selection-end="703" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/data/JdbcTicketDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="74" selection-start="2399" selection-end="2399" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1383944180987" expanded="true" signature="924:1004" placeholder="SELECT * FRO..TICKET..." />
+            <marker date="1383944180987" expanded="true" signature="2296:2392" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/data/JdbcNewsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="10" selection-start="3114" selection-end="3114" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1384017199833" expanded="true" signature="1024:1091" placeholder="SELECT * FRO..NEWS..." />
+            <marker date="1384017199833" expanded="true" signature="1914:2010" placeholder="SELECT * FRO..NEWS..." />
+            <marker date="1384017199833" expanded="true" signature="2956:3040" placeholder="INSERT INTO ..." />
+            <marker date="1384017199833" expanded="true" signature="3219:3242" placeholder="SELECT LAST_..." />
+            <marker date="1384017199833" expanded="true" signature="3459:3516" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/controller/NewsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="10" selection-start="1356" selection-end="1356" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/controller/AuthenticationFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="10" selection-start="956" selection-end="956" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="13" selection-start="828" selection-end="828" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/controller/TicketController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="5" selection-start="956" selection-end="956" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kloSpringServer/model/NewsItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="24" selection-start="1581" selection-end="1581" vertical-scroll-proportion="1.2720848">
           <folding />
         </state>
       </provider>
