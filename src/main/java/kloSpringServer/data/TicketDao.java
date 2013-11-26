@@ -2,6 +2,8 @@ package kloSpringServer.data;
 
 import kloSpringServer.model.SupportTicket;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: kala
@@ -10,6 +12,6 @@ import kloSpringServer.model.SupportTicket;
  */
 public interface TicketDao {
     public SupportTicket getTicketById(String ticketId);
-
     public void addTicket(SupportTicket ticket);
+    List<SupportTicket> getLatestTickets(int count);
 }

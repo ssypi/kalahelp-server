@@ -1,5 +1,7 @@
 package kloSpringServer.model;
 
+import java.util.Date;
+
 /**
  * Created with IntelliJ IDEA.
  * User: kala
@@ -12,10 +14,10 @@ public class SupportTicket {
     private String senderEmail;
     private String subject;
     private String status;
-    private String date;
+    private Date date;
     private String message;
     private String reply;
-    private String replyDate;
+    private Date replyDate;
     private String category;
     private String replyBy;
 
@@ -62,11 +64,11 @@ public class SupportTicket {
         this.status = status;
     }
 
-    public String getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(String date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 
@@ -86,11 +88,11 @@ public class SupportTicket {
         this.reply = reply;
     }
 
-    public String getReplyDate() {
+    public Date getReplyDate() {
         return replyDate;
     }
 
-    public void setReplyDate(String replyDate) {
+    public void setReplyDate(Date replyDate) {
         this.replyDate = replyDate;
     }
 

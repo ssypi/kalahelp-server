@@ -45,10 +45,10 @@ public class JdbcTicketDao implements TicketDao {
                 ticket.setCategory(rs.getString("CATEGORY"));
                 ticket.setSenderName(rs.getString("SENDER_NAME"));
                 ticket.setSenderEmail(rs.getString("SENDER_EMAIL"));
-                ticket.setDate(rs.getString("DATE"));
+                ticket.setDate(rs.getDate("DATE"));
                 ticket.setReply(rs.getString("REPLY_MESSAGE"));
                 ticket.setReplyBy(rs.getString("REPLY_BY"));
-                ticket.setReplyDate(rs.getString("REPLY_DATE"));
+                ticket.setReplyDate(rs.getDate("REPLY_DATE"));
 
                 return ticket;
             }
@@ -75,4 +75,39 @@ public class JdbcTicketDao implements TicketDao {
         };
         jdbcTemplate.update(sql, params);
     }
+
+    @Override
+    public List<SupportTicket> getLatestTickets(int count) {
+        String sql = "SELECT * FROM " + TABLE_TICKET +
+                " ORDER BY DATE DESC" +
+                " LIMIT ?;";
+
+        RowMapper<SupportTicket> mapper = new RowMapper<SupportTicket>() {
+            @Override
+            public SupportTicket mapRow(ResultSet rs, int rowNum) throws SQLException {
+                SupportTicket ticket = new SupportTicket();
+                ticket.setTicketNumber(rs.getInt("TICKET_NUMBER"));
+                ticket.setStatus(rs.getString("STATUS"));
+                ticket.setMessage(rs.getString("MESSAGE"));
+                ticket.setSubject(rs.getString("SUBJECT"));
+                ticket.setCategory(rs.getString("CATEGORY"));
+                ticket.setSenderName(rs.getString("SENDER_NAME"));
+                ticket.setSenderEmail(rs.getString("SENDER_EMAIL"));
+                ticket.setDate(rs.getDate("DATE"));
+                ticket.setReply(rs.getString("REPLY_MESSAGE"));
+                ticket.setReplyBy(rs.getString("REPLY_BY"));
+                ticket.setReplyDate(rs.getDate("REPLY_DATE"));
+
+                return ticket;
+            }
+        };
+
+        List<SupportTicket> tickets = jdbcTemplate.query(sql, mapper, count);
+        if (tickets.isEmpty()) {
+            return null;
+        } else {
+            return tickets;
+        }
+    }
+
 }
