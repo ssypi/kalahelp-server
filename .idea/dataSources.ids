@@ -66,9 +66,10 @@
     <table name="NEWS" schema="" catalog="syp" type="TABLE">
       <column name="ID" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="CONTENT" sqlType="VARCHAR" length="500" precision="0" nullable="true" jdbcType="12"/>
-      <column name="WRITTEN_BY" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="WRITTEN_BY" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
       <column name="DATE" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
       <primary-key name="PRIMARY" columns="ID"/>
+      <foreign-key name="FK_ActiveDirectories_WRITTEN_BY" columns="WRITTEN_BY" ref-table="USER" ref-schema="" ref-catalog="syp" ref-columns="USERNAME" update-rule="3" delete-rule="3" deferrability="2"/>
     </table>
     <table name="PICK" schema="" catalog="syp" type="TABLE">
       <column name="matchId" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" def="MA=="/>
@@ -113,6 +114,7 @@
       <column name="PASSWORD" sqlType="VARBINARY" length="255" precision="0" nullable="false" jdbcType="-3"/>
       <column name="SALT" sqlType="VARBINARY" length="255" precision="0" nullable="false" jdbcType="-3"/>
       <primary-key name="PRIMARY" columns="USERNAME"/>
+      <exported-key name="FK_ActiveDirectories_WRITTEN_BY" table="NEWS" schema="" catalog="syp" columns="WRITTEN_BY"/>
       <index name="unique_USERNAME" unique="true" columns="USERNAME"/>
     </table>
     <table name="Visitor" schema="" catalog="syp" type="TABLE">

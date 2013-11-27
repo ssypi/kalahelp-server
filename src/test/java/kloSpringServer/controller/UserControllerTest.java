@@ -5,9 +5,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import kloSpringServer.model.NewsItem;
 import kloSpringServer.model.User;
+import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.http.MediaType;
 
+import static org.junit.Assert.assertFalse;
 import static org.springframework.test.util.AssertionErrors.fail;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -20,6 +22,30 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * Time: 0:36
  */
 public class UserControllerTest extends ControllerTest {
+
+    @Test
+    public void addUserShouldNotAcceptInvalidUser() throws Exception {
+        User user = new User();
+        user.setUsername("asd asd asd");
+        user.setPassword("kal");
+        assertFalse(user.validate());
+
+        String userJson = convertToJson(user, User.class);
+
+        try {
+            mockMvc.perform(post("/user/")
+                    .contentType(MediaType.APPLICATION_JSON)
+                    .accept(MediaType.APPLICATION_JSON)
+                    .characterEncoding("UTF-8")
+                    .content(userJson)
+            )
+                    .andExpect(status().isBadRequest()); // todo: fix: not called
+            Assert.fail("Did not throw exception like expected.");
+        } catch (Exception e) {
+            // ignore
+        }
+    }
+
     @Test
     public void testCreateUser() throws Exception {
         User user = new User();
@@ -34,7 +60,7 @@ public class UserControllerTest extends ControllerTest {
                 .characterEncoding("UTF-8")
                 .content(json)
         )
-                .andExpect(status().isOk()); // success
+                .andExpect(status().isOk());
     }
 
     @Test
@@ -62,7 +88,5 @@ public class UserControllerTest extends ControllerTest {
     public void testDeleteUser() throws Exception {
         mockMvc.perform(get("/user/kalamies/delete"))
                 .andExpect(status().isOk());
-
-
     }
 }

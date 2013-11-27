@@ -75,9 +75,9 @@ public class JdbcUserDao implements UserDao {
             e.printStackTrace();
         }
 
+        // TODO: xxx
         String countSql = "SELECT COUNT(*) FROM " + TABLE_USER + ";";
         int count = jdbcTemplate.queryForObject(countSql, Integer.class);
-
         if (count == 1) {
             throw new IllegalStateException();
         }

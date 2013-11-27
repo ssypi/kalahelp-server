@@ -1,8 +1,13 @@
 package kloSpringServer.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Created with IntelliJ IDEA.
@@ -16,6 +21,9 @@ public class User implements Serializable {
     private String username = null;
     private String password = null;
     private String email = null;
+
+    @JsonIgnore
+    private List<String> errors = new ArrayList<>();
 
     public User() {
     }
@@ -44,9 +52,29 @@ public class User implements Serializable {
         this.email = email;
     }
 
+    @JsonIgnore
     public boolean validate() {
-        if (username == null || username.isEmpty()) return false;
-        if (password == null || password.isEmpty()) return false;
-        return true;
+        boolean valid = true;
+        Pattern pattern = Pattern.compile("\\s");
+        Matcher matcher = pattern.matcher(username);
+        boolean foundWhiteSpace = matcher.find();
+
+        if (username == null || username.length() > 15 || foundWhiteSpace || username.length() < 3) {
+            valid = false;
+            addError("Invalid username");
+        }
+        if (password == null || password.length() > 30 || password.length() < 5) {
+            valid = false;
+            addError("Invalid password");
+        }
+        return valid;
+    }
+
+    public List<String> getErrors() {
+        return errors;
+    }
+
+    public void addError(String error) {
+        errors.add(error);
     }
 }
