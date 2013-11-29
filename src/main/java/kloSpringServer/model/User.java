@@ -59,7 +59,7 @@ public class User implements Serializable {
         Matcher matcher = pattern.matcher(username);
         boolean foundWhiteSpace = matcher.find();
 
-        if (username == null || username.length() > 15 || foundWhiteSpace || username.length() < 3) {
+        if (username == null || username.length() > 20 || foundWhiteSpace || username.length() < 3) {
             valid = false;
             addError("Invalid username");
         }

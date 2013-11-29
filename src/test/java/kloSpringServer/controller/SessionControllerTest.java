@@ -13,6 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.core.IsNull.notNullValue;
+import static org.junit.Assert.assertFalse;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -44,7 +45,20 @@ public class SessionControllerTest extends ControllerTest {
     }
 
     @Test
-    public void testWrongUser() throws Exception {
+    public void shouldReturnBadRequestForInvalidUser() throws Exception {
+        User user = new User();
+        user.setUsername("k");
+        user.setPassword("a");
+        assertFalse(user.validate());
+
+        mockMvc.perform(post("/session/")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(convertToJson(user, User.class)))
+                .andExpect(status().isBadRequest());
+    }
+
+    @Test
+    public void shouldReturnUnauthorizedForWrongUserPass() throws Exception {
         User user = new User();
         user.setUsername("kalamiehenkaveri");
         user.setPassword("kalasalasana");
