@@ -37,6 +37,11 @@
       <column name="BanOrder" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="matchId,heroId"/>
     </table>
+    <table name="CATEGORY" schema="" catalog="syp" type="TABLE">
+      <column name="NAME" sqlType="VARCHAR" length="25" precision="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="NAME"/>
+      <index name="unique_NAME" unique="true" columns="NAME"/>
+    </table>
     <table name="GDBC_PERSON" schema="" catalog="syp" type="TABLE">
       <column name="Ssn" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12"/>
       <column name="FirstName" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12"/>

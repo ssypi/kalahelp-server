@@ -40,7 +40,7 @@ public class JdbcUserDao implements UserDao {
     public void saveUser(String username, byte[] encryptedPassword, byte[] salt) {
         logger.info("Saving new user: " + username);
         String sql = "INSERT INTO " + TABLE_USER
-                + " VALUES(?, ?, ?)";
+                + " VALUES(?, ?, ?);";
         jdbcTemplate.update(sql, username, encryptedPassword, salt);
     }
 
