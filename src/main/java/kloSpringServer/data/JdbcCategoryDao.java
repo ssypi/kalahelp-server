@@ -22,7 +22,7 @@ import java.util.List;
 @Repository
 public class JdbcCategoryDao implements CategoryDao {
     private static final Logger logger = Logger.getLogger(JdbcCategoryDao.class);
-    private String TABLE_CATEGORY = "category";
+    private String TABLE_CATEGORY = "CATEGORY";
     private JdbcTemplate jdbcTemplate;
 
     @Autowired
