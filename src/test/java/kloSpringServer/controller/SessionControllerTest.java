@@ -44,18 +44,18 @@ public class SessionControllerTest extends ControllerTest {
                 .andExpect(jsonPath("$.result").doesNotExist());
     }
 
-    @Test
-    public void shouldReturnBadRequestForInvalidUser() throws Exception {
-        User user = new User();
-        user.setUsername("k");
-        user.setPassword("a");
-        assertFalse(user.validate());
-
-        mockMvc.perform(post("/session/")
-                .contentType(MediaType.APPLICATION_JSON)
-                .content(convertToJson(user, User.class)))
-                .andExpect(status().isBadRequest());
-    }
+//    @Test
+//    public void shouldReturnBadRequestForInvalidUser() throws Exception {
+//        User user = new User();
+//        user.setUsername("k");
+//        user.setPassword("a");
+//        assertFalse(user.validate());
+//
+//        mockMvc.perform(post("/session/")
+//                .contentType(MediaType.APPLICATION_JSON)
+//                .content(convertToJson(user, User.class)))
+//                .andExpect(status().isBadRequest());
+//    }
 
     @Test
     public void shouldReturnUnauthorizedForWrongUserPass() throws Exception {

@@ -24,11 +24,11 @@ public class ChatDaoInMemoryImpl implements ChatDao {
     private static final ConcurrentHashMap<Integer, ChatRequest> chatRequests = new ConcurrentHashMap<>();
 
     @Override
-    public ChatRequest requestChat() {
+    public ChatRequest requestChat(String nickname) {
         ChatRequest request = new ChatRequest();
         request.setId(ChatRequest.generateId());
         request.setDate(new Date());
-        request.setNickname("kalamies");
+        request.setNickname(nickname);
         chatRequests.put(request.getId(), request);
         return request;
     }

@@ -43,11 +43,10 @@ public class SessionController {
         if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
             ip = request.getRemoteAddr();
         }
-        logger.info("Login attempt from " + ip);
 
         if (!user.validate()) { // invalid request
             logger.info("invalid request");
-            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+            response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
             return new ApiResult(null, ApiResult.STATUS_ERROR);
         }
 
@@ -58,6 +57,7 @@ public class SessionController {
         }
 
         Session newSession = sessionDao.createNewSessionForIp(ip);
+        newSession.setUser(user.getUsername());
         logger.info("Successful login for " + user.getUsername() + " from " + newSession.getIpAddress());
         return new ApiResult(newSession);
     }

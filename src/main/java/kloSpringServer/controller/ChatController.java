@@ -26,6 +26,7 @@ import java.util.concurrent.ConcurrentHashMap;
 @RequestMapping("/chat")
 public class ChatController {
     private static final Logger logger = Logger.getLogger(ChatController.class);
+//    private final Map<DeferredResult<ApiResult>, Integer> chatRequests = new ConcurrentHashMap<>();
     private final Map<DeferredResult<List<ChatMessage>>, Integer> chatRequests = new ConcurrentHashMap<>();
 
     @Autowired
@@ -54,6 +55,7 @@ public class ChatController {
     @RequestMapping(value = "/{chatId}", method = RequestMethod.GET, produces = "application/json")
     public @ResponseBody DeferredResult getChatMessages(@PathVariable int chatId, @RequestParam(value = "index", defaultValue = "0") int messageIndex) {
         final DeferredResult<List<ChatMessage>> deferredResult = new DeferredResult<>(30000L, Collections.emptyList());
+//        final DeferredResult<ApiResult> deferredResult = new DeferredResult<>(30000L, Collections.emptyList());
         this.chatRequests.put(deferredResult, chatId);
 
         deferredResult.onCompletion(new Runnable() {
@@ -79,19 +81,19 @@ public class ChatController {
 
     @RequestMapping(value = "/", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
     public @ResponseBody
-    ResponseEntity<?> requestChat() {
+    ResponseEntity<?> requestChat(@RequestBody ChatRequest chatRequest) {
         HttpHeaders headers = new HttpHeaders();
         HttpStatus status;
 
-        ChatRequest chatRequest = chatDao.requestChat();
+        ChatRequest response = chatDao.requestChat(chatRequest.getNickname());
         ApiResult result;
 
-        if (chatRequest != null) {
+        if (response != null) {
             URI uri = ServletUriComponentsBuilder.fromCurrentContextPath()
-                    .path("/chat/" + chatRequest.getId()).build().toUri();
+                    .path("/chat/" + response.getId()).build().toUri();
             headers.setLocation(uri);
             status = HttpStatus.CREATED;
-            result = new ApiResult(chatRequest, ApiResult.STATUS_OK);
+            result = new ApiResult(response, ApiResult.STATUS_OK);
         } else {
             status = HttpStatus.BAD_REQUEST;
             result = new ApiResult(null, ApiResult.STATUS_ERROR);

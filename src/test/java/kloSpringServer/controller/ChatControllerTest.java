@@ -3,6 +3,7 @@ package kloSpringServer.controller;
 import kloSpringServer.data.ChatDao;
 import kloSpringServer.data.ChatDaoInMemoryImpl;
 import kloSpringServer.model.ChatMessage;
+import kloSpringServer.model.ChatRequest;
 import org.hamcrest.CoreMatchers;
 import org.junit.Test;
 import org.springframework.http.MediaType;
@@ -29,7 +30,7 @@ public class ChatControllerTest extends ControllerTest {
 
     private ChatDao mockChatController() {
         chatDao = new ChatDaoInMemoryImpl();
-        chatId = chatDao.requestChat().getId();
+        chatId = chatDao.requestChat("Kalamies").getId();
         chatDao.acceptChat(chatId);
         controller = new ChatController();
         controller.chatDao = chatDao;
@@ -78,8 +79,8 @@ public class ChatControllerTest extends ControllerTest {
     @Test
     public void testGetWaitingChatRequests() throws Exception {
         mockChatController();
-        int id = chatDao.requestChat().getId();
-        int id2 = chatDao.requestChat().getId();
+        int id = chatDao.requestChat("Kalamies").getId();
+        int id2 = chatDao.requestChat("Kalamiehenkaveri").getId();
 
         MvcResult result = mockMvc.perform(get("/chat/"))
                 .andExpect(status().isOk())
@@ -92,10 +93,15 @@ public class ChatControllerTest extends ControllerTest {
 
     @Test
     public void testRequestChat() throws Exception {
+        ChatRequest request = new ChatRequest();
+        request.setNickname("Kala");
+        String json = convertToJson(request, ChatRequest.class);
+
         MvcResult result = mockMvc.perform(post("/chat/")
                 .contentType(MediaType.APPLICATION_JSON)
                 .accept(MediaType.APPLICATION_JSON)
                 .characterEncoding("UTF-8")
+                .content(json)
         )
                 .andExpect(status().isCreated())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))

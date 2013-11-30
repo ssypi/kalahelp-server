@@ -361,6 +361,16 @@
     <file type="web" url="file://$PROJECT_DIR$" />
   </component>
   <component name="IdProvider" IDEtalkID="1A8E30E9D66BFAF32E975BE3C257D9F0" />
+  <component name="MavenCompilerTasksManager">
+    <option name="afterCompileTasks">
+      <set>
+        <MavenCompilerTask>
+          <option name="goal" value="org.codehaus.mojo:wagon-maven-plugin:1.0-beta-4:upload-single" />
+          <option name="projectPath" value="$PROJECT_DIR$/pom.xml" />
+        </MavenCompilerTask>
+      </set>
+    </option>
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>

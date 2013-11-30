@@ -1,5 +1,6 @@
 package kloSpringServer.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 import java.util.Date;
@@ -38,6 +39,7 @@ public class ChatRequest {
         this.date = date;
     }
 
+    @JsonIgnore
     public static int generateId() {
         Random rand = new Random();
         return rand.nextInt(Integer.MAX_VALUE);

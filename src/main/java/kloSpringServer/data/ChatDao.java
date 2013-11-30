@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
 public interface ChatDao {
-    ChatRequest requestChat();
+    ChatRequest requestChat(String nickname);
     List<ChatRequest> getChatRequests();
     ChatRequest acceptChat(int chatId);
 

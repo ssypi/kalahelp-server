@@ -43,7 +43,7 @@ public class JdbcNewsDao implements NewsDao {
                 newsItem.setId(rs.getInt("ID"));
                 newsItem.setContent(rs.getString("CONTENT"));
                 newsItem.setDate(rs.getTimestamp("DATE"));
-                newsItem.setWriter(String.valueOf(rs.getInt("WRITTEN_BY")));
+                newsItem.setWriter(String.valueOf(rs.getString("WRITTEN_BY")));
                 return newsItem;
             }
         };
@@ -69,7 +69,7 @@ public class JdbcNewsDao implements NewsDao {
                 newsItem.setId(rs.getInt("ID"));
                 newsItem.setContent(rs.getString("CONTENT"));
                 newsItem.setDate(rs.getTimestamp("DATE"));
-                newsItem.setWriter(String.valueOf(rs.getInt("WRITTEN_BY")));
+                newsItem.setWriter(String.valueOf(rs.getString("WRITTEN_BY")));
                 return newsItem;
             }
         };

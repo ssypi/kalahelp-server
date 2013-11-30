@@ -21,6 +21,7 @@ public class Session implements Serializable {
     private String token;
     private String ipAddress;
     private Date expireDate;
+    private String user;
 
     private static final int EXPIRE_HOURS = 6;
 
@@ -85,6 +86,14 @@ public class Session implements Serializable {
 
     public static String generateToken() {
         return UUID.randomUUID().toString();
+    }
+
+    public String getUser() {
+        return user;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
     }
 
 
