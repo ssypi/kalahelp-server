@@ -35,7 +35,15 @@ public class CategoryController {
         logger.info(category);
         categoryDao.deleteCategory(category);
         return new ApiResult(null, ApiResult.STATUS_OK);
+    }
 
+    @RequestMapping(value = "/{category}/delete", method = RequestMethod.GET, produces = "application/json")
+    public
+    @ResponseBody
+    ApiResult deleteCategory2(@PathVariable String category) {
+        logger.info(category);
+        categoryDao.deleteCategory(category);
+        return new ApiResult(null, ApiResult.STATUS_OK);
     }
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
