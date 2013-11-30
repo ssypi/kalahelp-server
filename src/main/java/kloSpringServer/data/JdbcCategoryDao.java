@@ -8,6 +8,8 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
 import javax.sql.DataSource;
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,6 +34,11 @@ public class JdbcCategoryDao implements CategoryDao {
 
     @Override
     public void saveCategory(String category) {
+        try {
+            category = URLDecoder.decode(category, "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
         logger.info("Saving new category: " + category);
         String sql = "INSERT INTO " + TABLE_CATEGORY
                 + " VALUES(?);";
@@ -40,6 +47,11 @@ public class JdbcCategoryDao implements CategoryDao {
 
     @Override
     public void deleteCategory(String category) {
+        try {
+            category = URLDecoder.decode(category, "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
         String sql = "DELETE FROM " + TABLE_CATEGORY + " WHERE NAME = ? ";
         jdbcTemplate.update(sql, category);
     }
