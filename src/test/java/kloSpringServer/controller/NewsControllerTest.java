@@ -1,23 +1,15 @@
 package kloSpringServer.controller;
 
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.type.TypeFactory;
 import kloSpringServer.model.ApiResult;
 import kloSpringServer.model.NewsItem;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.util.Assert;
 
-import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 
-import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertTrue;
-import static junit.framework.Assert.fail;
+import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.not;
@@ -39,7 +31,7 @@ public class NewsControllerTest extends ControllerTest {
                 .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isNotFound())
                 .andExpect(jsonPath("$.status", is(404)))
-                .andExpect(jsonPath("$.errorMessage").exists());
+                .andExpect(jsonPath("$.message").exists());
     }
 
     @Test
@@ -49,7 +41,7 @@ public class NewsControllerTest extends ControllerTest {
                 .andExpect(content().contentType("application/json;charset=UTF-8"))
                 .andExpect(jsonPath("$.status", is(404)))
                 .andExpect(jsonPath("$.result").doesNotExist())
-                .andExpect(jsonPath("$.errorMessage").exists());
+                .andExpect(jsonPath("$.message").exists());
     }
 
     @Test
