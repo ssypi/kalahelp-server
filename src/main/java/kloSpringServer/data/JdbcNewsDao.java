@@ -97,12 +97,26 @@ public class JdbcNewsDao implements NewsDao {
         return newsItem;
     }
 
+    /**
+     * Deletes News with the supplied ID from the database.
+     *
+     *
+     * @param newsId id of the news
+     * @return boolean true if any row got deleted
+     */
     @Override
-    public void deleteNewsById(int newsId) {
-        logger.info("Deleting newzz with id " + newsId);
+    public boolean deleteNewsById(int newsId) {
+        logger.info("Deleting NewsItem with id " + newsId);
         String sql = "DELETE FROM " + TABLE_NEWS
                 + " WHERE ID=?;";
 
-        jdbcTemplate.update(sql, newsId);
+        int rowsAffected = jdbcTemplate.update(sql, newsId);
+
+        return rowsAffected != 0; // if no rows were affected, return false
+
+//        if (rowsAffected == 0) {
+//            throw new HttpClientErrorException(HttpStatus.NOT_FOUND,
+//                    "Unable to delete News with id " + newsId + " because it does not exist.");
+//        }
     }
 }
