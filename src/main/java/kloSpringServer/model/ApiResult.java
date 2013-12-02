@@ -23,6 +23,10 @@ public class ApiResult<T> {
         this.message = message;
     }
 
+    public ApiResult(int status) {
+        this.status = status;
+    }
+
     public ApiResult(T result) {
         if (null == result) {
             this.status = STATUS_WARN;

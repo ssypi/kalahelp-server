@@ -14,17 +14,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-/**
- * Created with IntelliJ IDEA.
- * User: Joona
- * Date: 1.12.2013
- * Time: 0:01
- * To change this template use File | Settings | File Templates.
- */
 @Repository
 public class JdbcCategoryDao implements CategoryDao {
     private static final Logger logger = Logger.getLogger(JdbcCategoryDao.class);
-    private String TABLE_CATEGORY = "CATEGORY";
+    private static final String TABLE_CATEGORY = "CATEGORY";
     private JdbcTemplate jdbcTemplate;
 
     @Autowired
@@ -52,7 +45,8 @@ public class JdbcCategoryDao implements CategoryDao {
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
-        String sql = "DELETE FROM " + TABLE_CATEGORY + " WHERE NAME = ? ";
+        String sql = "DELETE FROM " + TABLE_CATEGORY
+                + " WHERE NAME=?;";
         jdbcTemplate.update(sql, category);
     }
 

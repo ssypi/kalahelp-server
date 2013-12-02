@@ -49,11 +49,12 @@ public class ChatController {
         if (chatRequests.containsValue(chatId)) {
             complete(message, chatId);
         }
-        return new ApiResult(null, ApiResult.STATUS_OK);
+        return new ApiResult();
     }
 
     @RequestMapping(value = "/{chatId}", method = RequestMethod.GET, produces = "application/json")
-    public @ResponseBody DeferredResult getChatMessages(@PathVariable int chatId, @RequestParam(value = "index", defaultValue = "0") int messageIndex) {
+    public @ResponseBody
+    DeferredResult<? extends List<ChatMessage>> getChatMessages(@PathVariable int chatId, @RequestParam(value = "index", defaultValue = "0") int messageIndex) {
         final DeferredResult<List<ChatMessage>> deferredResult = new DeferredResult<>(30000L, Collections.emptyList());
 //        final DeferredResult<ApiResult> deferredResult = new DeferredResult<>(30000L, Collections.emptyList());
         this.chatRequests.put(deferredResult, chatId);
@@ -75,8 +76,8 @@ public class ChatController {
     @RequestMapping(value = "/", method = RequestMethod.GET, produces = "application/json")
     public
     @ResponseBody
-    ApiResult getWaitingChatRequests() {
-        return new ApiResult(chatDao.getChatRequests(), ApiResult.STATUS_OK);
+    ApiResult<List<ChatRequest>> getWaitingChatRequests() {
+        return new ApiResult<>(chatDao.getChatRequests(), ApiResult.STATUS_OK);
     }
 
     @RequestMapping(value = "/", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
@@ -86,17 +87,17 @@ public class ChatController {
         HttpStatus status;
 
         ChatRequest response = chatDao.requestChat(chatRequest.getNickname());
-        ApiResult result;
+        ApiResult<ChatRequest> result;
 
         if (response != null) {
             URI uri = ServletUriComponentsBuilder.fromCurrentContextPath()
                     .path("/chat/" + response.getId()).build().toUri();
             headers.setLocation(uri);
             status = HttpStatus.CREATED;
-            result = new ApiResult(response, ApiResult.STATUS_OK);
+            result = new ApiResult<>(response, ApiResult.STATUS_OK);
         } else {
             status = HttpStatus.BAD_REQUEST;
-            result = new ApiResult(null, ApiResult.STATUS_ERROR);
+            result = new ApiResult<>(ApiResult.STATUS_ERROR);
         }
         return new ResponseEntity<>(result, headers, status);
     }

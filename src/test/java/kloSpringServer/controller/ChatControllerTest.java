@@ -26,13 +26,12 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 public class ChatControllerTest extends ControllerTest {
     private int chatId;
     private ChatDao chatDao;
-    private ChatController controller;
 
     private ChatDao mockChatController() {
         chatDao = new ChatDaoInMemoryImpl();
         chatId = chatDao.requestChat("Kalamies").getId();
         chatDao.acceptChat(chatId);
-        controller = new ChatController();
+        ChatController controller = new ChatController();
         controller.chatDao = chatDao;
         mockMvc = MockMvcBuilders.standaloneSetup(controller).build();
         return chatDao;

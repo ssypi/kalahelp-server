@@ -15,7 +15,6 @@ import static junit.framework.Assert.assertTrue;
  * User: Joona
  * Date: 1.12.2013
  * Time: 0:10
- * To change this template use File | Settings | File Templates.
  */
 public class JdbcCategoryDaoTest extends ControllerTest {
     @Autowired

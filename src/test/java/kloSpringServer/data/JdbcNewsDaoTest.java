@@ -19,6 +19,7 @@ import java.util.List;
  * Date: 18.10.2013
  * Time: 23:57
  */
+@SuppressWarnings("SpellCheckingInspection")
 @ContextConfiguration (locations = {"/testContext.xml"})
 @RunWith(SpringJUnit4ClassRunner.class)
 public class JdbcNewsDaoTest {
