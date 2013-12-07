@@ -6,7 +6,7 @@ insert into NEWS (
        values (
               1,
               'Kalamiehen testi_uutinen',
-              1,
+              'Kalamies',
               '2013-10-18 00:42:59');
 insert into NEWS (
                      ID,
@@ -15,7 +15,7 @@ insert into NEWS (
                      DATE) values (
                                   2,
                                   'Kalakala',
-                                  2,
+                                  'Kalakaveri',
                                   '2013-10-19 05:35:34');
 insert into USER (
                     USERNAME,

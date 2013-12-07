@@ -76,7 +76,7 @@ public class JdbcNewsDaoTest {
 
     @Test
     @Transactional
-    public void testAddNewsItem() throws Exception {
+    public void addNewsShouldReturnId() throws Exception {
         String content = "Kala kala kala mies, olipa kerran kuka ties.";
         String writer = "1";
 

@@ -90,7 +90,7 @@ public class JdbcNewsDao implements NewsDao {
         }
         String sql = "INSERT INTO " + TABLE_NEWS
                 + " VALUES(null, ?, ?, CURRENT_TIMESTAMP);";
-        jdbcTemplate.update(sql, newsItem.getContent(), 1);
+        jdbcTemplate.update(sql, newsItem.getContent(), newsItem.getWriter());
         //TODO: replace 1 with writer, get writer id from user table
         int id = jdbcTemplate.queryForObject("SELECT LAST_INSERT_ID()", Integer.class);
         newsItem.setId(id);
