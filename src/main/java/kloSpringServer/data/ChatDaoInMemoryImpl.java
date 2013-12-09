@@ -2,6 +2,7 @@ package kloSpringServer.data;
 
 import kloSpringServer.model.ChatMessage;
 import kloSpringServer.model.ChatRequest;
+import org.jetbrains.annotations.Nullable;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -16,8 +17,8 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 @Repository
 public class ChatDaoInMemoryImpl implements ChatDao {
-    private static final ConcurrentHashMap<Integer, List<ChatMessage>> chats = new ConcurrentHashMap<>();
-    private static final ConcurrentHashMap<Integer, ChatRequest> chatRequests = new ConcurrentHashMap<>();
+    private final ConcurrentHashMap<Integer, List<ChatMessage>> chats = new ConcurrentHashMap<>();
+    private final ConcurrentHashMap<Integer, ChatRequest> chatRequests = new ConcurrentHashMap<>();
 
     @Override
     public ChatRequest requestChat(String nickname) {
@@ -27,6 +28,7 @@ public class ChatDaoInMemoryImpl implements ChatDao {
     }
 
     @Override
+    @Nullable
     public ChatRequest acceptChat(int chatId) {
         ChatRequest request = chatRequests.remove(chatId);
         if (request != null) {
@@ -41,17 +43,18 @@ public class ChatDaoInMemoryImpl implements ChatDao {
     }
 
     @Override
-    public void addMessage(int chatId, ChatMessage message) {
-        List<ChatMessage> messageList = chats.get(chatId);
-        if (messageList == null) {
-            if (acceptChat(chatId) != null) {
-                messageList = chats.get(chatId);
-            } else {
-                return;
+    public boolean addMessage(int chatId, ChatMessage message) {
+        if (!chats.containsKey(chatId)) {
+            if (acceptChat(chatId) == null) {
+                return false;
             }
         }
+
+        List<ChatMessage> messageList = chats.get(chatId);
+        assert messageList != null;
         message.setIndex(messageList.size());
         messageList.add(message);
+        return true;
     }
 
     @Override
@@ -73,9 +76,10 @@ public class ChatDaoInMemoryImpl implements ChatDao {
 
     /**
      * <p>Deletes the chat for the specified ID</P>
+     *
      * @param chatId id of the chat to close.
      * @return {@code true} if chat was closed.<br>
-     *     {@code false} if no chat exists for the specified id.
+     *         {@code false} if no chat exists for the specified id.
      */
     @Override
     public boolean closeChat(int chatId) {

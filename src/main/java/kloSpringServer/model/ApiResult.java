@@ -36,10 +36,6 @@ public class ApiResult<T> {
         this.status = STATUS_OK;
     }
 
-    public ApiResult(String message) {
-        this.message = message;
-    }
-
     public ApiResult(int status) {
         this.status = status;
     }

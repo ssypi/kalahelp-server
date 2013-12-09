@@ -27,7 +27,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public class ChatController extends ControllerBase {
     private static final Logger logger = Logger.getLogger(ChatController.class);
 //    private final Map<DeferredResult<ApiResult>, Integer> waitingMessageRequests = new ConcurrentHashMap<>();
-    private final Map<DeferredResult<List<ChatMessage>>, Integer> waitingMessageRequests = new ConcurrentHashMap<>();
+    private final Map<DeferredResult<ApiResult<List<ChatMessage>>>, Integer> waitingMessageRequests = new ConcurrentHashMap<>();
 
     @Autowired
     ChatDao chatDao;
@@ -35,21 +35,26 @@ public class ChatController extends ControllerBase {
     private void complete(ChatMessage message, int chatId) {
         List<ChatMessage> messageList = new ArrayList<>();
         messageList.add(message);
+        ApiResult<List<ChatMessage>> result = new ApiResult<>(messageList);
 
-        for (Map.Entry<DeferredResult<List<ChatMessage>>, Integer> entry : this.waitingMessageRequests.entrySet()) {
+        for (Map.Entry<DeferredResult<ApiResult<List<ChatMessage>>>, Integer> entry : this.waitingMessageRequests.entrySet()) {
             if (entry.getValue() == chatId) {
-                entry.getKey().setResult(messageList);
+                entry.getKey().setResult(result);
             }
         }
     }
 
     @RequestMapping(value = "/{chatId}", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
     public @ResponseBody ApiResult addMessage(@RequestBody ChatMessage message, @PathVariable int chatId) {
-        chatDao.addMessage(chatId, message);
-        if (waitingMessageRequests.containsValue(chatId)) {
-            complete(message, chatId);
+        if (!chatDao.addMessage(chatId, message)) {
+            throw new HttpClientErrorException(HttpStatus.NOT_FOUND,
+                    "Chat with id " + chatId + " doesn't exist.");
+        } else {
+            if (waitingMessageRequests.containsValue(chatId)) {
+                complete(message, chatId);
+            }
+            return new ApiResult(HttpStatus.OK.value(), "Message sent.");
         }
-        return new ApiResult();
     }
 
     /**
@@ -70,9 +75,9 @@ public class ChatController extends ControllerBase {
      */
     @RequestMapping(value = "/{chatId}", method = RequestMethod.GET, produces = "application/json")
     public @ResponseBody
-    DeferredResult<? extends List<ChatMessage>> getChatMessages(@PathVariable int chatId, @RequestParam(value = "index", defaultValue = "0") int messageIndex) {
-        final DeferredResult<List<ChatMessage>> deferredResult = new DeferredResult<>(30000L, Collections.emptyList());
-//        final DeferredResult<ApiResult> deferredResult = new DeferredResult<>(30000L, Collections.emptyList());
+    DeferredResult<? extends ApiResult<List<ChatMessage>>> getChatMessages(@PathVariable int chatId, @RequestParam(value = "index", defaultValue = "0") int messageIndex) {
+        ApiResult timeOutResult = new ApiResult(408, "Request timed out.");
+        final DeferredResult<ApiResult<List<ChatMessage>>> deferredResult = new DeferredResult<>(30000L, timeOutResult);
         this.waitingMessageRequests.put(deferredResult, chatId);
 
         deferredResult.onCompletion(new Runnable() {
@@ -83,8 +88,11 @@ public class ChatController extends ControllerBase {
         });
 
         List<ChatMessage> messageList = chatDao.getMessagesForChat(chatId, messageIndex);
+
         if (messageList != null && !messageList.isEmpty()) {
-            deferredResult.setResult(messageList);
+            ApiResult<List<ChatMessage>> apiResult = new ApiResult<>(messageList);
+            apiResult.setMessage("Messages for chat#" + chatId);
+            deferredResult.setResult(apiResult);
         }
         return deferredResult;
     }

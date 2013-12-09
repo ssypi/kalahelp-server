@@ -11,7 +11,7 @@ public interface ChatDao {
     List<ChatRequest> getChatRequests();
     ChatRequest acceptChat(int chatId);
 
-    void addMessage(int chatId,ChatMessage message);
+    boolean addMessage(int chatId, ChatMessage message);
 
     List<ChatMessage> getMessagesForChat(int chatId, int messageIndex);
 
