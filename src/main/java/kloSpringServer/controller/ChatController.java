@@ -6,14 +6,14 @@ import kloSpringServer.model.ChatMessage;
 import kloSpringServer.model.ChatRequest;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.context.request.async.DeferredResult;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import javax.servlet.http.HttpServletResponse;
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -24,10 +24,10 @@ import java.util.concurrent.ConcurrentHashMap;
 @SuppressWarnings("SpringJavaAutowiringInspection")
 @Controller
 @RequestMapping("/chat")
-public class ChatController {
+public class ChatController extends ControllerBase {
     private static final Logger logger = Logger.getLogger(ChatController.class);
-//    private final Map<DeferredResult<ApiResult>, Integer> chatRequests = new ConcurrentHashMap<>();
-    private final Map<DeferredResult<List<ChatMessage>>, Integer> chatRequests = new ConcurrentHashMap<>();
+//    private final Map<DeferredResult<ApiResult>, Integer> waitingMessageRequests = new ConcurrentHashMap<>();
+    private final Map<DeferredResult<List<ChatMessage>>, Integer> waitingMessageRequests = new ConcurrentHashMap<>();
 
     @Autowired
     ChatDao chatDao;
@@ -36,7 +36,7 @@ public class ChatController {
         List<ChatMessage> messageList = new ArrayList<>();
         messageList.add(message);
 
-        for (Map.Entry<DeferredResult<List<ChatMessage>>, Integer> entry : this.chatRequests.entrySet()) {
+        for (Map.Entry<DeferredResult<List<ChatMessage>>, Integer> entry : this.waitingMessageRequests.entrySet()) {
             if (entry.getValue() == chatId) {
                 entry.getKey().setResult(messageList);
             }
@@ -46,23 +46,39 @@ public class ChatController {
     @RequestMapping(value = "/{chatId}", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
     public @ResponseBody ApiResult addMessage(@RequestBody ChatMessage message, @PathVariable int chatId) {
         chatDao.addMessage(chatId, message);
-        if (chatRequests.containsValue(chatId)) {
+        if (waitingMessageRequests.containsValue(chatId)) {
             complete(message, chatId);
         }
         return new ApiResult();
     }
 
+    /**
+     * <p>Gets either all or only particular chat messages for the specified chat id.</p>
+     * <p>Example usage: /chat/295317?index=5 will wait up to 30 seconds until someone posts
+     * a 6th message to the chat with id 295317.</p>
+     *
+     * <p><b>NOTE: Uses long polling:</b> response will be delayed up to 30 seconds to wait for
+     * new messages for the specified id and index.</p>
+     *
+     * @param chatId id of the chat is specified in the request url.
+     * @param messageIndex only get messages starting from this index. Index starts from 0.
+     *                     If no index is specified or the index is 0, will return all messages.
+     *                     Index is given as a request param ?index=4
+     * @return a list of {@link ChatMessage} objects as json. <br>
+     *     If the connection times out, will return an empty list.<br>
+     *     TODO: If there is no chat for the specified ID, will return a 404
+     */
     @RequestMapping(value = "/{chatId}", method = RequestMethod.GET, produces = "application/json")
     public @ResponseBody
     DeferredResult<? extends List<ChatMessage>> getChatMessages(@PathVariable int chatId, @RequestParam(value = "index", defaultValue = "0") int messageIndex) {
         final DeferredResult<List<ChatMessage>> deferredResult = new DeferredResult<>(30000L, Collections.emptyList());
 //        final DeferredResult<ApiResult> deferredResult = new DeferredResult<>(30000L, Collections.emptyList());
-        this.chatRequests.put(deferredResult, chatId);
+        this.waitingMessageRequests.put(deferredResult, chatId);
 
         deferredResult.onCompletion(new Runnable() {
             @Override
             public void run() {
-                chatRequests.remove(deferredResult);
+                waitingMessageRequests.remove(deferredResult);
             }
         });
 
@@ -73,6 +89,10 @@ public class ChatController {
         return deferredResult;
     }
 
+    /**
+     * Get all waiting chats requested by users.
+     * @return List of ChatRequests wrapped in {@link ApiResult} object as JSON data.
+     */
     @RequestMapping(value = "/", method = RequestMethod.GET, produces = "application/json")
     public
     @ResponseBody
@@ -80,26 +100,40 @@ public class ChatController {
         return new ApiResult<>(chatDao.getChatRequests(), ApiResult.STATUS_OK);
     }
 
+    /**
+     * creates a new chatRequest, sets the HttpResponse location header to include the newly created request ID
+     * and returns the {@link ChatRequest} object to the user.
+     * @param chatRequest {@link ChatRequest} object as JSON is required in the request body.
+     *                    Only the nickname field has to be set, everything else will be generated later.
+     * @return {@link ApiResult} with the created chatRequest as application/json.
+     * HttpStatus code is 200 if the request succeeded.
+     */
     @RequestMapping(value = "/", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
     public @ResponseBody
-    ResponseEntity<?> requestChat(@RequestBody ChatRequest chatRequest) {
-        HttpHeaders headers = new HttpHeaders();
-        HttpStatus status;
+    ApiResult<ChatRequest> requestChat(@RequestBody ChatRequest chatRequest, HttpServletResponse response) {
+        ChatRequest newChatRequest = chatDao.requestChat(chatRequest.getNickname());
+        URI uri = ServletUriComponentsBuilder.fromCurrentContextPath()
+                    .path("/chat/" + newChatRequest.getId()).build().toUri();
+        response.addHeader("Location", uri.getRawPath());
+        response.setStatus(HttpStatus.CREATED.value());
+        return new ApiResult<>(newChatRequest, ApiResult.STATUS_OK);
+    }
 
-        ChatRequest response = chatDao.requestChat(chatRequest.getNickname());
-        ApiResult<ChatRequest> result;
-
-        if (response != null) {
-            URI uri = ServletUriComponentsBuilder.fromCurrentContextPath()
-                    .path("/chat/" + response.getId()).build().toUri();
-            headers.setLocation(uri);
-            status = HttpStatus.CREATED;
-            result = new ApiResult<>(response, ApiResult.STATUS_OK);
+    /**
+     * Closes the chat for the id specified in the url. Used with DELETE Http method.
+     * Throws {@link HttpClientErrorException} no chat exists for the id.
+     * @param chatId id of the chat is specified in the request url.
+     * @return {@link ApiResult} object with no result body as JSON.
+     */
+    @RequestMapping(value = "/{chatId}", method = RequestMethod.DELETE)
+    public @ResponseBody ApiResult closeChat(@PathVariable int chatId, HttpServletResponse response) {
+        if (!chatDao.closeChat(chatId)) {
+            throw new HttpClientErrorException(HttpStatus.NOT_FOUND,
+                    "Chat with id " + chatId + " doesn't exist.");
         } else {
-            status = HttpStatus.BAD_REQUEST;
-            result = new ApiResult<>(ApiResult.STATUS_ERROR);
+            response.setStatus(HttpStatus.OK.value());
+            return new ApiResult(ApiResult.STATUS_OK, "Chat closed successfully.");
         }
-        return new ResponseEntity<>(result, headers, status);
     }
 
 }

@@ -2,6 +2,23 @@ package kloSpringServer.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
+/**
+ * <p>Wrapper class for Api responses.
+ * The actual result of an operation is to be included in the {@link #result} field.</p>
+ *
+ * <p>Example JSON representation of ApiResult with a List as result:<br>
+ *    {
+ *      "status" : "200",
+ *      "message" : "List of tickets.",
+ *      "result" : "
+ *      [
+ *          {"id" : "1"},
+ *          {"id" : "2"}
+ *      ]"
+ *    }
+ * </p>
+ * @param <T> Class of the object in the result field.
+ */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class ApiResult<T> {
     private int status = 0;
@@ -25,6 +42,11 @@ public class ApiResult<T> {
 
     public ApiResult(int status) {
         this.status = status;
+    }
+
+    public ApiResult(int status, String message) {
+        this.status = status;
+        this.message = message;
     }
 
     public ApiResult(T result) {

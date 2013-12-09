@@ -6,15 +6,21 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.client.HttpStatusCodeException;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * Base controller class to be extended  by the controller class
+ * when basic exception handling is desired.
+ */
 public class ControllerBase {
     /**
-     * Exception handler for {@link HttpStatusCodeException}
-     * to return {@link ApiResult} object as json to user with correct error messages
-     * @return {@link ApiResult} converted to json
+     * <p>Exception handler for {@link HttpStatusCodeException}</p>
+     * <p>Creates {@link ApiResult} object and sets the status
+     * and message fields to match the exception. Also sets the HttpResponse status code
+     * to match the one in the exception.</p>
+     * @return {@link ApiResult} converted to json with no result body, only a message and status.
      */
     @ExceptionHandler(HttpStatusCodeException.class)
     @ResponseBody
-    public ApiResult handleException(HttpStatusCodeException exception, HttpServletResponse response) {
+    public ApiResult handleHttpException(HttpStatusCodeException exception, HttpServletResponse response) {
         ApiResult responseBody = new ApiResult();
 
         response.setStatus(exception.getStatusCode().value());

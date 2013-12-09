@@ -14,4 +14,6 @@ public interface ChatDao {
     void addMessage(int chatId,ChatMessage message);
 
     List<ChatMessage> getMessagesForChat(int chatId, int messageIndex);
+
+    boolean closeChat(int chatId);
 }
