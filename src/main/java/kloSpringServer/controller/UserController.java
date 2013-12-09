@@ -48,7 +48,7 @@ public class UserController {
         return new ApiResult<>(users);
     }
 
-    @RequestMapping(value = "/{username}/delete", method = RequestMethod.DELETE)
+    @RequestMapping(value = "/{username}", method = RequestMethod.DELETE)
     @ResponseBody
     public ApiResult deleteUser(@PathVariable String username) {
         logger.info("Deleting user: " + username);
