@@ -39,7 +39,7 @@ public class NewsController extends ControllerBase {
             throw new HttpClientErrorException(HttpStatus.NOT_FOUND,
                     "News with id " + newsId + " does not exist.");
         }
-        return new ApiResult("News#" + newsId + " successfully deleted.");
+        return new ApiResult(200, "News#" + newsId + " successfully deleted.");
     }
 
     @RequestMapping(value = "/{newsId}", method = RequestMethod.GET)

@@ -48,10 +48,10 @@ public class NewsControllerTest extends ControllerTest {
     public void testDeleteNews() throws Exception {
         int newsId = 2;
 
-        MvcResult result = mockMvc.perform(delete("/news/" + newsId)
+        MvcResult result = mockMvc.perform(delete("/news/"  + newsId)
                 .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.status", is(0)))
+                .andExpect(jsonPath("$.status", is(200)))
                 .andReturn();
 
         System.out.println(result.getResponse().getContentAsString());
