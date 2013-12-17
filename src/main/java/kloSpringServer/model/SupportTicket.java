@@ -1,5 +1,8 @@
 package kloSpringServer.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import kloSpringServer.controller.ValidationException;
+
 import java.util.Date;
 
 /**
@@ -110,5 +113,15 @@ public class SupportTicket {
 
     public void setReplyBy(String replyBy) {
         this.replyBy = replyBy;
+    }
+
+    @JsonIgnore
+    public void validate() throws ValidationException {
+        if (senderEmail == null || senderEmail.length() < 5 || !senderEmail.contains("@")) {
+            throw new ValidationException("Invalid email-address.");
+        }
+        if (message == null || senderName == null) {
+            throw new ValidationException("All required fields not filled");
+        }
     }
 }

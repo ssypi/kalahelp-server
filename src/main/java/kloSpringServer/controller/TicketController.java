@@ -28,6 +28,7 @@ public class TicketController {
     @RequestMapping(value = "/", method = RequestMethod.POST, headers="Accept=application/json")
     public @ResponseBody
     ApiResult saveTicket(@RequestBody SupportTicket ticket) {
+        ticket.validate();
         ticketDao.addTicket(ticket);
         return new ApiResult(null, ApiResult.STATUS_OK);
     }
