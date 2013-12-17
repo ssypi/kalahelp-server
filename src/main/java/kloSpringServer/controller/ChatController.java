@@ -26,7 +26,6 @@ import java.util.concurrent.ConcurrentHashMap;
 @RequestMapping("/chat")
 public class ChatController extends ControllerBase {
     private static final Logger logger = Logger.getLogger(ChatController.class);
-//    private final Map<DeferredResult<ApiResult>, Integer> waitingMessageRequests = new ConcurrentHashMap<>();
     private final Map<DeferredResult<ApiResult<List<ChatMessage>>>, Integer> waitingMessageRequests = new ConcurrentHashMap<>();
 
     @Autowired
