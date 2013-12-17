@@ -33,3 +33,5 @@ insert into USER (
 
 INSERT INTO TICKET (TICKET_NUMBER, STATUS, CATEGORY, SUBJECT, SENDER_NAME, SENDER_EMAIL, MESSAGE, DATE, REPLY_BY, REPLY_MESSAGE, REPLY_DATE) VALUES (1, 'New', 'Other', 'kala', 'kalamies', 'kala@kalamail.com', 'kala oli kalamies', '2011-11-30 21:11:23', null, '', '2013-10-09 03:12:46');
 INSERT INTO CATEGORY (NAME) VALUES ('kalamiehen gatogory');
+
+INSERT INTO TEMPLATE (NAME, BEGINNING, END, CREATED_BY) VALUES ('Kalamies', 'alku', 'loppu', 'Kalamies' );
