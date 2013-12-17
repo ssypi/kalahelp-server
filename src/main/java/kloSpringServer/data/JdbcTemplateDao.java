@@ -59,7 +59,7 @@ public class JdbcTemplateDao implements TemplateDao {
     @Override
     public List<ReplyTemplate> getTemplates() {
         String sql = "SELECT * FROM " + TABLE_TEMPLATE +
-                " ORDER BY NAME DESC";
+                " ORDER BY NAME ASC ";
 
         RowMapper<ReplyTemplate> mapper = new RowMapper<ReplyTemplate>() {
             @Override
