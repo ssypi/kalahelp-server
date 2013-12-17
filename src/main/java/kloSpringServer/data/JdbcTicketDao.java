@@ -1,16 +1,20 @@
 package kloSpringServer.data;
 
 import kloSpringServer.model.SupportTicket;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
-import org.springframework.stereotype.Component;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import javax.sql.DataSource;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -21,12 +25,15 @@ import java.util.List;
 
 @Repository
 public class JdbcTicketDao implements TicketDao {
+    private static final Logger logger = Logger.getLogger(JdbcTicketDao.class);
     private static final String TABLE_TICKET = "TICKET";
     private JdbcTemplate jdbcTemplate;
+    private NamedParameterJdbcTemplate namedTemplate;
 
     @Autowired
     public void setDataSource(DataSource dataSource) {
         this.jdbcTemplate = new JdbcTemplate(dataSource);
+        this.namedTemplate = new NamedParameterJdbcTemplate(dataSource);
     }
 
     @Override
@@ -64,16 +71,22 @@ public class JdbcTicketDao implements TicketDao {
     @Override
     public void addTicket(SupportTicket ticket) {
         String sql = "INSERT INTO " + TABLE_TICKET
-                + " VALUES (null, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP);"; // TODO: fixme
+                + " (STATUS, CATEGORY, SUBJECT, SENDER_NAME, SENDER_EMAIL, MESSAGE, DATE)"
+                + " VALUES (?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP);";
 
-        Object[] params = new Object[]{ticket.getStatus(),
+        Object[] params = new Object[]{
+                ticket.getStatus(),
                 ticket.getCategory(),
                 ticket.getSubject(),
                 ticket.getSenderName(),
                 ticket.getSenderEmail(),
                 ticket.getMessage(),
         };
-        jdbcTemplate.update(sql, params);
+        try {
+            jdbcTemplate.update(sql, params);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
@@ -110,4 +123,28 @@ public class JdbcTicketDao implements TicketDao {
         }
     }
 
+    @Override
+    public void updateTicket(SupportTicket ticket, int ticketId) {
+        logger.info("DAO: Updating ticket " + ticketId);
+        String sql = "UPDATE " + TABLE_TICKET +
+                " SET REPLY_BY=:writer, REPLY_MESSAGE=:reply, REPLY_DATE=CURRENT_TIMESTAMP, STATUS=:status " +
+                " WHERE TICKET_NUMBER=:id;";
+
+        Map<String, Object> arguments = new HashMap<>();
+        arguments.put("writer", ticket.getReplyBy());
+        arguments.put("reply", ticket.getReply());
+        arguments.put("status", ticket.getStatus());
+        arguments.put("id", ticket.getTicketNumber());
+
+        for(Object o : arguments.values()) {
+            logger.info(o.toString());
+        }
+
+        try {
+            namedTemplate.update(sql, arguments);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
 }

@@ -109,9 +109,9 @@
       <column name="SENDER_EMAIL" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12"/>
       <column name="MESSAGE" sqlType="VARCHAR" length="500" precision="0" nullable="true" jdbcType="12"/>
       <column name="DATE" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
-      <column name="REPLY_BY" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="REPLY_BY" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
       <column name="REPLY_MESSAGE" sqlType="VARCHAR" length="500" precision="0" nullable="true" jdbcType="12"/>
-      <column name="REPLY_DATE" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
+      <column name="REPLY_DATE" sqlType="TIMESTAMP" length="19" precision="0" nullable="true" jdbcType="93"/>
       <primary-key name="PRIMARY" columns="TICKET_NUMBER"/>
     </table>
     <table name="USER" schema="" catalog="syp" type="TABLE">

@@ -3,6 +3,7 @@ package kloSpringServer.controller;
 import kloSpringServer.data.TicketDao;
 import kloSpringServer.model.ApiResult;
 import kloSpringServer.model.SupportTicket;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -13,6 +14,7 @@ import java.util.List;
 @Controller
 @RequestMapping("/ticket")
 public class TicketController extends ControllerBase {
+    private final static Logger logger = Logger.getLogger(TicketController.class);
     @Autowired
     private TicketDao ticketDao;
 
@@ -33,6 +35,15 @@ public class TicketController extends ControllerBase {
     ApiResult saveTicket(@RequestBody SupportTicket ticket) {
         ticket.validate();
         ticketDao.addTicket(ticket);
+        return new ApiResult(ApiResult.STATUS_OK);
+    }
+
+    @RequestMapping(value = "/{ticketId}", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
+    public @ResponseBody
+    ApiResult updateTicket(@RequestBody SupportTicket ticket, @PathVariable int ticketId) {
+        logger.info("Updating ticket " + ticketId);
+        ticket.validate();
+        ticketDao.updateTicket(ticket, ticketId);
         return new ApiResult(ApiResult.STATUS_OK);
     }
 
