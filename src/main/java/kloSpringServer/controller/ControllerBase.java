@@ -16,6 +16,7 @@ public class ControllerBase {
      * <p>Creates {@link ApiResult} object and sets the status
      * and message fields to match the exception. Also sets the HttpResponse status code
      * to match the one in the exception.</p>
+     *
      * @return {@link ApiResult} converted to json with no result body, only a message and status.
      */
     @ExceptionHandler(HttpStatusCodeException.class)
@@ -31,6 +32,16 @@ public class ControllerBase {
         } else {
             responseBody.setMessage(exception.getStatusCode().getReasonPhrase());
         }
+        return responseBody;
+    }
+
+    @ExceptionHandler(ValidationException.class)
+    @ResponseBody
+    public ApiResult handleValidationException(ValidationException exception, HttpServletResponse response) {
+        ApiResult responseBody = new ApiResult();
+        response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+        responseBody.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+        responseBody.setMessage(exception.getMessage());
         return responseBody;
     }
 }

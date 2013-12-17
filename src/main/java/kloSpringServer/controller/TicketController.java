@@ -12,7 +12,7 @@ import java.util.List;
 @SuppressWarnings("SpringJavaAutowiringInspection")
 @Controller
 @RequestMapping("/ticket")
-public class TicketController {
+public class TicketController extends ControllerBase {
     @Autowired
     private TicketDao ticketDao;
 
