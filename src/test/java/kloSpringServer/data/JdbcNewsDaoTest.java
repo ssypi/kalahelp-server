@@ -19,6 +19,7 @@ import java.util.List;
  * Date: 18.10.2013
  * Time: 23:57
  */
+@SuppressWarnings("SpellCheckingInspection")
 @ContextConfiguration (locations = {"/testContext.xml"})
 @RunWith(SpringJUnit4ClassRunner.class)
 public class JdbcNewsDaoTest {
@@ -75,7 +76,7 @@ public class JdbcNewsDaoTest {
 
     @Test
     @Transactional
-    public void testAddNewsItem() throws Exception {
+    public void addNewsShouldReturnId() throws Exception {
         String content = "Kala kala kala mies, olipa kerran kuka ties.";
         String writer = "1";
 

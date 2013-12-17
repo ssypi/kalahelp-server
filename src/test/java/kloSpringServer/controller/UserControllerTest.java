@@ -11,6 +11,7 @@ import org.springframework.http.MediaType;
 
 import static org.junit.Assert.assertFalse;
 import static org.springframework.test.util.AssertionErrors.fail;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
@@ -74,19 +75,20 @@ public class UserControllerTest extends ControllerTest {
 
     @Test
     public void shouldNotAllowDeleteLastUser() throws Exception {
-        mockMvc.perform(get("/user/kalamies/delete"))
+        mockMvc.perform(delete("/user/kalamies"))
                 .andExpect(status().isOk());
         try {
-            mockMvc.perform(get("/user/kalamies2/delete"));
-            fail("Failed");
+            mockMvc.perform(delete("/user/kalamies2"))
+                    .andExpect(status().isBadRequest());
+            Assert.fail(); // we expect an exception to be thrown
         } catch (Exception e) {
-            //ignore
+            // ignore
         }
     }
 
     @Test
     public void testDeleteUser() throws Exception {
-        mockMvc.perform(get("/user/kalamies/delete"))
+        mockMvc.perform(delete("/user/kalamies"))
                 .andExpect(status().isOk());
     }
 }

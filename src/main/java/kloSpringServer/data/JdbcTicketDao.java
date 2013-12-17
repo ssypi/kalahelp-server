@@ -71,7 +71,7 @@ public class JdbcTicketDao implements TicketDao {
                 ticket.getSubject(),
                 ticket.getSenderName(),
                 ticket.getSenderEmail(),
-                ticket.getMessage()
+                ticket.getMessage(),
         };
         jdbcTemplate.update(sql, params);
     }

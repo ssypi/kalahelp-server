@@ -37,7 +37,7 @@ public class SessionController {
 
     @RequestMapping(value = "/", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
     @ResponseBody
-    public ApiResult newSessionForUser(@RequestBody User user, HttpServletResponse response, HttpServletRequest request) {
+    public ApiResult<Session> newSessionForUser(@RequestBody User user, HttpServletResponse response, HttpServletRequest request) {
         String ip = request.getHeader("X-Forwarded-For");
         logger.info("login attempt from " + ip);
         if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
@@ -47,18 +47,18 @@ public class SessionController {
         if (!user.validate()) { // invalid request
             logger.info("invalid request");
             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
-            return new ApiResult(null, ApiResult.STATUS_ERROR);
+            return new ApiResult<>(ApiResult.STATUS_ERROR);
         }
 
         if (!authentication.verifyUser(user)) { // wrong user/pass
             logger.info("wrong user/pass");
             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
-            return new ApiResult(null, ApiResult.STATUS_ERROR);
+            return new ApiResult<>(ApiResult.STATUS_ERROR);
         }
 
         Session newSession = sessionDao.createNewSessionForIp(ip);
         newSession.setUser(user.getUsername());
         logger.info("Successful login for " + user.getUsername() + " from " + newSession.getIpAddress());
-        return new ApiResult(newSession);
+        return new ApiResult<>(newSession);
     }
 }

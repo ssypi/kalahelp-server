@@ -15,6 +15,16 @@ public class ChatRequest {
     public ChatRequest() {
     }
 
+    /**
+     * Creates a ChatRequest object for the specified nickname.<br>
+     * Generates a new ID for the chat and sets the date to current date
+     * @param nickname nickname of the person who requested the chat
+     */
+    public ChatRequest(String nickname) {
+        setId(generateId());
+        setDate(new Date());
+    }
+
     public String getNickname() {
         return nickname;
     }

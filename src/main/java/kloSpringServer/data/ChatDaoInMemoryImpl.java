@@ -2,13 +2,10 @@ package kloSpringServer.data;
 
 import kloSpringServer.model.ChatMessage;
 import kloSpringServer.model.ChatRequest;
-import org.springframework.http.HttpStatus;
+import org.jetbrains.annotations.Nullable;
 import org.springframework.stereotype.Repository;
-import org.springframework.web.client.HttpClientErrorException;
-import org.springframework.web.client.HttpStatusCodeException;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -20,20 +17,18 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 @Repository
 public class ChatDaoInMemoryImpl implements ChatDao {
-    private static final ConcurrentHashMap<Integer, List<ChatMessage>> chats = new ConcurrentHashMap<>();
-    private static final ConcurrentHashMap<Integer, ChatRequest> chatRequests = new ConcurrentHashMap<>();
+    private final ConcurrentHashMap<Integer, List<ChatMessage>> chats = new ConcurrentHashMap<>();
+    private final ConcurrentHashMap<Integer, ChatRequest> chatRequests = new ConcurrentHashMap<>();
 
     @Override
     public ChatRequest requestChat(String nickname) {
-        ChatRequest request = new ChatRequest();
-        request.setId(ChatRequest.generateId());
-        request.setDate(new Date());
-        request.setNickname(nickname);
+        ChatRequest request = new ChatRequest(nickname);
         chatRequests.put(request.getId(), request);
         return request;
     }
 
     @Override
+    @Nullable
     public ChatRequest acceptChat(int chatId) {
         ChatRequest request = chatRequests.remove(chatId);
         if (request != null) {
@@ -48,17 +43,18 @@ public class ChatDaoInMemoryImpl implements ChatDao {
     }
 
     @Override
-    public void addMessage(int chatId, ChatMessage message) {
-        List<ChatMessage> messageList = chats.get(chatId);
-        if (messageList == null) {
-            if (acceptChat(chatId) != null) {
-                messageList = chats.get(chatId);
-            } else {
-                return;
+    public boolean addMessage(int chatId, ChatMessage message) {
+        if (!chats.containsKey(chatId)) {
+            if (acceptChat(chatId) == null) {
+                return false;
             }
         }
+
+        List<ChatMessage> messageList = chats.get(chatId);
+        assert messageList != null;
         message.setIndex(messageList.size());
         messageList.add(message);
+        return true;
     }
 
     @Override
@@ -75,6 +71,23 @@ public class ChatDaoInMemoryImpl implements ChatDao {
             return messageList.subList(messageIndex, messageList.size());
         } else {
             return messageList;
+        }
+    }
+
+    /**
+     * <p>Deletes the chat for the specified ID</P>
+     *
+     * @param chatId id of the chat to close.
+     * @return {@code true} if chat was closed.<br>
+     *         {@code false} if no chat exists for the specified id.
+     */
+    @Override
+    public boolean closeChat(int chatId) {
+        if (chats.containsKey(chatId)) {
+            chats.remove(chatId);
+            return true;
+        } else {
+            return false;
         }
     }
 }

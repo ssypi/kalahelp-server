@@ -12,15 +12,15 @@
         http://www.springframework.org/schema/tx
         http://www.springframework.org/schema/tx/spring-tx.xsd">
     <!--<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">-->
-        <!--<property name="locations" value="classpath:jdbc.properties"/>-->
+    <!--<property name="locations" value="classpath:jdbc.properties"/>-->
     <!--</bean>-->
 
     <!--<bean id="dataSource"-->
-          <!--class="org.springframework.jdbc.datasource.DriverManagerDataSource">-->
-        <!--<property name="driverClassName" value="${jdbc.driverClassName}"/>-->
-        <!--<property name="url" value="${jdbc.url}"/>-->
-        <!--<property name="username" value="${jdbc.username}"/>-->
-        <!--<property name="password" value="${jdbc.password}"/>-->
+    <!--class="org.springframework.jdbc.datasource.DriverManagerDataSource">-->
+    <!--<property name="driverClassName" value="${jdbc.driverClassName}"/>-->
+    <!--<property name="url" value="${jdbc.url}"/>-->
+    <!--<property name="username" value="${jdbc.username}"/>-->
+    <!--<property name="password" value="${jdbc.password}"/>-->
     <!--</bean>-->
 
     <context:component-scan base-package="kloSpringServer.controller"/>
@@ -37,7 +37,7 @@
     </bean>
 
     <!--<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">-->
-        <!--<property name="dataSource" ref="dataSource"/>-->
+    <!--<property name="dataSource" ref="dataSource"/>-->
     <!--</bean>-->
 
     <!--<tx:annotation-driven transaction-manager="transactionManager"/>-->

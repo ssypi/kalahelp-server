@@ -6,9 +6,7 @@ import kloSpringServer.model.User;
 import kloSpringServer.service.UserAuthentication;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.HttpClientErrorException;
@@ -21,6 +19,7 @@ import java.util.List;
  * Date: 4.11.2013
  * Time: 0:32
  */
+@SuppressWarnings("SpringJavaAutowiringInspection")
 @Controller
 @RequestMapping("/user")
 public class UserController {
@@ -39,22 +38,22 @@ public class UserController {
             throw new HttpClientErrorException(HttpStatus.BAD_REQUEST, "Invalid User");
         }
         authentication.createUser(user);
-        return new ApiResult(null, 0);
+        return new ApiResult();
     }
 
     @RequestMapping(value = "/", method = RequestMethod.GET, produces = "application/json")
     @ResponseBody
-    public ApiResult getUsers() {
+    public ApiResult<List<User>> getUsers() {
         List<User> users = userDao.getUsers();
-        return new ApiResult(users);
+        return new ApiResult<>(users);
     }
 
-    @RequestMapping(value = "/{username}/delete", method = RequestMethod.GET)
+    @RequestMapping(value = "/{username}", method = RequestMethod.DELETE)
     @ResponseBody
     public ApiResult deleteUser(@PathVariable String username) {
         logger.info("Deleting user: " + username);
         userDao.deleteUser(username);
-        return new ApiResult(null, ApiResult.STATUS_OK);
+        return new ApiResult(ApiResult.STATUS_OK);
     }
 
 

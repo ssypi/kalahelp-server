@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @SuppressWarnings("SpringJavaAutowiringInspection")
 @Controller
 @RequestMapping("/ticket")
@@ -16,13 +18,14 @@ public class TicketController {
 
     @RequestMapping(value = "/{ticketId}",  method = RequestMethod.GET, headers="Accept=application/json")
     public @ResponseBody
-    ApiResult getTicketById(@PathVariable String ticketId) {
-        return new ApiResult(ticketDao.getTicketById(ticketId));
+    ApiResult<SupportTicket> getTicketById(@PathVariable String ticketId) {
+        return new ApiResult<>(ticketDao.getTicketById(ticketId));
     }
 
     @RequestMapping(value = "/latest/{count}", method = RequestMethod.GET, produces = "application/json")
-    public @ResponseBody ApiResult getLatestTickets(@PathVariable int count) {
-        return new ApiResult(ticketDao.getLatestTickets(count));
+    public @ResponseBody
+    ApiResult<List<SupportTicket>> getLatestTickets(@PathVariable int count) {
+        return new ApiResult<>(ticketDao.getLatestTickets(count));
     }
 
     @RequestMapping(value = "/", method = RequestMethod.POST, headers="Accept=application/json")
@@ -30,7 +33,7 @@ public class TicketController {
     ApiResult saveTicket(@RequestBody SupportTicket ticket) {
         ticket.validate();
         ticketDao.addTicket(ticket);
-        return new ApiResult(null, ApiResult.STATUS_OK);
+        return new ApiResult(ApiResult.STATUS_OK);
     }
 
 

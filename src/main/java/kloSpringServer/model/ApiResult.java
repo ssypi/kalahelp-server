@@ -1,39 +1,62 @@
 package kloSpringServer.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonUnwrapped;
 
+/**
+ * <p>Wrapper class for Api responses.
+ * The actual result of an operation is to be included in the {@link #result} field.</p>
+ *
+ * <p>Example JSON representation of ApiResult with a List as result:<br>
+ *    {
+ *      "status" : "200",
+ *      "message" : "List of tickets.",
+ *      "result" : "
+ *      [
+ *          {"id" : "1"},
+ *          {"id" : "2"}
+ *      ]"
+ *    }
+ * </p>
+ * @param <T> Class of the object in the result field.
+ */
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class ApiResult {
+public class ApiResult<T> {
     private int status = 0;
-
-//    @JsonUnwrapped
-    private Object result = null;
+    private String message = null;
 
     public static final int STATUS_OK = 0;
     public static final int STATUS_WARN = 1;
     public static final int STATUS_ERROR = 2;
 
-    public ApiResult(Object result) {
+//    @JsonUnwrapped
+    private T result = null;
+
+
+    public ApiResult() {
+        this.status = STATUS_OK;
+    }
+
+    public ApiResult(int status) {
+        this.status = status;
+    }
+
+    public ApiResult(int status, String message) {
+        this.status = status;
+        this.message = message;
+    }
+
+    public ApiResult(T result) {
         if (null == result) {
-            this.status = 1;
+            this.status = STATUS_WARN;
         } else {
-            this.status = 0;
+            this.status = STATUS_OK;
         }
         this.result = result;
     }
 
-    public ApiResult(Object result, int status) {
+    public ApiResult(T result, int status) {
         this.result = result;
         this.status = status;
-    }
-
-    public Object getResult() {
-        return result;
-    }
-
-    public void setResult(Object result) {
-        this.result = result;
     }
 
     public int getStatus() {
@@ -42,5 +65,21 @@ public class ApiResult {
 
     public void setStatus(int status) {
         this.status = status;
+    }
+
+    public T getResult() {
+        return result;
+    }
+
+    public void setResult(T result) {
+        this.result = result;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
     }
 }
