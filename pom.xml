@@ -14,7 +14,8 @@
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <org.springframework.version>3.2.3.RELEASE</org.springframework.version>
+        <!--<org.springframework.version>3.2.3.RELEASE</org.springframework.version>-->
+        <org.springframework.version>4.0.0.RELEASE</org.springframework.version>
         <profileName>local</profileName>
     </properties>
 
@@ -87,6 +88,12 @@
             <groupId>com.thetransactioncompany</groupId>
             <artifactId>cors-filter</artifactId>
             <version>1.8</version>
+        </dependency>
+
+        <dependency>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
         </dependency>
 
         <!--spring framework-->
