@@ -1,6 +1,8 @@
 package kloSpringServer.service;
 
 
+import org.apache.log4j.Logger;
+
 import javax.mail.Message;
 import javax.mail.MessagingException;
 import javax.mail.Session;
@@ -10,8 +12,9 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import java.util.Properties;
 
-@Deprecated
 public class EmailSender {
+    private static final Logger logger = Logger.getLogger(EmailSender.class);
+
     private String recipientAddress;
     private String senderAddress;
     private final String SMTPServer;
@@ -30,7 +33,7 @@ public class EmailSender {
     }
 
     public void sendEmail(String to, String from, String subject, String messageBody) {
-        System.out.println(String.format("Server: Trying to send email from %s to %s", from, to));
+        logger.info(String.format("Server: Trying to send email from %s to %s", from, to));
         try {
             MimeMessage mimeMessage = new MimeMessage(session);
 
@@ -39,7 +42,7 @@ public class EmailSender {
             mimeMessage.setSubject(subject);
             mimeMessage.setText(messageBody);
             Transport.send(mimeMessage);
-            System.out.println(String.format("Email sent from %s to %s using %s", from, to, SMTPServer));
+            logger.info(String.format("Email sent from %s to %s using %s", from, to, SMTPServer));
         } catch (AddressException e) {
             e.printStackTrace();
         } catch (MessagingException e) {

@@ -3,6 +3,10 @@ package kloSpringServer.model;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 import javax.xml.bind.annotation.XmlRootElement;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import kloSpringServer.controller.ValidationException;
+
 import java.util.Date;
 
 /**
@@ -12,7 +16,6 @@ import java.util.Date;
  * Time: 1:33
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
-@XmlRootElement(name = "ticket")
 public class SupportTicket {
     private int ticketNumber;
     private String senderName;
@@ -62,6 +65,9 @@ public class SupportTicket {
     }
 
     public String getStatus() {
+        if (status == null) {
+            return "New";
+        }
         return status;
     }
 
@@ -115,6 +121,16 @@ public class SupportTicket {
 
     public void setReplyBy(String replyBy) {
         this.replyBy = replyBy;
+    }
+
+    @JsonIgnore
+    public void validate() throws ValidationException {
+        if (senderEmail == null || senderEmail.length() < 5 || !senderEmail.contains("@")) {
+            throw new ValidationException("Invalid email-address.");
+        }
+        if (message == null || senderName == null) {
+            throw new ValidationException("All required fields not filled");
+        }
     }
 
     @Override

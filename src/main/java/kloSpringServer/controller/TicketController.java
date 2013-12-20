@@ -6,29 +6,23 @@ import kloSpringServer.model.SupportTicket;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.web.servlet.view.RedirectView;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @SuppressWarnings("SpringJavaAutowiringInspection")
 @Controller
 @RequestMapping("/ticket")
-public class TicketController {
-    private static final Logger logger = Logger.getLogger(TicketController.class);
-
+public class TicketController extends ControllerBase {
+    private final static Logger logger = Logger.getLogger(TicketController.class);
     @Autowired
     private TicketDao ticketDao;
 
-    @RequestMapping(value = "/{ticketId}", method = RequestMethod.GET, headers = "Accept=application/json")
-    public
-    @ResponseBody
+    @RequestMapping(value = "/{ticketId}",  method = RequestMethod.GET, headers="Accept=application/json")
+    public @ResponseBody
     ApiResult<SupportTicket> getTicketById(@PathVariable String ticketId) {
         return new ApiResult<>(ticketDao.getTicketById(ticketId));
     }
@@ -62,7 +56,17 @@ public class TicketController {
     public
     @ResponseBody
     ApiResult saveTicket(@RequestBody SupportTicket ticket) {
+        ticket.validate();
         ticketDao.addTicket(ticket);
+        return new ApiResult(ApiResult.STATUS_OK);
+    }
+
+    @RequestMapping(value = "/{ticketId}", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
+    public @ResponseBody
+    ApiResult updateTicket(@RequestBody SupportTicket ticket, @PathVariable int ticketId) {
+        logger.info("Updating ticket " + ticketId);
+        ticket.validate();
+        ticketDao.updateTicket(ticket, ticketId);
         return new ApiResult(ApiResult.STATUS_OK);
     }
 
