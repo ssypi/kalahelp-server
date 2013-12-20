@@ -100,6 +100,14 @@
       <column name="PLAYER_5" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5"/>
       <primary-key name="PRIMARY" columns="TeamId"/>
     </table>
+    <table name="TEMPLATE" schema="" catalog="syp" type="TABLE">
+      <column name="NAME" sqlType="VARCHAR" length="25" precision="0" nullable="false" jdbcType="12"/>
+      <column name="BEGINNING" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12"/>
+      <column name="END" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12"/>
+      <column name="CREATED_BY" sqlType="VARCHAR" length="25" precision="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="NAME"/>
+      <index name="unique_NAME" unique="true" columns="NAME"/>
+    </table>
     <table name="TICKET" schema="" catalog="syp" type="TABLE">
       <column name="TICKET_NUMBER" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="STATUS" sqlType="VARCHAR" length="10" precision="0" nullable="true" jdbcType="12" def="J05ldyc="/>
