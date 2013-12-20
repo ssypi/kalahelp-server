@@ -1,5 +1,8 @@
 package kloSpringServer.model;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Date;
 
 /**
@@ -8,6 +11,8 @@ import java.util.Date;
  * Date: 9.10.2013
  * Time: 1:33
  */
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@XmlRootElement(name = "ticket")
 public class SupportTicket {
     private int ticketNumber;
     private String senderName;
@@ -110,5 +115,17 @@ public class SupportTicket {
 
     public void setReplyBy(String replyBy) {
         this.replyBy = replyBy;
+    }
+
+    @Override
+    public String toString() {
+        return "SupportTicket{" +
+                "ticketNumber=" + ticketNumber +
+                ", senderName='" + senderName + '\'' +
+                ", subject='" + subject + '\'' +
+                ", message='" + message + '\'' +
+                ", date=" + date +
+                ", senderEmail='" + senderEmail + '\'' +
+                '}';
     }
 }

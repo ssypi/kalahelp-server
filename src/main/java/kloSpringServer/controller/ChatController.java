@@ -128,7 +128,7 @@ public class ChatController extends ControllerBase {
 
     /**
      * Closes the chat for the id specified in the url. Used with DELETE Http method.
-     * Throws {@link HttpClientErrorException} no chat exists for the id.
+     * Throws {@link HttpClientErrorException} if no chat exists for the id.
      * @param chatId id of the chat is specified in the request url.
      * @return {@link ApiResult} object with no result body as JSON.
      */
