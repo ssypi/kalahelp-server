@@ -24,10 +24,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="klo" />
         <module name="kloSpringServer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="klo" target="1.7" />
       <module name="kloSpringServer" target="1.7" />
     </bytecodeTargetLevel>
   </component>

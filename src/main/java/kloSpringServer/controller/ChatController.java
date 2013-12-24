@@ -11,7 +11,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.context.request.async.DeferredResult;
+import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+import sun.awt.ModalityListener;
 
 import javax.servlet.http.HttpServletResponse;
 import java.net.URI;
@@ -21,7 +23,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-@SuppressWarnings("SpringJavaAutowiringInspection")
+//@SuppressWarnings("SpringJavaAutowiringInspection")
 @Controller
 @RequestMapping("/chat")
 public class ChatController extends ControllerBase {
@@ -105,6 +107,13 @@ public class ChatController extends ControllerBase {
     @ResponseBody
     ApiResult<List<ChatRequest>> getWaitingChatRequests() {
         return new ApiResult<>(chatDao.getChatRequests(), ApiResult.STATUS_OK);
+    }
+
+
+    @RequestMapping(value = "/new", method = RequestMethod.GET)
+    public ModelAndView newChat() {
+        ModelAndView mav = new ModelAndView("/chat");
+        return mav;
     }
 
     /**

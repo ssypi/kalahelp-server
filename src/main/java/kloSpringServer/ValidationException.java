@@ -1,4 +1,4 @@
-package kloSpringServer.controller;
+package kloSpringServer;
 
 /**
  * Created with IntelliJ IDEA.

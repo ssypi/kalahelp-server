@@ -1,0 +1,214 @@
+@blue-light : #7d7dff;
+@blue-light-hover : #87cefa;
+@blue-dark : #443266;
+@body-bg : #F1F0FF;
+
+html {
+  height: 100%;
+  background: @body-bg;
+}
+
+body {
+  height: 100%;
+  background: @body-bg;
+  font-size: 87.5%;
+  font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.429;
+  margin: 0;
+  padding: 1px;
+  text-align: left;
+}
+
+#container {
+  position: relative;
+//  clear: both;
+  width:  500px;
+  height:  500px;
+  margin:  2% auto auto;
+  .gradient-bg(#b9b9b9, #424242);
+  .shadow(5px, 5px, 20px, #999);
+  .border(10px);
+}
+
+#header {
+  color:  @blue-light;
+  background: @blue-dark;
+  .border-top(10px);
+  .a(@blue-light, @blue-light-hover);
+  .nav-arrow {
+    display: inline;
+    float: left;
+    margin-top: 2px;
+    margin-left: 2%;
+    margin-right: 10px;
+  }
+  .nav-title {
+    display: inline;
+  }
+}
+
+.error {
+  color: red;
+  font-style:  italic;
+}
+
+#helpdesk {
+  height: 80%;
+  padding: 2%;
+  margin: auto;
+  vertical-align: middle;
+  #template {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+#chooser {
+  margin-top: 15%;
+  width: 100%;
+  display: block;
+  margin-left: 10%;
+  margin-right: 10%;
+  .choose-button {
+    .my-button(#63b8ee, #468ccf);
+    width: 40%;
+    font-size: 30px;
+    font-size: 2.0vw;
+    height: 100px;
+  }
+}
+
+#chat {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 90%;
+  padding-top: 5%;
+  #chat-area {
+    width: 100%;
+    height: 90%;
+    resize: none;
+    margin: auto;
+  }
+  #message-box {
+    width:  70%;
+    float: left;
+  }
+  #send-button {
+    width: 50px;
+    margin: auto;
+//    float: right
+  }
+}
+
+#footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 30px;
+  clear: both;
+  text-align: center;
+  .border-bot(10px);
+  background: @blue-dark;
+  color: @blue-light
+}
+
+.arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-bottom: 13px solid transparent;
+  border-right: 13px solid @blue-light;
+}
+
+
+// -------------------------- functions -------------------------------
+
+.a (@color, @hover) {
+  a {
+    text-decoration: none;
+    color: @color;
+    &:hover {
+      color: @hover;
+    }
+  }
+}
+
+.border (@radius) {
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.border-top (@radius) {
+  -moz-border-radius-topleft: @radius;
+  -moz-border-radius-topright: @radius;
+  -webkit-border-top-left-radius: @radius;
+  -webkit-border-top-right-radius: @radius;
+  border-top-left-radius: @radius;
+  border-top-right-radius: @radius;
+}
+
+.border-bot (@radius) {
+  -moz-border-radius-bottomleft: @radius;
+  -moz-border-radius-bottomright: @radius;
+  -webkit-border-bottom-left-radius: @radius;
+  -webkit-border-bottom-right-radius: @radius;
+  border-bottom-left-radius: @radius;
+  border-bottom-right-radius: @radius;
+}
+
+.shadow (@x: 0, @y: 0, @blur: 2px, @color: #000) {
+  -moz-box-shadow: @arguments;
+  -webkit-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
+
+.gradient-bg (@top, @bottom) {
+  background-color: @top;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(@top), to(@bottom)); /* Chrome, Safari 4+ */
+  background-image: -webkit-linear-gradient(top, @top, @bottom); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+  background-image: -moz-linear-gradient(top, @top, @bottom); /* Firefox 3.6-15 */
+  background-image: -o-linear-gradient(top, @top, @bottom); /* Opera 11.10-12.00 */
+  background-image: linear-gradient(to bottom, @top, @bottom); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+}
+
+.my-button (@start-color, @end-color) {
+  @gradient-args : @start-color, 5%, @end-color 100%;
+
+  -moz-box-shadow: inset 0px 1px 0px 0px #bee2f9;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #bee2f9;
+  box-shadow: inset 0px 1px 0px 0px #bee2f9;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, @start-color), color-stop(1, @end-color));
+  background: -moz-linear-gradient(top, @gradient-args);
+  background: -webkit-linear-gradient(top, @gradient-args);
+  background: -o-linear-gradient(top, @gradient-args);
+  background: -ms-linear-gradient(top, @gradient-args);
+  background: linear-gradient(to bottom, @gradient-args);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@{start-color}', endColorstr='@{end-color}', GradientType=0);
+  background-color: @start-color;
+
+  .border(6px);
+  border: 1px solid #3866a3;
+  display: inline-block;
+  cursor: pointer;
+  color: #14396a;
+  font-family: arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #7cacde;
+
+  &:hover {
+    @gradient-args: @end-color 5%, @start-color 100%;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, @end-color), color-stop(1, @start-color));
+    background: -moz-linear-gradient(top, @gradient-args);
+    background: -webkit-linear-gradient(top, @gradient-args);
+    background: -o-linear-gradient(top, @gradient-args);
+    background: -ms-linear-gradient(top, @gradient-args);
+    background: linear-gradient(to bottom, @gradient-args);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@{end-color}', endColorstr='@{start-color}', GradientType=0);
+    background-color: @end-color;
+  }
+}

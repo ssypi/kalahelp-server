@@ -19,9 +19,7 @@ import static junit.framework.Assert.assertNotNull;
  * Time: 19:17
  * To change this template use File | Settings | File Templates.
  */
-@ContextConfiguration(locations = {"/testContext.xml"})
-@RunWith(SpringJUnit4ClassRunner.class)
-public class JdbcTicketDaoTest {
+public class JdbcTicketDaoTest extends ControllerTest {
     @Autowired
     public TicketDao ticketDao;
 

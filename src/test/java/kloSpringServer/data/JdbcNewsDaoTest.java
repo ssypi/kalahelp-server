@@ -1,5 +1,6 @@
 package kloSpringServer.data;
 
+import kloSpringServer.controller.ControllerTest;
 import kloSpringServer.model.NewsItem;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,10 +20,7 @@ import java.util.List;
  * Date: 18.10.2013
  * Time: 23:57
  */
-@SuppressWarnings("SpellCheckingInspection")
-@ContextConfiguration (locations = {"/testContext.xml"})
-@RunWith(SpringJUnit4ClassRunner.class)
-public class JdbcNewsDaoTest {
+public class JdbcNewsDaoTest extends ControllerTest {
 
     @Autowired
     public NewsDao newsDao;

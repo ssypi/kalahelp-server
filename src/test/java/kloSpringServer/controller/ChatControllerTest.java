@@ -96,7 +96,8 @@ public class ChatControllerTest extends ControllerTest {
         List<ChatRequest> list = chatDao.getChatRequests();
         assertEquals(2, list.size());
 
-        MvcResult result = mockMvc.perform(get("/chat/"))
+        MvcResult result = mockMvc.perform(get("/chat/")
+                .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                 .andExpect(jsonPath("$.result").isArray())

@@ -81,8 +81,18 @@
     </bean>
 
     <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
-        <!-- All configuration is now done by the manager - since Spring V3.2 -->
+        <property name="order" value="1"/>
         <property name="contentNegotiationManager" ref="contentNegotiationManager"/>
+
+        <property name="defaultViews">
+            <list>
+                <!-- JSON View -->
+                <bean
+                        class="org.springframework.web.servlet.view.json.MappingJackson2JsonView">
+                    <property name="prettyPrint" value="true"/>
+                </bean>
+            </list>
+        </property>
     </bean>
 
     <bean id="contentNegotiationManager"
@@ -103,10 +113,12 @@
         </property>
     </bean>
 
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/jsp/"/>
-        <property name="suffix" value=".jsp"/>
-    </bean>
+    <!--<bean id="viewResolver" class="org.springframework.web.servlet.view.tiles3.TilesViewResolver">-->
+    <!--</bean>-->
+
+    <!--<bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">-->
+        <!--<property name="completeAutoload" value="true"/>-->
+    <!--</bean>-->
 
     <mvc:annotation-driven content-negotiation-manager="contentNegotiationManager"/>
 </beans>

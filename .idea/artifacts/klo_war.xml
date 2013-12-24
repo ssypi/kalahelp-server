@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="klo:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="klo.war">
+      <element id="artifact" artifact-name="klo:war exploded" />
+    </root>
+  </artifact>
+</component>

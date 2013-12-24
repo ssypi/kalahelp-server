@@ -1,5 +1,6 @@
 package kloSpringServer.controller;
 
+import kloSpringServer.ValidationException;
 import kloSpringServer.model.ApiResult;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;

@@ -1,0 +1,15 @@
+<form action="" id="selectForm" data-bind="submit: pressSubmit, enable: isEnabled">
+    <label>Name:</label> <input class="textfield" type="text" name="username" data-bind="value: name">
+    <label>Problem:</label>
+
+    <select class="pulldown" name="problemType" size="1" data-bind="options: categories, value: selectedCategory"></select>
+
+    <!--<input class="textfield" type="text" name="problem">-->
+
+    <button type="Submit" class="okbutton" data-bind="enable: isEnabled">
+        Ok
+    </button>
+</form>
+<div data-bind="visible: progress">
+    <p data-bind="text: progress"></p>
+</div>

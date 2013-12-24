@@ -2,34 +2,54 @@ package kloSpringServer.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
-import javax.xml.bind.annotation.XmlRootElement;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonInclude;
-import kloSpringServer.controller.ValidationException;
+import kloSpringServer.ValidationException;
+import org.hibernate.validator.constraints.Email;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.Date;
 
-/**
- * Created with IntelliJ IDEA.
- * User: kala
- * Date: 9.10.2013
- * Time: 1:33
- */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class SupportTicket {
     private int ticketNumber;
+
+    @NotNull @Size(max = 25)
     private String senderName;
+
+    @NotNull @Email
     private String senderEmail;
+
+    @NotNull @Size(max = 50)
     private String subject;
+
     private String status;
     private Date date;
+
+    @NotNull @Size(max = 500)
     private String message;
+
+    @NotNull
+    private String category;
+
     private String reply;
     private Date replyDate;
-    private String category;
     private String replyBy;
 
     public SupportTicket() {
+    }
+
+
+    @JsonIgnore
+    public void validate() throws ValidationException {
+        if (senderEmail == null || senderEmail.length() < 5 || !senderEmail.contains("@")) {
+            throw new ValidationException("Invalid email-address.");
+        }
+        if (message == null || senderName == null) {
+            throw new ValidationException("All required fields not filled");
+        }
     }
 
     public int getTicketNumber() {
@@ -76,6 +96,9 @@ public class SupportTicket {
     }
 
     public Date getDate() {
+        if (date == null) {
+            return new Date();
+        }
         return date;
     }
 
@@ -100,6 +123,9 @@ public class SupportTicket {
     }
 
     public Date getReplyDate() {
+        if (replyDate == null) {
+            return new Date();
+        }
         return replyDate;
     }
 
@@ -123,17 +149,8 @@ public class SupportTicket {
         this.replyBy = replyBy;
     }
 
-    @JsonIgnore
-    public void validate() throws ValidationException {
-        if (senderEmail == null || senderEmail.length() < 5 || !senderEmail.contains("@")) {
-            throw new ValidationException("Invalid email-address.");
-        }
-        if (message == null || senderName == null) {
-            throw new ValidationException("All required fields not filled");
-        }
-    }
-
     @Override
+    @JsonIgnore
     public String toString() {
         return "SupportTicket{" +
                 "ticketNumber=" + ticketNumber +

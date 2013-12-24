@@ -59,6 +59,9 @@
     <listener>
         <listener-class>kloSpringServer.JdbcDriverRegistrationListener</listener-class>
     </listener>
+    <listener>
+        <listener-class>org.apache.tiles.extras.complete.CompleteAutoloadTilesListener</listener-class>
+    </listener>
 
     <servlet>
         <servlet-name>apiController</servlet-name>

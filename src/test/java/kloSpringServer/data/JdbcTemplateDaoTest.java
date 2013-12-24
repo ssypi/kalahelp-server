@@ -1,5 +1,6 @@
 package kloSpringServer.data;
 
+import kloSpringServer.controller.ControllerTest;
 import kloSpringServer.model.ReplyTemplate;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,9 +20,7 @@ import static junit.framework.Assert.assertFalse;
  * Time: 19:54
  * To change this template use File | Settings | File Templates.
  */
-@ContextConfiguration(locations = {"/testContext.xml"})
-@RunWith(SpringJUnit4ClassRunner.class)
-public class JdbcTemplateDaoTest {
+public class JdbcTemplateDaoTest extends ControllerTest {
 
     @Autowired
     public TemplateDao templateDao;

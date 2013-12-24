@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/klo.iml" filepath="$PROJECT_DIR$/klo.iml" />
       <module fileurl="file://$PROJECT_DIR$/kloSpringServer.iml" filepath="$PROJECT_DIR$/kloSpringServer.iml" />
     </modules>
   </component>
