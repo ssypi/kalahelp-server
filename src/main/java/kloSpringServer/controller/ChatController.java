@@ -13,12 +13,10 @@ import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.context.request.async.DeferredResult;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-import sun.awt.ModalityListener;
 
 import javax.servlet.http.HttpServletResponse;
 import java.net.URI;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -110,11 +108,21 @@ public class ChatController extends ControllerBase {
     }
 
 
-    @RequestMapping(value = "/new", method = RequestMethod.GET)
-    public ModelAndView newChat() {
+    @RequestMapping(value = "/new", method = RequestMethod.GET,
+    params = {"nickname", "category"})
+    public ModelAndView newChat(@RequestParam("nickname") String nickname,
+                                @RequestParam("category") String category,
+                                HttpServletResponse response) {
+        logger.info("chat request with nickname: " + nickname);
         ModelAndView mav = new ModelAndView("/chat");
+        ChatRequest chatRequest = new ChatRequest(nickname);
+        ApiResult<ChatRequest> result = requestChat(chatRequest, response);
+        chatRequest.setId(result.getResult().getId());
+        mav.addObject("chatId", chatRequest.getId());
+        mav.addObject("nickname", nickname);
         return mav;
     }
+
 
     /**
      * creates a new chatRequest, sets the HttpResponse location header to include the newly created request ID
@@ -124,12 +132,23 @@ public class ChatController extends ControllerBase {
      * @return {@link ApiResult} with the created chatRequest as application/json.
      * HttpStatus code is 200 if the request succeeded.
      */
+//    @RequestMapping(value = "/", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
+//    public String requestChat(@RequestBody ChatRequest chatRequest, HttpServletResponse response) {
+//        ChatRequest newChatRequest = chatDao.requestChat(chatRequest.getNickname());
+//        URI uri = ServletUriComponentsBuilder.fromCurrentContextPath()
+//                    .path("/chat/" + newChatRequest.getId()).build().toUri();
+//        response.addHeader("Location", uri.getRawPath());
+//        response.setStatus(HttpStatus.CREATED.value());
+//        return "redirect:/chat/" + newChatRequest.getId();
+//    }
+
     @RequestMapping(value = "/", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
-    public @ResponseBody
+    public
+    @ResponseBody
     ApiResult<ChatRequest> requestChat(@RequestBody ChatRequest chatRequest, HttpServletResponse response) {
         ChatRequest newChatRequest = chatDao.requestChat(chatRequest.getNickname());
         URI uri = ServletUriComponentsBuilder.fromCurrentContextPath()
-                    .path("/chat/" + newChatRequest.getId()).build().toUri();
+                .path("/chat/" + newChatRequest.getId()).build().toUri();
         response.addHeader("Location", uri.getRawPath());
         response.setStatus(HttpStatus.CREATED.value());
         return new ApiResult<>(newChatRequest, ApiResult.STATUS_OK);

@@ -13,12 +13,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
-/**
- * Created with IntelliJ IDEA.
- * User: kala
- * Date: 10.10.2013
- * Time: 0:37
- */
 @Repository
 public class JdbcNewsDao implements NewsDao {
     private static final String TABLE_NEWS = "NEWS";

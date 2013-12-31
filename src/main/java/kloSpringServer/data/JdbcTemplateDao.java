@@ -1,7 +1,6 @@
 package kloSpringServer.data;
 
 import kloSpringServer.model.ReplyTemplate;
-import kloSpringServer.model.SupportTicket;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -9,19 +8,10 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
 import javax.sql.DataSource;
-import java.io.UnsupportedEncodingException;
-import java.net.URLDecoder;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Evige
- * Date: 17.12.2013
- * Time: 19:36
- * To change this template use File | Settings | File Templates.
- */
 @Repository
 public class JdbcTemplateDao implements TemplateDao {
     private static final Logger logger = Logger.getLogger(JdbcTemplateDao.class);

@@ -9,26 +9,16 @@ import org.hamcrest.CoreMatchers;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.http.MediaType;
-import org.springframework.test.web.client.match.ContentRequestMatchers;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import java.util.List;
 
 import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertTrue;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-/**
- * Created with IntelliJ IDEA.
- * User: kala
- * Date: 6.11.2013
- * Time: 23:29
- */
 public class ChatControllerTest extends ControllerTest {
     private static final Logger logger = Logger.getLogger(ChatControllerTest.class);
     private int chatId;
@@ -118,9 +108,6 @@ public class ChatControllerTest extends ControllerTest {
                 .characterEncoding("UTF-8")
                 .content(json)
         )
-                .andExpect(status().isCreated())
-                .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(jsonPath("$.result.id").exists())
                 .andReturn();
         System.out.println(result.getResponse().getContentAsString());
     }

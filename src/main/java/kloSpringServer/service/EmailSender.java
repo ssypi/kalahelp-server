@@ -1,6 +1,7 @@
 package kloSpringServer.service;
 
 
+import kloSpringServer.model.SupportTicket;
 import org.apache.log4j.Logger;
 
 import javax.mail.Message;
@@ -17,14 +18,14 @@ public class EmailSender {
 
     private String recipientAddress;
     private String senderAddress;
-    private final String SMTPServer;
+    private String smtpServer;
     private final Session session;
 
-    public EmailSender(String SMTPServerHostname, String senderAddress) {
-        this.SMTPServer = SMTPServerHostname;
+    public EmailSender(String smtpServer, String senderAddress) {
+        this.smtpServer = smtpServer;
         this.senderAddress = senderAddress;
         Properties properties = System.getProperties();
-        properties.setProperty("mail.smtp.host", SMTPServer);
+        properties.setProperty("mail.smtp.host", this.smtpServer);
         session = Session.getDefaultInstance(properties);
     }
 
@@ -42,7 +43,7 @@ public class EmailSender {
             mimeMessage.setSubject(subject);
             mimeMessage.setText(messageBody);
             Transport.send(mimeMessage);
-            logger.info(String.format("Email sent from %s to %s using %s", from, to, SMTPServer));
+            logger.info(String.format("Email sent from %s to %s using %s", from, to, smtpServer));
         } catch (AddressException e) {
             e.printStackTrace();
         } catch (MessagingException e) {
@@ -50,4 +51,27 @@ public class EmailSender {
         }
     }
 
+    public void sendTicket(SupportTicket ticket) {
+        if (ticket.getReply() == null || ticket.getReply().length() < 5) {
+            return; // todo: throw exception
+        }
+        String address = ticket.getSenderEmail();
+        int ticketId = ticket.getTicketNumber();
+
+        if (validateEmailAddress(address)) {
+            sendEmail(address, "Reply to your ticket #" + ticketId, ticket.getReply());
+        }
+    }
+
+    private boolean validateEmailAddress(String recipientAddress) {
+        return true;
+    }
+
+    public void setSmtpServer(String smtpServer) {
+        this.smtpServer = smtpServer;
+    }
+
+    public void setSenderAddress(String senderAddress) {
+        this.senderAddress = senderAddress;
+    }
 }

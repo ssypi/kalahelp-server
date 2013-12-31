@@ -1,20 +1,11 @@
 package kloSpringServer.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import kloSpringServer.data.SessionDao;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.Serializable;
 import java.util.Date;
 import java.util.UUID;
 
-/**
- * Created with IntelliJ IDEA.
- * User: kala
- * Date: 20.10.2013
- * Time: 0:14
- */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Session implements Serializable {
     private static final long serialVersionUID = 3542845L;

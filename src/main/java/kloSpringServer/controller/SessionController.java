@@ -16,12 +16,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Created with IntelliJ IDEA.
- * User: kala
- * Date: 20.10.2013
- * Time: 0:52
- */
 @SuppressWarnings("SpringJavaAutowiringInspection")
 @Controller
 @RequestMapping("/session")
@@ -53,7 +47,7 @@ public class SessionController {
         if (!authentication.verifyUser(user)) { // wrong user/pass
             logger.info("wrong user/pass");
             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
-            return new ApiResult<>(ApiResult.STATUS_ERROR);
+            return new ApiResult<>(ApiResult.STATUS_ERROR, "Invalid user/pass");
         }
 
         Session newSession = sessionDao.createNewSessionForIp(ip);

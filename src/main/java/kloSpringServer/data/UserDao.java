@@ -4,12 +4,6 @@ import kloSpringServer.model.User;
 
 import java.util.List;
 
-/**
- * Created with IntelliJ IDEA.
- * User: kala
- * Date: 20.10.2013
- * Time: 21:38
- */
 public interface UserDao {
     void saveUser(User user);
     User getUserByUsername(String username);
@@ -21,5 +15,7 @@ public interface UserDao {
     List<User> getUsers();
 
     void deleteUser(String username);
+
+    void updateUser(String userName, byte[] encryptedPassword, byte[] salt);
 //    public User getUserByName(String username);
 }

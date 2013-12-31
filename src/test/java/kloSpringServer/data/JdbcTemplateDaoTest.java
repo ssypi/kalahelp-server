@@ -3,23 +3,13 @@ package kloSpringServer.data;
 import kloSpringServer.controller.ControllerTest;
 import kloSpringServer.model.ReplyTemplate;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.List;
 
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertFalse;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Evige
- * Date: 17.12.2013
- * Time: 19:54
- * To change this template use File | Settings | File Templates.
- */
 public class JdbcTemplateDaoTest extends ControllerTest {
 
     @Autowired

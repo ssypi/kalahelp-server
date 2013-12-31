@@ -5,12 +5,6 @@ import kloSpringServer.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-/**
- * Created with IntelliJ IDEA.
- * User: kala
- * Date: 20.10.2013
- * Time: 21:38
- */
 @Service
 public class UserAuthentication {
     @Autowired
@@ -41,5 +35,11 @@ public class UserAuthentication {
         byte[] salt = encryption.createSalt();
         byte[] encryptedPassword = encryption.encryptPassword(password, salt);
         userDao.saveUser(username, encryptedPassword, salt);
+    }
+
+    public void updateUser(String username, String password) {
+        byte[] salt = encryption.createSalt();
+        byte[] encryptedPassword = encryption.encryptPassword(password, salt);
+        userDao.updateUser(username, encryptedPassword, salt);
     }
 }

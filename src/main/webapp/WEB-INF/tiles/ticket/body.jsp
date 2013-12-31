@@ -5,16 +5,14 @@
 <c:set var="subTitle" value="Tiketti"/>
 
 <div id="ticket-form">
-    <form:form modelAttribute="ticket" method="POST" action="../" cssClass="pure-form pure-form-stacked">
+    <form:form modelAttribute="ticket" method="POST" action="ticket/" cssClass="pure-form pure-form-stacked">
         <fieldset>
             <legend>Support Ticket</legend>
             <div class="pure-g-r">
                 <div class="pure-u-1-2">
-                        <%--<label for="senderName">Name</label>--%>
-                        <%--<input name="senderName" id="senderName" placeholder="Your name" type="text" tabindex="1"--%>
-                        <%--required autofocus="">--%>
-                    <form:label path="senderName">Name</form:label>
-                    <form:input path="senderName"/>
+                    <label for="senderName">Name</label>
+                    <input name="senderName" id="senderName" placeholder="Your name" type="text" tabindex="1"
+                           required autofocus="">
                     <form:errors path="senderName" cssClass="error"/>
                 </div>
 
@@ -49,12 +47,13 @@
                 </div>
             </div>
         </fieldset>
-        <button type="submit" class="pure-button pure-button-primary" data-bind="enable: isEnabled">
+        <button type="submit" class="pure-button pure-button-primary">
             Submit
         </button>
-        <button class="pure-button pure-button-secondary" type="button" data-bind="click: pressCancel">
-            Back
-        </button>
+        <a href="" class="pure-button pure-button secondary">Back</a>
+        <%--<button class="pure-button pure-button-secondary" type="button" data-bind="click: pressCancel">--%>
+        <%--Back--%>
+        <%--</button>--%>
         <form:errors path="*" element="div" cssClass="errorBox"/>
     </form:form>
     <div class="progress">

@@ -7,12 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-/**
- * Created with IntelliJ IDEA.
- * User: kala
- * Date: 20.12.2013
- * Time: 23:10
- */
 @Controller
 @RequestMapping("/")
 public class HelpController {

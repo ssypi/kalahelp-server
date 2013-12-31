@@ -9,12 +9,6 @@ import java.security.SecureRandom;
 import java.security.spec.InvalidKeySpecException;
 import java.security.spec.KeySpec;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Joona
- * Date: 5.11.2012
- * Time: 18:57
- */
 @Service
 public class PasswordEncryption {
     private static final int HASH_BITS = 160;

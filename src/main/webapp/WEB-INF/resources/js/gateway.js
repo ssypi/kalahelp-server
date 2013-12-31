@@ -1,14 +1,11 @@
 var helpdesk = helpdesk || {};
 
-(function(app, $) {
+(function(app) {
     "use strict";
 
     var Gateway = function () {
-        var apiUrl = "http://syp.kapsi.fi/tc/klo/api/";
+        var apiUrl = "http://syp.kapsi.fi/klo/helpdesk/";
 //        var apiUrl = "http://localhost:8080/kloSpring/api/";
-
-        function parseApiResponse(response) {
-        }
 
         function ajaxPostJson(url, data, callback) {
             callback = callback || function() {};
@@ -37,11 +34,10 @@ var helpdesk = helpdesk || {};
                 async: true,
                 accept: "application/json",
                 success: function (data) {
-                    console.log("ajax get success.");
                     callback(data);
                 },
                 error: function (xhr) {
-                    callback(false, xhr.status + ":" + xhr.statusText);
+                    callback(xhr.statusText);
                 }
             })
         }
@@ -54,6 +50,10 @@ var helpdesk = helpdesk || {};
             var chatRequest = {};
             chatRequest.nickname = username;
             ajaxPostJson("chat/", chatRequest, callback);
+        }
+
+        function getMessages(chatId, callback) {
+            ajaxGet("chat/" + chatId, callback);
         }
 
         function sendMessage(chatId, message, nickname, callback) {
@@ -75,9 +75,10 @@ var helpdesk = helpdesk || {};
             getCategories : getCategories,
             saveTicket : saveTicket,
             sendMessage : sendMessage,
-            requestChat : requestChat
+            requestChat : requestChat,
+            getMessages : getMessages
         }
     };
 
     app.gateway = new Gateway();
-})(helpdesk, jQuery);
+})(helpdesk);

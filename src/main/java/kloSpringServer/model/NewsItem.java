@@ -5,12 +5,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- * Created with IntelliJ IDEA.
- * User: kalamies
- * Date: 21.11.2012
- * Time: 21:10
- */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class NewsItem implements Serializable {
     private static final long serialVersionUID = 3823808L;

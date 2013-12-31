@@ -1,32 +1,13 @@
 package kloSpringServer.service;
 
-import org.hamcrest.core.IsEqual;
-import org.hamcrest.core.IsNot;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.test.context.web.WebAppConfiguration;
-import org.springframework.transaction.annotation.Transactional;
-
-import java.util.Arrays;
 
 import static org.hamcrest.core.IsEqual.equalTo;
 import static org.hamcrest.core.IsNot.not;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertTrue;
 
-/**
- * Created with IntelliJ IDEA.
- * User: kala
- * Date: 20.10.2013
- * Time: 21:55
- */
-//@RunWith(SpringJUnit4ClassRunner.class)
-//@WebAppConfiguration
-//@Transactional
-//@ContextConfiguration(locations = {"/testContext.xml"})
 public class PasswordEncryptionTest {
 //    @Autowired
     PasswordEncryption encryption;

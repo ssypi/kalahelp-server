@@ -1,13 +1,11 @@
 package kloSpringServer.model;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import kloSpringServer.ValidationException;
 import org.hibernate.validator.constraints.Email;
+import org.jetbrains.annotations.Nullable;
 
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.Date;
@@ -16,13 +14,13 @@ import java.util.Date;
 public class SupportTicket {
     private int ticketNumber;
 
-    @NotNull @Size(max = 25)
+    @NotNull @Size(min = 2, max = 25)
     private String senderName;
 
-    @NotNull @Email
+    @NotNull @Email @Size(min = 5, max = 80)
     private String senderEmail;
 
-    @NotNull @Size(max = 50)
+    @NotNull @Size(min = 1, max = 50)
     private String subject;
 
     private String status;
@@ -122,10 +120,8 @@ public class SupportTicket {
         this.reply = reply;
     }
 
+    @Nullable
     public Date getReplyDate() {
-        if (replyDate == null) {
-            return new Date();
-        }
         return replyDate;
     }
 

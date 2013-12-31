@@ -1,27 +1,14 @@
 package kloSpringServer.controller;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.ObjectWriter;
-import kloSpringServer.model.NewsItem;
 import kloSpringServer.model.User;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.http.MediaType;
 
 import static org.junit.Assert.assertFalse;
-import static org.springframework.test.util.AssertionErrors.fail;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-/**
- * Created with IntelliJ IDEA.
- * User: kala
- * Date: 4.11.2013
- * Time: 0:36
- */
 public class UserControllerTest extends ControllerTest {
 
     @Test

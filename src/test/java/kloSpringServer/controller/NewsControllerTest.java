@@ -9,20 +9,13 @@ import org.springframework.util.Assert;
 
 import java.util.List;
 
-import static org.junit.Assert.*;
-import static org.hamcrest.CoreMatchers.containsString;
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.CoreMatchers.not;
+import static org.hamcrest.CoreMatchers.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 
-/**
- * Created with IntelliJ IDEA.
- * User: kala
- * Date: 19.10.2013
- * Time: 3:27
- */
 public class NewsControllerTest extends ControllerTest {
     @Test
     public void deletingNonExistingNewsShouldResultIn404() throws Exception {

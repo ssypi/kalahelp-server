@@ -8,14 +8,7 @@ import java.util.List;
 
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertFalse;
-import static junit.framework.Assert.assertTrue;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Joona
- * Date: 1.12.2013
- * Time: 0:10
- */
 public class JdbcCategoryDaoTest extends ControllerTest {
     @Autowired
     public CategoryDao categoryDao;

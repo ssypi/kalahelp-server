@@ -9,12 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
-/**
- * Created with IntelliJ IDEA.
- * User: kala
- * Date: 6.11.2013
- * Time: 22:58
- */
 @Repository
 public class ChatDaoInMemoryImpl implements ChatDao {
     private final ConcurrentHashMap<Integer, List<ChatMessage>> chats = new ConcurrentHashMap<>();

@@ -3,23 +3,14 @@ package kloSpringServer.data;
 import kloSpringServer.controller.ControllerTest;
 import kloSpringServer.model.NewsItem;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.junit.Assert.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-/**
- * Created with IntelliJ IDEA.
- * User: kala
- * Date: 18.10.2013
- * Time: 23:57
- */
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.junit.Assert.*;
+
 public class JdbcNewsDaoTest extends ControllerTest {
 
     @Autowired

@@ -13,12 +13,6 @@ import org.springframework.web.client.HttpClientErrorException;
 
 import java.util.List;
 
-/**
- * Created with IntelliJ IDEA.
- * User: kala
- * Date: 4.11.2013
- * Time: 0:32
- */
 @SuppressWarnings("SpringJavaAutowiringInspection")
 @Controller
 @RequestMapping("/user")
@@ -56,7 +50,12 @@ public class UserController {
         return new ApiResult(ApiResult.STATUS_OK);
     }
 
-
-
-
+    @RequestMapping(value = "/{userId}", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
+    public
+    @ResponseBody
+    ApiResult updateUser(@RequestBody User user, @PathVariable String userId) {
+        logger.info("Updating user " + userId);
+        authentication.updateUser(userId, user.getPassword());
+        return new ApiResult(ApiResult.STATUS_OK);
+    }
 }

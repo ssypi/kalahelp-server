@@ -11,15 +11,7 @@ import org.apache.tiles.factory.BasicTilesContainerFactory;
 import org.apache.tiles.request.ApplicationContext;
 import org.apache.tiles.request.render.BasicRendererFactory;
 import org.apache.tiles.request.render.Renderer;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.context.WebApplicationContext;
 
-/**
-* Created with IntelliJ IDEA.
-* User: kala
-* Date: 21.12.2013
-* Time: 4:20
-*/
 public class TilesContainerFactory extends BasicTilesContainerFactory {
 
     @Override

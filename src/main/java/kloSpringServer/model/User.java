@@ -9,12 +9,6 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * Created with IntelliJ IDEA.
- * User: kala
- * Date: 20.10.2013
- * Time: 0:17
- */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class User implements Serializable {
     private static final long serialVersionUID = 4683845L;

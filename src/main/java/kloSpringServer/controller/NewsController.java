@@ -16,12 +16,6 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import java.net.URI;
 import java.util.List;
 
-/**
- * Created with IntelliJ IDEA.
- * User: kala
- * Date: 10.10.2013
- * Time: 0:34
- */
 @SuppressWarnings("SpringJavaAutowiringInspection")
 @Controller
 @RequestMapping("/news")

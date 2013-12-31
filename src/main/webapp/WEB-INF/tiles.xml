@@ -14,6 +14,5 @@
 
     <definition name="WILDCARD:/*" extends="base">
         <put-attribute name="body" value="/WEB-INF/tiles/{1}/body.jsp"/>
-        <put-attribute name="subTitle" value="{1}"/>
     </definition>
 </tiles-definitions>

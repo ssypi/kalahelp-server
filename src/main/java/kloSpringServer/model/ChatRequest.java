@@ -23,6 +23,7 @@ public class ChatRequest {
     public ChatRequest(String nickname) {
         setId(generateId());
         setDate(new Date());
+        this.nickname = nickname;
     }
 
     public String getNickname() {

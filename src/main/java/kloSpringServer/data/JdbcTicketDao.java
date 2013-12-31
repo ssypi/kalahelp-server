@@ -3,7 +3,6 @@ package kloSpringServer.data;
 import kloSpringServer.model.SupportTicket;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
@@ -15,13 +14,6 @@ import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-/**
- * Created with IntelliJ IDEA.
- * User: kala
- * Date: 9.10.2013
- * Time: 1:39
- */
 
 @Repository
 public class JdbcTicketDao implements TicketDao {

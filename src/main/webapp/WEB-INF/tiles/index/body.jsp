@@ -1,12 +1,29 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <div id="chooser">
-    <a href="chat/new/" class="nav-button choose-button">Chat</a>
-    <a href="ticket/new/" class="nav-button choose-button">Ticket</a>
-        <%--<button class="nav-button choose-button">Chat</button>--%>
-        <%--<button class="nav-button choose-button">Ticket</button>--%>
+    <a href="#" class="choose-button" onclick="return showChatOptions()">Chat</button>
+    <a href="ticket/new/" class="choose-button">Ticket</a>
     <div id="message">
         <c:out value="${message}"/>
     </div>
+    <br>
+    <br>
+    <div id="chat-options" hidden>
+        <form class="pure-form pure-form-stacked" action="chat/new/">
+            <label for="chat-options">Nickname:</label>
+            <input id="nickname" name="nickname" placeholder="Please enter your nickname" type="text"/>
+            <label for="category">Problem Type:</label>
+            <select id="category" name="category">
+                <option>Other</option>
+                <option>Billing</option>
+            </select>
+            <button class="pure-button" type="submit">Ok</button>
+        </form>
+    </div>
 </div>
 
-
+<script>
+    function showChatOptions() {
+        document.getElementById('chat-options').style.display = 'block';
+        return false;
+    }
+</script>

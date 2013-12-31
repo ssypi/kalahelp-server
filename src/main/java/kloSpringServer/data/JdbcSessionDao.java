@@ -12,14 +12,7 @@ import org.springframework.stereotype.Repository;
 import javax.sql.DataSource;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Date;
 
-/**
- * Created with IntelliJ IDEA.
- * User: kala
- * Date: 20.10.2013
- * Time: 0:18
- */
 @Repository
 public class JdbcSessionDao implements SessionDao {
     private static final String TABLE_SESSION = "SESSION";

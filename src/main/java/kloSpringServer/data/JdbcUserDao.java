@@ -12,18 +12,11 @@ import org.springframework.stereotype.Repository;
 import javax.sql.DataSource;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
-import java.net.URLEncoder;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * Created with IntelliJ IDEA.
- * User: kala
- * Date: 20.10.2013
- * Time: 22:31
- */
 @Repository
 public class JdbcUserDao implements UserDao {
     private static final String TABLE_USER = "USER";
@@ -86,6 +79,17 @@ public class JdbcUserDao implements UserDao {
         String sql = "DELETE FROM " + TABLE_USER +
                 " WHERE USERNAME=?;";
         jdbcTemplate.update(sql, username);
+    }
+
+
+    @Override
+    public void updateUser(String username, byte[] encryptedPassword, byte[] salt) {
+        logger.info("DAO: Updating user " + username);
+        String sql = "UPDATE " + TABLE_USER +
+                " SET PASSWORD=?, SALT=?" +
+                " WHERE USERNAME=?";
+
+        jdbcTemplate.update(sql, encryptedPassword, salt, username);
     }
 
     @Override
